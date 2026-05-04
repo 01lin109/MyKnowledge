@@ -1,6 +1,7 @@
 {
   "promptDelete": false,
   "alwaysUpdateLinks": true,
-  "newFileLocation": "folder",
-  "newFileFolderPath": "supportPhoto"
+  "newFileLocation": "current",
+  "newFileFolderPath": "suppo",
+  "attachmentFolderPath": "supportPhoto"
 }
