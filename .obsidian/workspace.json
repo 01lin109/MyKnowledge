@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "算法/未命名.md",
+                "file": "AI/Harness Engineering.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "未命名"
+              "title": "Harness Engineering"
             }
           }
         ],
@@ -109,7 +109,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Mysql/B+树.md",
+                "file": "AI/Harness Engineering.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -119,7 +119,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "B+树 的反向链接列表"
+              "title": "Harness Engineering 的反向链接列表"
             }
           },
           {
@@ -171,13 +171,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "算法/未命名.md",
+                "file": "AI/Harness Engineering.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "未命名 的大纲"
+              "title": "Harness Engineering 的大纲"
             }
           },
           {
@@ -185,9 +185,11 @@
             "type": "leaf",
             "state": {
               "type": "file-properties",
-              "state": {},
+              "state": {
+                "file": "AI/Harness Engineering.md"
+              },
               "icon": "lucide-info",
-              "title": "笔记属性"
+              "title": "Harness Engineering的笔记属性"
             }
           },
           {
@@ -219,24 +221,39 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "075741f227b6db56",
+  "active": "86b7bb9824bd75ea",
   "lastOpenFiles": [
-    "算法/贪心.md",
-    "算法/未命名.md",
-    "Mysql/B+树.md",
-    "supportPhoto/Pasted image 20260506114855.png",
+    "Go/Golang面试题.md",
+    "AI/Harness Engineering.md",
+    "未命名",
+    "Go/Go语言基础：语言特性、语法基础与数据类型 - 金山课件.md",
+    "Go/未命名.md",
+    "Redis/Redis 常见面试题.md",
+    "Redis/持久化篇.md",
+    "Redis/未命名.md",
+    "Clippings/RDB 快照是怎么实现的？.md",
+    "Redis/缓存篇.md",
+    "Redis/Redis面试题.md",
+    "supportPhoto/Pasted image 20260508102522.png",
+    "supportPhoto/Pasted image 20260508102412.png",
+    "supportPhoto/Pasted image 20260508102344.png",
+    "supportPhoto/Pasted image 20260508102320.png",
+    "supportPhoto/Pasted image 20260508102307.png",
+    "Redis/Redis数据结构.md",
+    "Mysql/B+ 树.md",
+    "supportPhoto/Pasted image 20260507225517.png",
     "Mysql/索引.md",
-    "supportPhoto/Pasted image 20260506114456.png",
-    "supportPhoto/Pasted image 20260506114439.png",
-    "supportPhoto/Pasted image 20260506112546.png",
-    "supportPhoto/Pasted image 20260506112113.png",
+    "Mysql/性能优化.md",
+    "supportPhoto/Pasted image 20260507224731.png",
+    "supportPhoto/Pasted image 20260507224524.png",
+    "supportPhoto/Pasted image 20260507224122.png",
+    "Mysql/B+树.md",
+    "Clippings",
+    "算法/未命名.md",
+    "算法/贪心.md",
+    "supportPhoto/Pasted image 20260506114855.png",
     "Mysql/未命名.base",
     "Mysql/锁.md",
-    "supportPhoto/Pasted image 20260506110303.png",
-    "supportPhoto/Pasted image 20260506105951.png",
-    "supportPhoto/Pasted image 20260506104023.png",
-    "supportPhoto/Pasted image 20260506103955.png",
-    "supportPhoto/Pasted image 20260506103601.png",
     "Mysql/日志.md",
     "Mysql/并发问题.md",
     "Go/微服务.md",
@@ -251,18 +268,7 @@
     "计算机网络/HTTP/未命名.md",
     "计算机网络/HTTP",
     "AI",
-    "Redis/Redis数据结构.md",
-    "计算机网络.md",
     "计算机网络",
-    "Redis/Redis面试题.md",
-    "算法",
-    "LangGraph",
-    "Redis/数据结构.md",
-    "Mysql/sql基础.md",
-    "Mysql/性能优化.md",
-    "MySQL日志.md",
-    "MVCC的实现原理.md",
-    "未命名.canvas",
-    "欢迎.md"
+    "未命名.canvas"
   ]
 }
