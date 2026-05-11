@@ -120,8 +120,6 @@ Go程序的执行入口是 `main` 包中的 `main()` 函数，但在 `main()` �
 		2. 不同包按 **导入依赖顺序** 执行（被依赖包先执行）
 		3. 所有init函数执行完毕后，才执行 `main()` 函数
 
-go 复制代码
-
 ```go
 // 包初始化示例（文件名：demo.go）
 package main
@@ -154,8 +152,6 @@ func main() {
 - 无参数无返回值： `func main() {}`
 - 程序入口唯一：一个项目只能有一个 `main()` 函数
 - 命令行参数通过 `os.Args` 获取：
-
-go 复制代码
 
 ```go
 package main
@@ -287,8 +283,6 @@ func Add(a, b int) int {
 
 #### 完整声明（显式类型）
 
-go 复制代码
-
 ```go
 var age int       // 声明变量，默认值0
 var name string   // 默认值""（空字符串）
@@ -296,17 +290,12 @@ var isActive bool // 默认值false
 ```
 
 #### 初始化声明（类型推断）
-
-go 复制代码
-
 ```go
 var score = 95.5  // 自动推断为float64类型
 var username = "alice" // 自动推断为string类型
 ```
 
 #### 短变量声明（函数内使用）
-
-go 复制代码
 
 ```go
 func main() {
@@ -316,8 +305,6 @@ func main() {
 ```
 
 #### 多变量声明
-
-go 复制代码
 
 ```go
 // 批量声明
@@ -331,15 +318,11 @@ var (
 x, y := 10, 20
 x, y = y, x // 交换变量值，无需临时变量
 ```
-![image.png](https://campus.wps.cn/api/resources/get?cuid=cmmuaj56y0002hhaznmfqr7na)
-
 ### 6.2 常量声明与iota
 
 常量是编译期确定的不可变值，使用 `const` 声明：
 
 #### 基本常量
-
-go 复制代码
 
 ```go
 const Pi = 3.1415926

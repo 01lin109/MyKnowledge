@@ -8,35 +8,49 @@
         "type": "tabs",
         "children": [
           {
-            "id": "6bdd4f6935d1806b",
+            "id": "bc150f99d99c7caf",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Mysql/索引.md",
+                "file": "Go/Golang面试题.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "索引"
+              "title": "Golang面试题"
             }
           },
           {
-            "id": "86b7bb9824bd75ea",
+            "id": "e952644d78e398f2",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "AI/Harness Engineering.md",
+                "file": "Go/Go协程/WaitGroup.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Harness Engineering"
+              "title": "WaitGroup"
+            }
+          },
+          {
+            "id": "a9ec75e56a7dd9b5",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "面试/项目经历-OnCall.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "项目经历-OnCall"
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -109,7 +123,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "AI/Harness Engineering.md",
+                "file": "Go/Go协程/Channel（通道）.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -119,7 +133,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Harness Engineering 的反向链接列表"
+              "title": "Channel（通道） 的反向链接列表"
             }
           },
           {
@@ -128,12 +142,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Redis.md",
+                "file": "Go/Go协程/Channel（通道）.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Redis 的出链列表"
+              "title": "Channel（通道） 的出链列表"
             }
           },
           {
@@ -171,13 +185,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "AI/Harness Engineering.md",
+                "file": "面试/项目经历-OnCall.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Harness Engineering 的大纲"
+              "title": "项目经历-OnCall 的大纲"
             }
           },
           {
@@ -221,13 +235,35 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "86b7bb9824bd75ea",
+  "active": "a9ec75e56a7dd9b5",
   "lastOpenFiles": [
-    "Go/Golang面试题.md",
+    "supportPhoto/Pasted image 20260511153046.png",
+    "supportPhoto/Pasted image 20260511152934.png",
+    "面试/实习经历.md",
+    "面试/项目经历-OnCall.md",
+    "面试/自我介绍.md",
     "AI/Harness Engineering.md",
-    "未命名",
+    "面试",
+    "前端/XMLHttpRequest 到 Fetch，SSE，WebSocket - 金山课件.md",
+    "前端",
+    "计算机网络/HTTP.md",
+    "supportPhoto/Pasted image 20260511114557.png",
+    "supportPhoto/Pasted image 20260511112226.png",
+    "计算机网络/应用层.md",
+    "supportPhoto/Pasted image 20260511110409.png",
+    "Go/Golang面试题.md",
+    "Go/Go协程/互斥锁和读写锁.md",
+    "Go/Go协程/WaitGroup.md",
     "Go/Go语言基础：语言特性、语法基础与数据类型 - 金山课件.md",
-    "Go/未命名.md",
+    "Go/Go协程/goroutine（协程）.md",
+    "Go/Go协程/Channel（通道）.md",
+    "supportPhoto/Pasted image 20260510154737.png",
+    "supportPhoto/Pasted image 20260510154730.png",
+    "supportPhoto/Pasted image 20260510154708.png",
+    "supportPhoto/Pasted image 20260510153351.png",
+    "Go/Go协程",
+    "Go/微服务.md",
+    "Go/Go协程.md",
     "Redis/Redis 常见面试题.md",
     "Redis/持久化篇.md",
     "Redis/未命名.md",
@@ -236,39 +272,17 @@
     "Redis/Redis面试题.md",
     "supportPhoto/Pasted image 20260508102522.png",
     "supportPhoto/Pasted image 20260508102412.png",
-    "supportPhoto/Pasted image 20260508102344.png",
-    "supportPhoto/Pasted image 20260508102320.png",
-    "supportPhoto/Pasted image 20260508102307.png",
     "Redis/Redis数据结构.md",
     "Mysql/B+ 树.md",
-    "supportPhoto/Pasted image 20260507225517.png",
     "Mysql/索引.md",
     "Mysql/性能优化.md",
-    "supportPhoto/Pasted image 20260507224731.png",
-    "supportPhoto/Pasted image 20260507224524.png",
-    "supportPhoto/Pasted image 20260507224122.png",
-    "Mysql/B+树.md",
     "Clippings",
-    "算法/未命名.md",
-    "算法/贪心.md",
-    "supportPhoto/Pasted image 20260506114855.png",
     "Mysql/未命名.base",
-    "Mysql/锁.md",
-    "Mysql/日志.md",
-    "Mysql/并发问题.md",
-    "Go/微服务.md",
-    "Mysql/事务.md",
-    "计算机网络/HTTP.md",
     "Go/Gin",
     "Go/Gorm",
     "Go/gRPC",
     "Go",
-    "计算机网络/OSI&5层网络模型.md",
-    "AI/MCP.md",
-    "计算机网络/HTTP/未命名.md",
     "计算机网络/HTTP",
-    "AI",
-    "计算机网络",
     "未命名.canvas"
   ]
 }
