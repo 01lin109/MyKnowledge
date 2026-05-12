@@ -58,9 +58,8 @@ JavaScript 提供了一整套网络 API 来满足这些需求：
 AJAX（ **A** synchronous **J** avaScript **A** nd **X** ML）是一个术语，而不是一项具体技术。它的核心思想是：
 
 > 使用 JavaScript 在后台发起 HTTP 请求，获取数据后局部更新页面，无需整页刷新。
-
 尽管名字里有"XML"，但现在绝大多数场景都使用 JSON 格式。实现 AJAX 的技术手段主要有两个： `XMLHttpRequest` 和 `Fetch API` 。
-
+[[HTTP]]
 ## 第二章 XMLHttpRequest：经典的网络请求
 
 ### 2.1 认识 XMLHttpRequest
@@ -179,19 +178,16 @@ javascript 复制代码
 xhr.responseType = 'json'; // 自动解析为 JavaScript 对象
 ```
 
-| 值 | 响应数据类型 |
-| --- | --- |
-| `""` （默认） | 字符串 |
-| `"text"` | 字符串 |
-| `"json"` | JSON 自动解析为对象 |
-| `"blob"` | `Blob` 对象（二进制数据） |
+| 值               | 响应数据类型                  |
+| --------------- | ----------------------- |
+| `""` （默认）       | 字符串                     |
+| `"text"`        | 字符串                     |
+| `"json"`        | JSON 自动解析为对象            |
+| `"blob"`        | `Blob` 对象（二进制数据）        |
 | `"arraybuffer"` | `ArrayBuffer` （底层二进制数据） |
-| `"document"` | XML/HTML Document 对象 |
+| `"document"`    | XML/HTML Document 对象    |
 
 **示例：获取 JSON 数据**
-
-javascript 复制代码
-
 ```javascript
 let xhr = new XMLHttpRequest();
 xhr.open('GET', '/api/user/1');
