@@ -91,7 +91,7 @@ type slice struct {
 
 Go1.22之前：
 
-```
+```go
 for index, value := range collection {
     // ...
 }
@@ -133,7 +133,7 @@ strings.Join ≈ strings.Builder > bytes.Buffer > "+" > fmt.Sprintf
 
 5种拼接方法的实例代码
 
-```
+```go
 func main(){
         a := []string{"a", "b", "c"}
         //方式1：+
@@ -196,7 +196,7 @@ func main() {
 
 上面这个例子中，test返回值并没有修改，这是由于Go的返回机制决定的，执行Return语句后，Go会创建一个临时变量保存返回值。如果是有名返回（也就是指明返回值 `func test() (i int)` ）
 
-```
+```go
 func test() (i int) {
         i = 0
         defer func() {
@@ -222,7 +222,7 @@ Go 语言的字符有以下两种：
 
 - uint8 类型，或者叫 byte 型，代表了 ASCII 码的一个字符。
 - rune 类型，代表一个 UTF-8 字符，当需要处理中文、日文或者其他复合字符时，则需要用到 rune 类型。rune 类型等价于 int32 类型。
-```
+```go
 package main
 import "fmt"
 
@@ -274,7 +274,7 @@ func main() {
 
 可以使用 unsafe.Sizeof 计算出一个数据类型实例需要占用的字节数，空struct{}不占用任何空间
 
-```
+```go
 package main
 
 import (
@@ -290,7 +290,7 @@ func main() {
 ### 1.13 Go语言中，空 struct{} 有什么用？
 
 - 用map模拟一个set，那么就要把值置为struct{}，struct{}本身不占任何空间，可以避免任何多余的内存分配。
-```
+```go
 type Set map[string]struct{}
 
 func main() {
@@ -306,7 +306,7 @@ func main() {
 }
 ```
 - 有时候给通道发送一个空结构体,channel<-struct{}{}，可以节省空间
-```
+```go
 func main() {
         ch := make(chan struct{}, 1)
         go func() {
@@ -318,7 +318,7 @@ func main() {
 }
 ```
 - 表示仅有方法的结构体
-```
+```go
 type Lamp struct{}
 ```
 
@@ -328,7 +328,7 @@ type Lamp struct{}
 
 **详细：** init()函数是go初始化的一部分，由runtime初始化每个导入的包，初始化不是按照从上到下的导入顺序，而是按照解析的依赖关系，没有依赖的包最先初始化。
 
-每个包首先初始化包作用域的常量和变量（常量优先于变量），然后执行包的 `init()` 函数。同一个包，甚至是同一个源文件可以有多个 `init()` 函数。 `init()` 函数没有入参和返回值，不能被其他函数调用，同一个包内多个 `init()` 函数的执行顺序不作保证。
+每个包首先初始化包作用域的常量和变量（常量优先于变量），然后执行包的 `init()` 函数。同一个包，甚至是同一个源文件可以有多个 `init()` 函数。 `init()` 函数**没有**入参和返回值，不能被其他函数调用，同一个包内多个 `init()` 函数的执行顺序不作保证。
 
 执行顺序：import –> const –> var –> `init()` –> `main()`
 
@@ -342,7 +342,7 @@ Go 语言中，interface 的内部实现包含了 2 个字段，类型 `T` 和 �
 
 1. 两个 interface 均等于 nil（此时 V 和 T 都处于 unset 状态）
 2. 类型 T 相同，且对应的值 V 相等。
-```
+```go
 type Stu struct {
      Name string
 }
@@ -363,7 +363,7 @@ func main() {
 
 可能不等。interface在运行时绑定值，只有值为nil接口值才为nil，但是与指针的nil不相等。举个例子：
 
-```
+```go
 var p *int = nil
 var i interface{} = nil
 if(p == i){
@@ -401,7 +401,7 @@ Go 语言的多返回值是通过在函数调用栈帧上预留空间并进行 *
 
 示例：
 
-```
+```go
 package main
 
 import (
@@ -440,7 +440,7 @@ unsafe.Pointer和uintptr可以相互转换，这是Go提供的唯一合法的指
 
 slice 的底层数据其实也是数组，slice 是对数组的封装，它描述一个数组的片段。slice 实际上是一个结构体，包含三个字段：长度、容量、底层数组。
 
-```
+```go
 // runtime/slice.go
 type slice struct {
         array unsafe.Pointer // 元素指针
@@ -469,7 +469,7 @@ Go1.18及以后，引入了新的扩容规则：
 
 示例：
 
-```
+```go
 package main
 
 import "fmt"func main() {
@@ -538,7 +538,7 @@ s1[2] = 20
 
 示例：
 
-```
+```go
 package main
 
 func main() {
@@ -570,7 +570,7 @@ func f(s []int) {
 
 要想真的改变外层 `slice` ，只有将返回的新的 slice 赋值到原始 slice，或者向函数传递一个指向 slice 的指针。我们再来看一个例子：
 
-```
+```go
 package main
 
 import "fmt"
@@ -618,12 +618,13 @@ func main() {
 ## 3\. Map面试题
 
 ### 3.1 Go语言Map的底层实现原理是怎样的？
+![[Pasted image 20260513114023.png]]
 
 map的就是一个hmap的结构。Go Map的底层实现是一个 **哈希表** 。它在运行时表现为一个指向 `hmap` 结构体的指针， `hmap` 中记录了 **桶数组指针 `buckets`** 、 **溢出桶指针** 以及 **元素个数** 等字段。每个桶是一个 `bmap` 结构体，能存储 **8个键值对** 和 **8个 `tophash`** ，并有指向下一个 **溢出桶的指针 `overflow`** 。为了 **内存紧凑** ， `bmap` 中采用的是先存8个键再存8个值的存储方式。
 
 **分析：** hmap结构定义：
 
-```
+```go
 // A header for a Go map.
 type hmap struct {
    count     int // map中元素个数
@@ -660,7 +661,7 @@ Go团队为了避免开发者写出依赖底层实现细节的脆弱代码，而
 
 如果业务上确实需要有序遍历，最规范的做法就是将Map的键（Key）取出来放入一个切片（Slice）中，用 `sort` 包对切片进行排序，然后根据这个有序的切片去遍历Map。
 
-```
+```go
 package main
 
 import (
@@ -696,7 +697,7 @@ map 不是线程安全的。
 
 检测写标志：
 
-```
+```go
 if h.flags&hashWriting == 0 {
                 throw("concurrent map writes")
         }
@@ -704,7 +705,7 @@ if h.flags&hashWriting == 0 {
 
 设置写标志：
 
-```
+```go
 h.flags |= hashWriting
 ```
 
@@ -727,6 +728,10 @@ Map的Key必须要可比较。
 
 ### 3.8 Go语言Map的扩容过程是怎样的？
 
+> [!NOTE]扩容机制
+> 与Redis的Hash扩容机制类似[[Redis数据结构#3. 核心机制：渐进式 rehash (Progressive Rehash)]]
+
+
 Go的扩容是 **渐进式（gradual** ）的。它不会在触发扩容时"stop the world"来一次性把所有数据搬迁到新空间，而是只分配新空间，然后在后续的每一次插入、修改或删除操作时，才会顺便搬迁一两个旧桶的数据。这种设计将庞大的扩容成本分摊到了多次操作中，极大地减少了服务的瞬间延迟（STW），保证了性能的平滑性。
 
 如果是触发双倍扩容，会新建一个buckets数组，新的buckets数量大小是原来的2倍，然后旧buckets数据搬迁到新的buckets。如果是等量扩容，buckets数量维持不变，重新做一遍类似双倍扩容的搬迁动作，把松散的键值对重新排列一次，使得同一个 bucket 中的 key 排列地更紧密，这样节省空间，存取效率更高
@@ -737,7 +742,7 @@ Go的扩容是 **渐进式（gradual** ）的。它不会在触发扩容时"stop
 
 示例：
 
-```
+```go
 package main
 
 import "fmt"

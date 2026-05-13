@@ -286,7 +286,7 @@ typedef struct dictEntry {
 ------
 
 #### 3. 核心机制：渐进式 rehash (Progressive Rehash)
-
+[[Golang面试题#3.8 Go语言Map的扩容过程是怎样的？]]
 这是 Redis 能够保持高性能的关键。传统的 HashTable 在扩容（rehash）时，往往需要一次性将所有数据迁移到新表，这会导致服务器在瞬时产生严重的阻塞（停顿）。
 
 **Redis 的做法是“分而治之”：**

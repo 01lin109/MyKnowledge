@@ -91,7 +91,7 @@ fatal error: all goroutines are asleep - deadlock!
 
 当向无缓冲通道发送数据时，如果没有其他 Goroutine 在接收数据，发送操作会一直阻塞，直到有接收方准备好。
 
-```
+```go
 package main
 
 import (
