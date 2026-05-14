@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Java/JVM/Java虚拟机面试题.md",
+                "file": "每日一面/算法题.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Java虚拟机面试题"
+              "title": "算法题"
             }
           },
           {
@@ -185,13 +185,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Java/JVM/Java虚拟机面试题.md",
+                "file": "每日一面/算法题.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Java虚拟机面试题 的大纲"
+              "title": "算法题 的大纲"
             }
           },
           {
@@ -237,8 +237,11 @@
   },
   "active": "7907211d32d65d70",
   "lastOpenFiles": [
-    "Java/JVM/JVM 基本介绍.md",
+    "算法/贪心.md",
+    "每日一面/算法题.md",
+    "算法/字符串.md",
     "Java/JVM/Java虚拟机面试题.md",
+    "Java/JVM/JVM 基本介绍.md",
     "Java/JVM/JVM垃圾回收.md",
     "supportPhoto/Pasted image 20260514112829.png",
     "Go/Go垃圾回收/Golang垃圾回收(GC)介绍.md",
@@ -275,10 +278,7 @@
     "MQ/Kafka.md",
     "On-Call学习/项目经历-OnCall.md",
     "MQ",
-    "On-Call学习/实习经历.md",
-    "On-Call学习/自我介绍.md",
     "每日一面",
-    "计算机网络/OSI&5层网络模型.md",
     "实战方案",
     "Go/Go框架/Orm框架/未命名",
     "Go/Go框架/Orm框架",
