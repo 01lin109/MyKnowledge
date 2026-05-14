@@ -13,15 +13,44 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Go/Go协程/Channel（通道）.md",
+                "file": "Java/JVM/JVM 基本介绍.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Channel（通道）"
+              "title": "JVM 基本介绍"
+            }
+          },
+          {
+            "id": "7907211d32d65d70",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Java/JVM/Java虚拟机面试题.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Java虚拟机面试题"
+            }
+          },
+          {
+            "id": "db925ffd1ae431e8",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Go/Go垃圾回收/Golang垃圾回收(GC)介绍.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Golang垃圾回收(GC)介绍"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -156,13 +185,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Go/Go协程/Channel（通道）.md",
+                "file": "Java/JVM/Java虚拟机面试题.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Channel（通道） 的大纲"
+              "title": "Java虚拟机面试题 的大纲"
             }
           },
           {
@@ -206,15 +235,34 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "bc150f99d99c7caf",
+  "active": "7907211d32d65d70",
   "lastOpenFiles": [
+    "Java/JVM/JVM 基本介绍.md",
+    "Java/JVM/Java虚拟机面试题.md",
+    "Java/JVM/JVM垃圾回收.md",
+    "supportPhoto/Pasted image 20260514112829.png",
+    "Go/Go垃圾回收/Golang垃圾回收(GC)介绍.md",
+    "supportPhoto/Pasted image 20260514110553.png",
+    "supportPhoto/Pasted image 20260514103804.png",
     "Go/Golang面试题.md",
+    "supportPhoto/Pasted image 20260514095057.png",
+    "supportPhoto/Pasted image 20260514094606.png",
+    "supportPhoto/Pasted image 20260514094558.png",
+    "Clippings/大白话带你认识 JVM.md",
+    "Java/JVM/JVM常见的参数.md",
+    "Java/JVM",
+    "supportPhoto/Pasted image 20260514091626.png",
+    "supportPhoto/Pasted image 20260514091432.png",
+    "supportPhoto/Pasted image 20260514090707.png",
+    "supportPhoto/Pasted image 20260514090616.png",
+    "Java/Java面试题.md",
+    "Go/Go协程/Channel（通道）.md",
+    "Java/Java垃圾回收",
     "Redis/Redis数据结构.md",
     "计算机网络/HTTP.md",
     "Redis/Redis 常见面试题.md",
     "Redis/缓存篇.md",
     "Redis/持久化篇.md",
-    "supportPhoto/Pasted image 20260513114023.png",
     "Go/Go语言基础：语言特性、语法基础与数据类型 - 金山课件.md",
     "Go/Go垃圾回收",
     "每日一面/实习.md",
@@ -231,29 +279,10 @@
     "On-Call学习/自我介绍.md",
     "每日一面",
     "计算机网络/OSI&5层网络模型.md",
-    "计算机网络/RESTful API 设计规范.md",
-    "supportPhoto/Pasted image 20260512171127.png",
-    "实战方案/服务端鉴权认证方案.md",
-    "Go/Go协程/WaitGroup.md",
-    "Go/Go协程/Channel（通道）.md",
-    "Go/Go协程/互斥锁和读写锁.md",
-    "前端/XMLHttpRequest 到 Fetch，SSE，WebSocket.md",
-    "公众号@小林面试笔记.md",
-    "小林coding.md",
     "实战方案",
     "Go/Go框架/Orm框架/未命名",
     "Go/Go框架/Orm框架",
     "Go/Go框架/Web框架",
-    "supportPhoto/Pasted image 20260512163357.png",
-    "未命名.canvas",
-    "Go/Go框架",
-    "supportPhoto/Pasted image 20260512103858.png",
-    "supportPhoto/Pasted image 20260511153046.png",
-    "supportPhoto/Pasted image 20260511152934.png",
-    "On-Call学习",
-    "supportPhoto/Pasted image 20260511114557.png",
-    "supportPhoto/Pasted image 20260511112226.png",
-    "supportPhoto/Pasted image 20260511110409.png",
-    "supportPhoto/Pasted image 20260510154737.png"
+    "未命名.canvas"
   ]
 }
