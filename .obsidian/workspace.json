@@ -8,31 +8,34 @@
         "type": "tabs",
         "children": [
           {
-            "id": "bc150f99d99c7caf",
+            "id": "7907211d32d65d70",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Go/Golang面试题.md",
+                "file": "Redis/Redis 常见面试题.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Golang面试题"
+              "title": "Redis 常见面试题"
             }
           },
           {
-            "id": "7f5385520654fd78",
+            "id": "92cc2f30e879ae85",
             "type": "leaf",
             "state": {
-              "type": "split-diff-view",
+              "type": "canvas",
               "state": {
-                "aFile": "计算机网络/HTTP.md",
-                "bFile": "计算机网络/HTTP.md",
-                "aRef": ""
+                "file": "清能互联实习.canvas",
+                "viewState": {
+                  "x": 12.090000000000124,
+                  "y": -5.547187500000047,
+                  "zoom": 0
+                }
               },
-              "icon": "diff",
-              "title": "Diff: HTTP  (Working Tree)"
+              "icon": "lucide-layout-dashboard",
+              "title": "清能互联实习"
             }
           }
         ],
@@ -171,13 +174,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "每日一面/实习.md",
+                "file": "清能互联实习.canvas",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "实习 的大纲"
+              "title": "清能互联实习 的大纲"
             }
           },
           {
@@ -221,16 +224,33 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "7f5385520654fd78",
+  "active": "92cc2f30e879ae85",
   "lastOpenFiles": [
-    "未命名.canvas",
-    "AI/RAG.md",
-    "计算机网络/HTTP.md",
-    "On-Call学习/eino框架.md",
-    "supportPhoto/Pasted image 20260514200906.png",
-    "On-Call学习/项目经历-OnCall.md",
+    "OnCall.canvas",
+    "清能互联实习.canvas",
+    "Redis/持久化篇.md",
+    "Redis/Redis 常见面试题.md",
+    "Go/Golang面试题.md",
+    "Go/Go语言基础：语言特性、语法基础与数据类型 - 金山课件.md",
+    "Go/Go协程/goroutine（协程）.md",
+    "Go/Go协程/WaitGroup.md",
+    "Go/Go框架/Web框架/Gin框架基础.md",
+    "Go/Go框架/Web框架/GoFrame框架基础.md",
+    "Go/Go垃圾回收/Golang垃圾回收(GC)介绍.md",
+    "Go/Go框架/Orm框架/GORM.md",
+    "每日一面/计算机基础.md",
+    "每日一面/Java八股.md",
+    "每日一面/项目.md",
     "每日一面/算法题.md",
-    "每日一面/中间件八股.md",
+    "每日一面/实习.md",
+    "Java/JVM/Java虚拟机面试题.md",
+    "Java/JVM/JVM垃圾回收.md",
+    "每日一面/GO八股.md",
+    "Java/JVM/JVM常见的参数.md",
+    "Java/JVM/JVM 基本介绍.md",
+    "supportPhoto/Pasted image 20260514200906.png",
+    "On-Call学习/eino框架.md",
+    "算法/贪心.md",
     "算法/字符串.md",
     "supportPhoto/Pasted image 20260514112829.png",
     "supportPhoto/Pasted image 20260514110553.png",
@@ -238,36 +258,20 @@
     "supportPhoto/Pasted image 20260514095057.png",
     "supportPhoto/Pasted image 20260514094606.png",
     "supportPhoto/Pasted image 20260514094558.png",
-    "supportPhoto/Pasted image 20260514091626.png",
-    "supportPhoto/Pasted image 20260514090707.png",
-    "supportPhoto/Pasted image 20260514090313.png",
-    "Java/JVM/JVM垃圾回收.md",
-    "Java/JVM/JVM常见的参数.md",
-    "Java/JVM/JVM 基本介绍.md",
-    "Java/JVM/Java虚拟机面试题.md",
-    "Java/JVM",
-    "Java/Java面试题.md",
-    "Java",
-    "Go/Go垃圾回收/Golang垃圾回收(GC)介绍.md",
-    "Go/Go垃圾回收",
     "Clippings/大白话带你认识 JVM.md",
-    "每日一面/项目.md",
-    "每日一面/实习.md",
-    "每日一面/Java八股.md",
-    "每日一面/GO八股.md",
-    "Go/Go协程/goroutine（协程）.md",
-    "Go/Golang面试题.md",
-    "Go/Go语言基础：语言特性、语法基础与数据类型 - 金山课件.md",
-    "MQ/Kafka.md",
+    "Java/JVM",
+    "supportPhoto/Pasted image 20260514091626.png",
+    "supportPhoto/Pasted image 20260514091432.png",
+    "supportPhoto/Pasted image 20260514090707.png",
+    "Java/Java面试题.md",
+    "Java/Java垃圾回收",
+    "Go/Go垃圾回收",
+    "Java",
     "MQ",
-    "On-Call学习/实习经历.md",
-    "On-Call学习/自我介绍.md",
     "每日一面",
-    "计算机网络/OSI&5层网络模型.md",
     "实战方案",
     "Go/Go框架/Orm框架/未命名",
     "Go/Go框架/Orm框架",
-    "Go/Go框架/Web框架",
-    "Go/Go框架"
+    "Go/Go框架/Web框架"
   ]
 }

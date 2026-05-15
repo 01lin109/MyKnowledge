@@ -9,10 +9,6 @@ description:
 tags:
   - "clippings"
 ---
-[![](https://cdn.xiaolincoding.com/niumianhaibao.pn
-大家好，我是小林。
-
-不知不觉《 [图解 Redis](https://mp.weixin.qq.com/mp/appmsgalbum?__biz=MzUxODAzNDg4NQ==&action=getalbum&album_id=1790401816640225283#wechat_redirect) 》系列文章写了很多了，考虑到一些同学面试突击 Redis，所以我整理了 3 万字 + 40 张图的 Redis 八股文，共收集了 40 多个面试题。
 
 ![](https://cdn.xiaolincoding.com/gh/xiaolincoder/redis/%E5%85%AB%E8%82%A1%E6%96%87/3%E4%B8%87%E5%AD%97.jpeg)
 
