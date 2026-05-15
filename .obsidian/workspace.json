@@ -25,17 +25,14 @@
             "id": "92cc2f30e879ae85",
             "type": "leaf",
             "state": {
-              "type": "canvas",
+              "type": "markdown",
               "state": {
-                "file": "清能互联实习.canvas",
-                "viewState": {
-                  "x": 12.090000000000124,
-                  "y": -5.547187500000047,
-                  "zoom": 0
-                }
+                "file": "笔试题/操作系统.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-layout-dashboard",
-              "title": "清能互联实习"
+              "icon": "lucide-file",
+              "title": "操作系统"
             }
           }
         ],
@@ -174,13 +171,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "清能互联实习.canvas",
+                "file": "笔试题/操作系统.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "清能互联实习 的大纲"
+              "title": "操作系统 的大纲"
             }
           },
           {
@@ -226,8 +223,16 @@
   },
   "active": "92cc2f30e879ae85",
   "lastOpenFiles": [
-    "OnCall.canvas",
+    "AI/大模型选择题.md",
+    "笔试题/操作系统.md",
+    "笔试题",
+    "算法/堆 & 队列.md",
+    "supportPhoto/Pasted image 20260515203812.png",
+    "每日一面/算法题.md",
+    "算法/贪心.md",
+    "算法/字符串.md",
     "清能互联实习.canvas",
+    "OnCall.canvas",
     "Redis/持久化篇.md",
     "Redis/Redis 常见面试题.md",
     "Go/Golang面试题.md",
@@ -241,7 +246,6 @@
     "每日一面/计算机基础.md",
     "每日一面/Java八股.md",
     "每日一面/项目.md",
-    "每日一面/算法题.md",
     "每日一面/实习.md",
     "Java/JVM/Java虚拟机面试题.md",
     "Java/JVM/JVM垃圾回收.md",
@@ -250,20 +254,15 @@
     "Java/JVM/JVM 基本介绍.md",
     "supportPhoto/Pasted image 20260514200906.png",
     "On-Call学习/eino框架.md",
-    "算法/贪心.md",
-    "算法/字符串.md",
     "supportPhoto/Pasted image 20260514112829.png",
     "supportPhoto/Pasted image 20260514110553.png",
     "supportPhoto/Pasted image 20260514103804.png",
     "supportPhoto/Pasted image 20260514095057.png",
     "supportPhoto/Pasted image 20260514094606.png",
     "supportPhoto/Pasted image 20260514094558.png",
-    "Clippings/大白话带你认识 JVM.md",
     "Java/JVM",
     "supportPhoto/Pasted image 20260514091626.png",
     "supportPhoto/Pasted image 20260514091432.png",
-    "supportPhoto/Pasted image 20260514090707.png",
-    "Java/Java面试题.md",
     "Java/Java垃圾回收",
     "Go/Go垃圾回收",
     "Java",
@@ -271,7 +270,6 @@
     "每日一面",
     "实战方案",
     "Go/Go框架/Orm框架/未命名",
-    "Go/Go框架/Orm框架",
-    "Go/Go框架/Web框架"
+    "Go/Go框架/Orm框架"
   ]
 }
