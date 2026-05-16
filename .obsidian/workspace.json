@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "每日一面/Java八股.md",
+                "file": "MQ/RabbitMQ.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Java八股"
+              "title": "RabbitMQ"
             }
           }
         ],
@@ -223,8 +223,10 @@
   },
   "active": "92cc2f30e879ae85",
   "lastOpenFiles": [
-    "每日一面/GO八股.md",
+    "supportPhoto/7bf15d7f2e88d5e293023addf16d1eac.png",
     "每日一面/Java八股.md",
+    "MQ/RabbitMQ.md",
+    "每日一面/GO八股.md",
     "每日一面/中间件八股.md",
     "每日一面/项目.md",
     "每日一面/算法题.md",
@@ -251,8 +253,6 @@
     "Go/Go垃圾回收/Golang垃圾回收(GC)介绍.md",
     "Go/Go框架/Orm框架/GORM.md",
     "Java/JVM/Java虚拟机面试题.md",
-    "Java/JVM/JVM垃圾回收.md",
-    "Java/JVM/JVM常见的参数.md",
     "supportPhoto/Pasted image 20260514200906.png",
     "supportPhoto/Pasted image 20260514112829.png",
     "supportPhoto/Pasted image 20260514110553.png",
