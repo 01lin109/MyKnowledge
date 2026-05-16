@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "笔试题/操作系统.md",
+                "file": "每日一面/Java八股.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "操作系统"
+              "title": "Java八股"
             }
           }
         ],
@@ -171,13 +171,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "笔试题/操作系统.md",
+                "file": "每日一面/Java八股.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "操作系统 的大纲"
+              "title": "Java八股 的大纲"
             }
           },
           {
@@ -223,16 +223,23 @@
   },
   "active": "92cc2f30e879ae85",
   "lastOpenFiles": [
-    "AI/大模型选择题.md",
+    "每日一面/GO八股.md",
+    "每日一面/Java八股.md",
+    "每日一面/中间件八股.md",
+    "每日一面/项目.md",
+    "每日一面/算法题.md",
+    "每日一面/实习.md",
+    "Redis/缓存篇.md",
+    "清能互联实习.canvas",
+    "OnCall.canvas",
+    "每日一面/计算机基础.md",
     "笔试题/操作系统.md",
+    "AI/大模型选择题.md",
     "笔试题",
     "算法/堆 & 队列.md",
     "supportPhoto/Pasted image 20260515203812.png",
-    "每日一面/算法题.md",
     "算法/贪心.md",
     "算法/字符串.md",
-    "清能互联实习.canvas",
-    "OnCall.canvas",
     "Redis/持久化篇.md",
     "Redis/Redis 常见面试题.md",
     "Go/Golang面试题.md",
@@ -243,17 +250,10 @@
     "Go/Go框架/Web框架/GoFrame框架基础.md",
     "Go/Go垃圾回收/Golang垃圾回收(GC)介绍.md",
     "Go/Go框架/Orm框架/GORM.md",
-    "每日一面/计算机基础.md",
-    "每日一面/Java八股.md",
-    "每日一面/项目.md",
-    "每日一面/实习.md",
     "Java/JVM/Java虚拟机面试题.md",
     "Java/JVM/JVM垃圾回收.md",
-    "每日一面/GO八股.md",
     "Java/JVM/JVM常见的参数.md",
-    "Java/JVM/JVM 基本介绍.md",
     "supportPhoto/Pasted image 20260514200906.png",
-    "On-Call学习/eino框架.md",
     "supportPhoto/Pasted image 20260514112829.png",
     "supportPhoto/Pasted image 20260514110553.png",
     "supportPhoto/Pasted image 20260514103804.png",

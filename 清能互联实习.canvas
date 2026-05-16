@@ -3,10 +3,10 @@
 		{"id":"07b3f6c2a9f45258","type":"file","file":"Java/JVM/JVM垃圾回收.md","x":14,"y":-270,"width":400,"height":400},
 		{"id":"8694360418f560d4","type":"text","text":"导入模块优化","x":-200,"y":-240,"width":140,"height":60},
 		{"id":"535d433476db172b","type":"text","text":"核心：JVM","x":-207,"y":-100,"width":155,"height":60},
-		{"id":"60c8cec70efb1187","x":-740,"y":-270,"width":400,"height":400,"type":"file","file":"每日一面/实习.md"},
-		{"id":"a969ac81748eae3f","x":-255,"y":29,"width":250,"height":101,"type":"text","text":"延伸：数据库事务策略：\n**事务控制策略**：\n\n- **不要每行提交一次事务**，也不要整个 5 万条才提交一次（大事务会导致 Undo Log 激增和锁竞争）。\n    \n- **最佳实践**：建议每 1000-2000 条开启并提交一次事务。这与 EasyExcel 的分批回调机制完美契合。"},
-		{"id":"d6e04378f30052a3","x":-255,"y":200,"width":250,"height":60,"type":"text","text":"延伸：Redis布隆过滤器进行校验看是新增还是更新\n1.先根据场景id进行预热，把该场景下的设备id+日期+场景id加载到Redis中\n2.使用布隆过滤器进行分流"},
-		{"id":"9b2ba37670fe0be1","x":80,"y":280,"width":400,"height":400,"type":"file","file":"Redis/缓存篇.md"}
+		{"id":"60c8cec70efb1187","type":"file","file":"每日一面/实习.md","x":-740,"y":-270,"width":400,"height":400},
+		{"id":"a969ac81748eae3f","type":"text","text":"延伸：数据库事务策略：\n**事务控制策略**：\n\n- **不要每行提交一次事务**，也不要整个 5 万条才提交一次（大事务会导致 Undo Log 激增和锁竞争）。\n    \n- **最佳实践**：建议每 1000-2000 条开启并提交一次事务。这与 EasyExcel 的分批回调机制完美契合。","x":-255,"y":29,"width":250,"height":101},
+		{"id":"d6e04378f30052a3","type":"text","text":"延伸：Redis布隆过滤器进行校验看是新增还是更新\n1.先根据场景id进行预热，把该场景下的设备id+日期+场景id加载到Redis中\n2.使用布隆过滤器进行分流","x":-255,"y":200,"width":250,"height":180},
+		{"id":"9b2ba37670fe0be1","type":"file","file":"Redis/缓存篇.md","x":80,"y":280,"width":400,"height":400}
 	],
 	"edges":[
 		{"id":"429c002978804af5","fromNode":"8694360418f560d4","fromSide":"bottom","toNode":"535d433476db172b","toSide":"top"},
