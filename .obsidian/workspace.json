@@ -221,8 +221,10 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "075741f227b6db56",
+  "active": "0100b979b0d53611",
   "lastOpenFiles": [
+    "每日一面/Java八股.md",
+    "Java/Java面试题.md",
     "Java/Spring",
     "On-Call学习/项目经历-OnCall.md",
     "AI/RAG.md",
@@ -242,7 +244,6 @@
     "MQ/RabbitMQ.md",
     "supportPhoto/Pasted image 20260516162207.png",
     "supportPhoto/7bf15d7f2e88d5e293023addf16d1eac.png",
-    "每日一面/Java八股.md",
     "每日一面/GO八股.md",
     "每日一面/项目.md",
     "每日一面/算法题.md",
@@ -269,7 +270,6 @@
     "MQ",
     "每日一面",
     "实战方案",
-    "Go/Go框架/Orm框架/未命名",
-    "Go/Go框架/Orm框架"
+    "Go/Go框架/Orm框架/未命名"
   ]
 }
