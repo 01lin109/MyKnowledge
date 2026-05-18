@@ -8,41 +8,31 @@
         "type": "tabs",
         "children": [
           {
-            "id": "7907211d32d65d70",
+            "id": "ca85aed520863732",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Redis/Redis 常见面试题.md",
+                "file": "AI/RAG.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Redis 常见面试题"
+              "title": "RAG"
             }
           },
           {
-            "id": "ac112a98452241e5",
+            "id": "0100b979b0d53611",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "算法/贪心.md",
+                "file": "Java/Java面试题.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "贪心"
-            }
-          },
-          {
-            "id": "92cc2f30e879ae85",
-            "type": "leaf",
-            "state": {
-              "type": "graph",
-              "state": {},
-              "icon": "lucide-git-fork",
-              "title": "关系图谱"
+              "title": "Java面试题"
             }
           }
         ],
@@ -181,13 +171,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "算法/贪心.md",
+                "file": "Java/Java面试题.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "贪心 的大纲"
+              "title": "Java面试题 的大纲"
             }
           },
           {
@@ -231,11 +221,23 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "73f49f012dd04a85",
+  "active": "075741f227b6db56",
   "lastOpenFiles": [
+    "Java/Spring",
+    "On-Call学习/项目经历-OnCall.md",
+    "AI/RAG.md",
+    "Clippings/13. 什么是多路召回？具体怎么做？.md",
+    "supportPhoto/Pasted image 20260518112355.png",
+    "On-Call学习/eino框架.md",
+    "supportPhoto/Pasted image 20260518110239.png",
+    "Clippings/大白话带你认识 JVM.md",
+    "Clippings/6. 在 RAG 中 Embedding 究竟是什么？如何选择和评估一个 Embedding 模型？.md",
+    "Clippings/5. 怎么规避语义被切割掉的问题？.md",
+    "Clippings/8. 什么是向量数据库？有没有做过向量数据库的对比选型？.md",
+    "supportPhoto/Pasted image 20260518105014.png",
+    "算法/贪心.md",
     "每日一面/中间件八股.md",
     "mikechen的互联网架构.md",
-    "算法/贪心.md",
     "supportPhoto/Pasted image 20260516192316.png",
     "MQ/RabbitMQ.md",
     "supportPhoto/Pasted image 20260516162207.png",
@@ -257,21 +259,9 @@
     "算法/字符串.md",
     "Redis/持久化篇.md",
     "Redis/Redis 常见面试题.md",
-    "Go/Golang面试题.md",
-    "Go/Go语言基础：语言特性、语法基础与数据类型 - 金山课件.md",
-    "Go/Go协程/goroutine（协程）.md",
-    "Go/Go协程/WaitGroup.md",
-    "Go/Go框架/Web框架/Gin框架基础.md",
-    "Go/Go框架/Web框架/GoFrame框架基础.md",
-    "Go/Go垃圾回收/Golang垃圾回收(GC)介绍.md",
-    "Go/Go框架/Orm框架/GORM.md",
-    "Java/JVM/Java虚拟机面试题.md",
     "supportPhoto/Pasted image 20260514200906.png",
     "supportPhoto/Pasted image 20260514112829.png",
     "supportPhoto/Pasted image 20260514110553.png",
-    "supportPhoto/Pasted image 20260514103804.png",
-    "supportPhoto/Pasted image 20260514095057.png",
-    "supportPhoto/Pasted image 20260514094606.png",
     "Java/JVM",
     "Java/Java垃圾回收",
     "Go/Go垃圾回收",
