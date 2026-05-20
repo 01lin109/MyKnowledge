@@ -1,19 +1,30 @@
 {
 	"nodes":[
-		{"id":"07b3f6c2a9f45258","type":"file","file":"Java/JVM/JVM垃圾回收.md","x":14,"y":-270,"width":400,"height":400},
-		{"id":"8694360418f560d4","type":"text","text":"导入模块优化","x":-200,"y":-240,"width":140,"height":60},
-		{"id":"535d433476db172b","type":"text","text":"核心：JVM","x":-207,"y":-100,"width":155,"height":60},
-		{"id":"60c8cec70efb1187","type":"file","file":"每日一面/实习.md","x":-740,"y":-270,"width":400,"height":400},
-		{"id":"a969ac81748eae3f","type":"text","text":"延伸：数据库事务策略：\n**事务控制策略**：\n\n- **不要每行提交一次事务**，也不要整个 5 万条才提交一次（大事务会导致 Undo Log 激增和锁竞争）。\n    \n- **最佳实践**：建议每 1000-2000 条开启并提交一次事务。这与 EasyExcel 的分批回调机制完美契合。","x":-255,"y":29,"width":250,"height":101},
-		{"id":"d6e04378f30052a3","type":"text","text":"延伸：Redis布隆过滤器进行校验看是新增还是更新\n1.先根据场景id进行预热，把该场景下的设备id+日期+场景id加载到Redis中\n2.使用布隆过滤器进行分流","x":-255,"y":200,"width":250,"height":180},
-		{"id":"9b2ba37670fe0be1","type":"file","file":"Redis/缓存篇.md","x":80,"y":280,"width":400,"height":400}
+		{"id":"1057eb5e8292d764","type":"text","text":"### 📌 第一阶段：懵懂期的“拿来主义”（POI + saveOrUpdateBatch）\n\n> “面试官，这个电力数据导入模块最开始由我负责时，因为我刚进组，对实际线上的业务数据量级缺乏直观的概念，为了快速交付，我便图省事，直接仿照了组内既有的‘设备检修情况导入’接口的逻辑去写 。\n> \n> 底层直接调用了 Apache POI 进行全量解析 ，下游直接配合 MyBatis-Plus 的 `saveOrUpdateBatch` 进行乐观盲插。在开发初期，我用本地随手造的十几条、上百条测试数据去跑，响应都是毫秒级的，当时我觉得这套方案完全没问题。”","x":-795,"y":-720,"width":540,"height":320},
+		{"id":"b0c898f14c6ed0f5","type":"text","text":"### 📌 第二阶段：洪峰测试与求助 Mentor（引入 EasyExcel 但陷入“读快写慢”的尴尬）\n\n> “但是到了前后端联调和集成测试阶段，Mentor（MT）发给了我几份真实的、包含 **5万行记录** 的全量曲线测试文件 。我一点击上传，本地电脑风扇瞬间狂转，导入不仅卡了足足 10 多秒 ，控制台还疯狂打印出红色的唯一索引冲突异常。\n> \n> 我立刻用 **IDEA 自带的 Profiler Live Charts** 观察 JVM 内存，亲眼看到了严重的**内存锯齿波（Sawtooth）与系统停顿**：\n> \n> 在解析刚开始时，POI 的 DOM 全量加载让堆内存直接拉出一个平地拔起的大斜坡；而在后面的落库循环中，由于 `saveOrUpdateBatch` 默认 1000 条分批转化提交，遇到重复数据时批量事务瞬间**坍塌劣化为单条单条的 `UPDATE`**。这导致旧对象的生命周期被无限拉长、无法及时回收，而新批次对象又在 `for` 循环里源源不断地涌入。这种‘存量对象释放不掉’与‘新批次持续涌入’的拉锯战，导致 JVM 频繁触发剧烈的 Full GC，形成了一整排断崖式波动的内存毛刺大波浪。\n> \n> 发现这个痛点后我赶紧向 Mentor 请教，Mentor 指出那个‘设备检修表’由于业务模板极其复杂 、有很多多层嵌套单元格需要像素级精细解析 、且使用频率极低，所以才被迫用 POI；但我负责的序列导入是清晰的`场景+设备+日期+曲线数据`结构，**应该用磁盘流式解析的 EasyExcel 来根治内存放大效应** 。\n> \n> 我听完立刻将解析端重构为了 EasyExcel，在监听器里边解析边回调 。重构后一测，JVM 内存曲线确实被死死压在 MB 级别，平稳得像一条直线 。但诡异的是，Postman 里的总耗时依然卡在 10s+，控制台里单条 SQL 瀑布流刷屏的卡顿没有任何改善 。我意识到，EasyExcel 只解决了‘读’的内存，‘写’的网络 I/O 盲查瓶颈依然存在。”","x":-20,"y":-720,"width":612,"height":320},
+		{"id":"dcef21ce680a449f","type":"text","text":"**导入模块优化**","x":-237,"y":-880,"width":185,"height":50},
+		{"id":"9b2ba37670fe0be1","type":"file","file":"Redis/缓存篇.md","x":80,"y":590,"width":400,"height":400},
+		{"id":"fb20cb44f5530cd3","type":"text","text":"### 📌 第四阶段：量级压测下的“空间碰撞”（HashSet 的堆内存危机）\n\n> “本地跑通后，我为了验证系统的鲁棒性，开始用更大规模的数据集（模拟多网点并发、长周期大批量历史数据回溯）进行压测。\n> \n> 此时我发现了本地 `HashSet` 致命的‘空间天花板’：在 Java 64位虚拟机下，由于对象头、字节对齐以及 HashMap Node 节点的包装，单个复合键实际要吞掉近 96 字节的堆空间。当匹配基数冲到百万级、或者线上多网点同时上传时，**本地 `HashSet` 瞬间吃掉了数百 MB 的常驻内存，JVM 堆内存再次剧烈抖动，频繁触发 Young GC**。\n> \n> 既然本地内存管不饱，我当时的第一反应是：**把这个 Set 移出 JVM，转存到外置的 Redis 集中式缓存中**，利用 Redis 的 `SISMEMBER` 来做分布式高并发分流。”","x":-880,"y":-320,"width":540,"height":230},
+		{"id":"225f42dc5e068e41","type":"text","text":"### 📌 第三阶段：初试本地分流（Java HashSet 的 $O(1)$ 尝试）\n\n> “为了干掉这 5 万次跨网络去数据库 `SELECT` 判定是否存在的耗时黑洞，我开启了第三阶段的重构——引入**内存分流逻辑**。\n> \n> 在 EasyExcel 流式解析启动前，我先通过 MyBatis 异步把当前场景和日期下已有的历史设备 ID 一把抓到 Java 内存中，存进一个本地 `HashSet` 。然后在 EasyExcel 的 `invoke()` 监听器里，每解析一行就用 `set.contains()` 进行微秒级的 $O(1)$ 分流判断 ：不存在的干净数据归入**‘纯新增流’，直接走 `saveBatch` 享受顺序页写入 ；可能存在的归入‘更新流’**。\n> \n> 这一改效果立竿见影，本地的导入耗时瞬间被砍到了 2 秒以内。”","x":-5,"y":-320,"width":485,"height":220},
+		{"id":"60c8cec70efb1187","type":"file","file":"每日一面/实习.md","x":-960,"y":170,"width":400,"height":400},
+		{"id":"d6e04378f30052a3","type":"text","text":"延伸：Redis布隆过滤器进行校验看是新增还是更新\n1.先根据场景id进行预热，把该场景下的设备id+日期+场景id加载到Redis中\n2.使用布隆过滤器进行分流","x":-332,"y":700,"width":250,"height":180},
+		{"id":"a969ac81748eae3f","type":"text","text":"延伸：数据库事务策略：\n**事务控制策略**：\n\n- **不要每行提交一次事务**，也不要整个 5 万条才提交一次（大事务会导致 Undo Log 激增和锁竞争）。\n    \n- **最佳实践**：建议每 1000-2000 条开启并提交一次事务。这与 EasyExcel 的分批回调机制完美契合。","x":-332,"y":440,"width":250,"height":101},
+		{"id":"07b3f6c2a9f45258","type":"file","file":"Java/JVM/JVM垃圾回收.md","x":238,"y":170,"width":400,"height":400},
+		{"id":"535d433476db172b","type":"text","text":"核心：JVM","x":-237,"y":260,"width":155,"height":60},
+		{"id":"2fcb0f8e4b9c8800","type":"text","text":"#### 📌 第五阶段（补丁）：Redis Set 的空间反思与“布隆过滤器”的终极降维打击\n\n> “但在推演 Redis Set 方案时，我发现了新的瓶颈：千万级基数的短字符串直接塞进 Redis Set，由于 Redis 内部 `dict` 字典结构的强指针开销，会吃掉数百 MB 的昂贵 Redis 内存。在微服务共享缓存集群中，这依然是一个无法接受的‘内存刺客’。\n> \n> 为了追求极致的空间利用率，我死磕这段核心集群的‘空间复杂度’，最终锁定了**布隆过滤器（Bloom Filter）**方案。\n> \n> 我将方案最终重构成：以 `场景ID + 日期` 作为 Key，在 Redis 中动态创建专属该场景批次的临时布隆过滤器。**利用其强大的位图压缩技术，直接将千万级数据的判定空间，从数百 MB 的巨型 Set 死死锁在了十几 MB 级别，给 Redis 带来了近 20 倍的空间节省（ROI极高）！**\n> \n> 同时，针对布隆过滤器 1% 的假阳性误判缺陷，我在最终落库阶段，采用了 MyBatis-Plus 配合 **`INSERT ... ON DUPLICATE KEY UPDATE`（Upsert语义）** 进行终极的一致性幂等兜底，完美堵住了误判漏洞。\n> \n> 这套历经五次演进的架构，最终完美支撑了 100 个网点、5万级记录的高并发稳定导入，单接口耗时从 10s+ 稳定在 1.5s 左右 ，彻底完成了‘读’与‘写’两端性能的完美闭环。”","x":-396,"y":-60,"width":473,"height":230}
 	],
 	"edges":[
-		{"id":"429c002978804af5","fromNode":"8694360418f560d4","fromSide":"bottom","toNode":"535d433476db172b","toSide":"top"},
 		{"id":"70dfe31ceea3b73b","fromNode":"535d433476db172b","fromSide":"right","toNode":"07b3f6c2a9f45258","toSide":"left"},
 		{"id":"07e60e9e00eea355","fromNode":"535d433476db172b","fromSide":"left","toNode":"60c8cec70efb1187","toSide":"right"},
 		{"id":"6e0844be385f94b6","fromNode":"535d433476db172b","fromSide":"bottom","toNode":"a969ac81748eae3f","toSide":"top"},
 		{"id":"b1269ff2392f949e","fromNode":"a969ac81748eae3f","fromSide":"bottom","toNode":"d6e04378f30052a3","toSide":"top"},
-		{"id":"424dbc6d776e9841","fromNode":"d6e04378f30052a3","fromSide":"right","toNode":"9b2ba37670fe0be1","toSide":"left"}
+		{"id":"424dbc6d776e9841","fromNode":"d6e04378f30052a3","fromSide":"right","toNode":"9b2ba37670fe0be1","toSide":"left"},
+		{"id":"d8611c894a4271c4","fromNode":"dcef21ce680a449f","fromSide":"top","toNode":"1057eb5e8292d764","toSide":"top"},
+		{"id":"f790388afa478d32","fromNode":"1057eb5e8292d764","fromSide":"right","toNode":"b0c898f14c6ed0f5","toSide":"left"},
+		{"id":"32f9b4db51f84e05","fromNode":"dcef21ce680a449f","fromSide":"top","toNode":"b0c898f14c6ed0f5","toSide":"top"},
+		{"id":"d9d1f6ea28bb2721","fromNode":"b0c898f14c6ed0f5","fromSide":"right","toNode":"225f42dc5e068e41","toSide":"right"},
+		{"id":"ca63865bbd48460a","fromNode":"225f42dc5e068e41","fromSide":"left","toNode":"fb20cb44f5530cd3","toSide":"right"},
+		{"id":"dad62fe4a031b9cc","fromNode":"fb20cb44f5530cd3","fromSide":"left","toNode":"2fcb0f8e4b9c8800","toSide":"left"},
+		{"id":"44e0574464f7afd8","fromNode":"535d433476db172b","fromSide":"top","toNode":"2fcb0f8e4b9c8800","toSide":"bottom"}
 	]
 }
