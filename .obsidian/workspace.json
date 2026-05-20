@@ -29,9 +29,9 @@
               "state": {
                 "file": "清能互联实习.canvas",
                 "viewState": {
-                  "x": -200.68014419867504,
-                  "y": 921.0018602291809,
-                  "zoom": -0.9040800724558108
+                  "x": -193.5548749383391,
+                  "y": 207.2264467335351,
+                  "zoom": -1.4420726116498312
                 }
               },
               "icon": "lucide-layout-dashboard",
@@ -238,7 +238,7 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "73f49f012dd04a85",
+  "active": "0100b979b0d53611",
   "lastOpenFiles": [
     "每日一面/实习.md",
     "清能互联实习.canvas",
