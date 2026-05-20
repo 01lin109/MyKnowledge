@@ -25,17 +25,14 @@
             "id": "0100b979b0d53611",
             "type": "leaf",
             "state": {
-              "type": "canvas",
+              "type": "markdown",
               "state": {
-                "file": "清能互联实习.canvas",
-                "viewState": {
-                  "x": -193.5548749383391,
-                  "y": 207.2264467335351,
-                  "zoom": -1.4420726116498312
-                }
+                "file": "每日一面/中间件八股.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-layout-dashboard",
-              "title": "清能互联实习"
+              "icon": "lucide-file",
+              "title": "中间件八股"
             }
           },
           {
@@ -188,13 +185,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "清能互联实习.canvas",
+                "file": "每日一面/中间件八股.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "清能互联实习 的大纲"
+              "title": "中间件八股 的大纲"
             }
           },
           {
@@ -238,10 +235,10 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "0100b979b0d53611",
+  "active": "73f49f012dd04a85",
   "lastOpenFiles": [
-    "每日一面/实习.md",
     "清能互联实习.canvas",
+    "每日一面/实习.md",
     "每日一面/中间件八股.md",
     "AI/RAG.md",
     "每日一面/Java八股.md",
