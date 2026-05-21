@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "每日一面/中间件八股.md",
+                "file": "AI/Harness Engineering.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "中间件八股"
+              "title": "Harness Engineering"
             }
           },
           {
@@ -41,16 +41,16 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "每日一面/中间件八股.md",
+                "file": "算法/贪心.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "中间件八股"
+              "title": "贪心"
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -185,13 +185,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "每日一面/中间件八股.md",
+                "file": "算法/贪心.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "中间件八股 的大纲"
+              "title": "贪心 的大纲"
             }
           },
           {
@@ -235,14 +235,25 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "73f49f012dd04a85",
+  "active": "e7a89ee135d6f728",
   "lastOpenFiles": [
-    "清能互联实习.canvas",
     "每日一面/实习.md",
-    "每日一面/中间件八股.md",
-    "AI/RAG.md",
-    "每日一面/Java八股.md",
+    "Redis/缓存篇.md",
+    "清能互联实习.canvas",
+    "每日一面/项目#.md",
     "每日一面/项目.md",
+    "Java/并发/并发安全.md",
+    "Java/并发/线程池.md",
+    "AI/Harness Engineering.md",
+    "AI/RAG.md",
+    "Java/设计模式.md",
+    "supportPhoto/Pasted image 20260521110134.png",
+    "Java/并发/多线程.md",
+    "每日一面/中间件八股.md",
+    "supportPhoto/Pasted image 20260521103659.png",
+    "Java/并发/场景.md",
+    "Java/并发",
+    "每日一面/Java八股.md",
     "每日一面/算法题.md",
     "每日一面/计算机基础.md",
     "每日一面/GO八股.md",
@@ -261,28 +272,18 @@
     "算法/贪心.md",
     "mikechen的互联网架构.md",
     "supportPhoto/Pasted image 20260516192316.png",
-    "MQ/RabbitMQ.md",
     "supportPhoto/Pasted image 20260516162207.png",
     "supportPhoto/7bf15d7f2e88d5e293023addf16d1eac.png",
-    "Redis/缓存篇.md",
     "OnCall.canvas",
-    "笔试题/操作系统.md",
-    "AI/大模型选择题.md",
     "笔试题",
-    "算法/堆 & 队列.md",
     "supportPhoto/Pasted image 20260515203812.png",
-    "算法/字符串.md",
-    "Redis/持久化篇.md",
     "supportPhoto/Pasted image 20260514200906.png",
-    "supportPhoto/Pasted image 20260514112829.png",
-    "supportPhoto/Pasted image 20260514110553.png",
     "Java/JVM",
     "Java/Java垃圾回收",
     "Go/Go垃圾回收",
     "Java",
     "MQ",
     "每日一面",
-    "实战方案",
-    "Go/Go框架/Orm框架/未命名"
+    "实战方案"
   ]
 }
