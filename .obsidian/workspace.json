@@ -41,12 +41,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "算法/贪心.md",
+                "file": "AI/Harness+SDD+多仓管理模式的AI全栈开发实践.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "贪心"
+              "title": "Harness+SDD+多仓管理模式的AI全栈开发实践"
             }
           }
         ],
@@ -185,13 +185,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "算法/贪心.md",
+                "file": "AI/Harness+SDD+多仓管理模式的AI全栈开发实践.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "贪心 的大纲"
+              "title": "Harness+SDD+多仓管理模式的AI全栈开发实践 的大纲"
             }
           },
           {
@@ -237,14 +237,19 @@
   },
   "active": "e7a89ee135d6f728",
   "lastOpenFiles": [
+    "AI/AI学习日记.md",
+    "AI/Harness+SDD+多仓管理模式的AI全栈开发实践.md",
+    "每日一面/项目.md",
+    "每日一面/项目#.md",
+    "OnCall.canvas",
+    "Clippings/基于 Harness + SDD + 多仓管理模式的 AI 全栈开发实践｜得物技术.md",
+    "算法/贪心.md",
+    "Clippings/‎Google Gemini.md",
     "每日一面/实习.md",
     "Redis/缓存篇.md",
     "清能互联实习.canvas",
-    "每日一面/项目#.md",
-    "每日一面/项目.md",
     "Java/并发/并发安全.md",
     "Java/并发/线程池.md",
-    "AI/Harness Engineering.md",
     "AI/RAG.md",
     "Java/设计模式.md",
     "supportPhoto/Pasted image 20260521110134.png",
@@ -266,15 +271,10 @@
     "supportPhoto/Pasted image 20260518110239.png",
     "Clippings/大白话带你认识 JVM.md",
     "Clippings/6. 在 RAG 中 Embedding 究竟是什么？如何选择和评估一个 Embedding 模型？.md",
-    "Clippings/5. 怎么规避语义被切割掉的问题？.md",
-    "Clippings/8. 什么是向量数据库？有没有做过向量数据库的对比选型？.md",
     "supportPhoto/Pasted image 20260518105014.png",
-    "算法/贪心.md",
-    "mikechen的互联网架构.md",
     "supportPhoto/Pasted image 20260516192316.png",
     "supportPhoto/Pasted image 20260516162207.png",
     "supportPhoto/7bf15d7f2e88d5e293023addf16d1eac.png",
-    "OnCall.canvas",
     "笔试题",
     "supportPhoto/Pasted image 20260515203812.png",
     "supportPhoto/Pasted image 20260514200906.png",
