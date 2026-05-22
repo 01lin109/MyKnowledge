@@ -25,14 +25,14 @@
             "id": "7f5385520654fd78",
             "type": "leaf",
             "state": {
-              "type": "split-diff-view",
+              "type": "markdown",
               "state": {
-                "aFile": "计算机网络/HTTP.md",
-                "bFile": "计算机网络/HTTP.md",
-                "aRef": ""
+                "file": "Go/Go框架/Orm框架/GORM.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "diff",
-              "title": "Diff: HTTP  (Working Tree)"
+              "icon": "lucide-file",
+              "title": "GORM"
             }
           }
         ],
@@ -221,12 +221,13 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "73f49f012dd04a85",
+  "active": "7f5385520654fd78",
   "lastOpenFiles": [
+    "清能互联实习.canvas",
+    "OnCall.canvas",
     "算法/堆 & 队列.md",
     "笔试题/操作系统.md",
     "笔试题",
-    "清能互联实习.canvas",
     "每日一面/计算机基础.md",
     "supportPhoto/Pasted image 20260521110134.png",
     "supportPhoto/Pasted image 20260521103659.png",
@@ -236,7 +237,6 @@
     "supportPhoto/Pasted image 20260516162207.png",
     "supportPhoto/Pasted image 20260515203812.png",
     "supportPhoto/7bf15d7f2e88d5e293023addf16d1eac.png",
-    "OnCall.canvas",
     "MQ/RabbitMQ.md",
     "Java/设计模式.md",
     "Java/并发/线程池.md",
@@ -264,7 +264,6 @@
     "Java/JVM/JVM 基本介绍.md",
     "Java/JVM/Java虚拟机面试题.md",
     "Java/JVM",
-    "Java/Java面试题.md",
     "Java",
     "Go/Go垃圾回收",
     "MQ",
