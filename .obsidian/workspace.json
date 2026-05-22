@@ -8,49 +8,35 @@
         "type": "tabs",
         "children": [
           {
-            "id": "ca85aed520863732",
+            "id": "bc150f99d99c7caf",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "AI/RAG.md",
+                "file": "Go/Golang面试题.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "RAG"
+              "title": "Golang面试题"
             }
           },
           {
-            "id": "0100b979b0d53611",
+            "id": "7f5385520654fd78",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "split-diff-view",
               "state": {
-                "file": "AI/Harness Engineering.md",
-                "mode": "source",
-                "source": false
+                "aFile": "计算机网络/HTTP.md",
+                "bFile": "计算机网络/HTTP.md",
+                "aRef": ""
               },
-              "icon": "lucide-file",
-              "title": "Harness Engineering"
-            }
-          },
-          {
-            "id": "e7a89ee135d6f728",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "AI/Harness+SDD+多仓管理模式的AI全栈开发实践.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Harness+SDD+多仓管理模式的AI全栈开发实践"
+              "icon": "diff",
+              "title": "Diff: HTTP  (Working Tree)"
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -185,13 +171,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "AI/Harness+SDD+多仓管理模式的AI全栈开发实践.md",
+                "file": "每日一面/实习.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Harness+SDD+多仓管理模式的AI全栈开发实践 的大纲"
+              "title": "实习 的大纲"
             }
           },
           {
@@ -235,55 +221,56 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "e7a89ee135d6f728",
+  "active": "73f49f012dd04a85",
   "lastOpenFiles": [
-    "AI/AI学习日记.md",
-    "AI/Harness+SDD+多仓管理模式的AI全栈开发实践.md",
-    "每日一面/项目.md",
-    "每日一面/项目#.md",
-    "OnCall.canvas",
-    "Clippings/基于 Harness + SDD + 多仓管理模式的 AI 全栈开发实践｜得物技术.md",
-    "算法/贪心.md",
-    "Clippings/‎Google Gemini.md",
-    "每日一面/实习.md",
-    "Redis/缓存篇.md",
+    "算法/堆 & 队列.md",
+    "笔试题/操作系统.md",
+    "笔试题",
     "清能互联实习.canvas",
-    "Java/并发/并发安全.md",
-    "Java/并发/线程池.md",
-    "AI/RAG.md",
-    "Java/设计模式.md",
-    "supportPhoto/Pasted image 20260521110134.png",
-    "Java/并发/多线程.md",
-    "每日一面/中间件八股.md",
-    "supportPhoto/Pasted image 20260521103659.png",
-    "Java/并发/场景.md",
-    "Java/并发",
-    "每日一面/Java八股.md",
-    "每日一面/算法题.md",
     "每日一面/计算机基础.md",
-    "每日一面/GO八股.md",
-    "Java/Java面试题.md",
-    "Java/Spring",
-    "On-Call学习/项目经历-OnCall.md",
-    "Clippings/13. 什么是多路召回？具体怎么做？.md",
+    "supportPhoto/Pasted image 20260521110134.png",
+    "supportPhoto/Pasted image 20260521103659.png",
     "supportPhoto/Pasted image 20260518112355.png",
-    "On-Call学习/eino框架.md",
-    "supportPhoto/Pasted image 20260518110239.png",
-    "Clippings/大白话带你认识 JVM.md",
-    "Clippings/6. 在 RAG 中 Embedding 究竟是什么？如何选择和评估一个 Embedding 模型？.md",
     "supportPhoto/Pasted image 20260518105014.png",
     "supportPhoto/Pasted image 20260516192316.png",
     "supportPhoto/Pasted image 20260516162207.png",
-    "supportPhoto/7bf15d7f2e88d5e293023addf16d1eac.png",
-    "笔试题",
     "supportPhoto/Pasted image 20260515203812.png",
+    "supportPhoto/7bf15d7f2e88d5e293023addf16d1eac.png",
+    "OnCall.canvas",
+    "MQ/RabbitMQ.md",
+    "Java/设计模式.md",
+    "Java/并发/线程池.md",
+    "Java/并发/并发安全.md",
+    "Java/并发/多线程.md",
+    "Java/并发/场景.md",
+    "Java/并发",
+    "Clippings/基于 Harness + SDD + 多仓管理模式的 AI 全栈开发实践｜得物技术.md",
+    "Clippings/13. 什么是多路召回？具体怎么做？.md",
+    "AI/大模型选择题.md",
+    "AI/Harness+SDD+多仓管理模式的AI全栈开发实践.md",
+    "AI/AI学习日记.md",
+    "未命名.canvas",
+    "AI/RAG.md",
+    "计算机网络/HTTP.md",
+    "On-Call学习/eino框架.md",
     "supportPhoto/Pasted image 20260514200906.png",
+    "On-Call学习/项目经历-OnCall.md",
+    "每日一面/算法题.md",
+    "每日一面/中间件八股.md",
+    "算法/字符串.md",
+    "supportPhoto/Pasted image 20260514112829.png",
+    "Java/JVM/JVM垃圾回收.md",
+    "Java/JVM/JVM常见的参数.md",
+    "Java/JVM/JVM 基本介绍.md",
+    "Java/JVM/Java虚拟机面试题.md",
     "Java/JVM",
-    "Java/Java垃圾回收",
-    "Go/Go垃圾回收",
+    "Java/Java面试题.md",
     "Java",
+    "Go/Go垃圾回收",
     "MQ",
     "每日一面",
-    "实战方案"
+    "实战方案",
+    "Go/Go框架/Orm框架/未命名",
+    "Go/Go框架/Orm框架"
   ]
 }
