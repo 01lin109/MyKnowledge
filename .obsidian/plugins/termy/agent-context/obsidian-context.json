@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 1,
+  "source": "termy",
+  "updatedAt": "2026-05-23T08:43:31.592Z",
+  "vaultRoot": "D:/MyKnowledge/MyKnowledge",
+  "workspaceFolders": [
+    "D:/MyKnowledge/MyKnowledge"
+  ],
+  "activeFile": null,
+  "openFiles": [
+    {
+      "filePath": "D:\\MyKnowledge\\MyKnowledge\\Go\\Go框架\\Orm框架\\GORM.md",
+      "vaultPath": "Go/Go框架/Orm框架/GORM.md",
+      "fileUrl": "file:///D:/MyKnowledge/MyKnowledge/Go/Go%E6%A1%86%E6%9E%B6/Orm%E6%A1%86%E6%9E%B6/GORM.md",
+      "isActive": false
+    }
+  ],
+  "selection": null
+}
