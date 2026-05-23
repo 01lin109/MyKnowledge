@@ -53,20 +53,6 @@
             "id": "753e46a08e62c01f",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "On-Call学习/项目经历-OnCall.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "项目经历-OnCall"
-            }
-          },
-          {
-            "id": "a2f4e8c0f7bdaf3c",
-            "type": "leaf",
-            "state": {
               "type": "split-diff-view",
               "state": {
                 "aFile": ".obsidian/workspace.json",
@@ -78,7 +64,7 @@
             }
           }
         ],
-        "currentTab": 4
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -262,10 +248,13 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "a2f4e8c0f7bdaf3c",
+  "active": "753e46a08e62c01f",
   "lastOpenFiles": [
-    "On-Call学习/项目经历-OnCall.md",
     "AI/RAG.md",
+    "Clippings/基于 Harness + SDD + 多仓管理模式的 AI 全栈开发实践｜得物技术.md",
+    "清能互联实习.canvas",
+    "OnCall.canvas",
+    "On-Call学习/项目经历-OnCall.md",
     "AI/Harness+SDD+多仓管理模式的AI全栈开发实践.md",
     "AI/AI学习日记.md",
     "AI/Agent.md",
@@ -281,7 +270,6 @@
     "supportPhoto/Pasted image 20260523144031.png",
     "supportPhoto/Pasted image 20260523143708.png",
     "Clippings/‌​⁢⁢﻿‬⁡‍⁡⁡‬﻿‌⁢﻿‍⁡⁡‍⁣﻿‬​⁡‬​⁣​​​‌⁣‬⁢​​‍​⁢‌​⁣​﻿⁣⁤⁡​⁤​架构设计：ReAct设计模式核心原理 - 飞书云文档.md",
-    "OnCall.canvas",
     "Clippings/6. ReAct、Plan-and-Execute、Reflection 三种范式有什么核心区别？实际项目中该如何选型？.md",
     "Clippings/Agent.md",
     "AI/MCP.md",
@@ -289,13 +277,10 @@
     "Mysql/锁.md",
     "每日一面/项目.md",
     "每日一面/项目#.md",
-    "Clippings/基于 Harness + SDD + 多仓管理模式的 AI 全栈开发实践｜得物技术.md",
     "Clippings/‎Google Gemini.md",
     "每日一面/实习.md",
     "Redis/缓存篇.md",
-    "清能互联实习.canvas",
     "Java/并发/并发安全.md",
-    "Java/并发/线程池.md",
     "supportPhoto/Pasted image 20260521110134.png",
     "supportPhoto/Pasted image 20260521103659.png",
     "Java/并发",
