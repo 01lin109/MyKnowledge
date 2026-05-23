@@ -41,16 +41,30 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "AI/Harness+SDD+多仓管理模式的AI全栈开发实践.md",
+                "file": "AI/Agent.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Harness+SDD+多仓管理模式的AI全栈开发实践"
+              "title": "Agent"
+            }
+          },
+          {
+            "id": "753e46a08e62c01f",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "On-Call学习/项目经历-OnCall.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "项目经历-OnCall"
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -185,13 +199,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "AI/Harness+SDD+多仓管理模式的AI全栈开发实践.md",
+                "file": "On-Call学习/项目经历-OnCall.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Harness+SDD+多仓管理模式的AI全栈开发实践 的大纲"
+              "title": "项目经历-OnCall 的大纲"
             }
           },
           {
@@ -235,22 +249,34 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "e7a89ee135d6f728",
+  "active": "753e46a08e62c01f",
   "lastOpenFiles": [
-    "AI/AI学习日记.md",
+    "supportPhoto/Pasted image 20260523144144.png",
+    "supportPhoto/Pasted image 20260523144034.png",
+    "supportPhoto/Pasted image 20260523144031.png",
+    "supportPhoto/Pasted image 20260523143708.png",
+    "Clippings/‌​⁢⁢﻿‬⁡‍⁡⁡‬﻿‌⁢﻿‍⁡⁡‍⁣﻿‬​⁡‬​⁣​​​‌⁣‬⁢​​‍​⁢‌​⁣​﻿⁣⁤⁡​⁤​架构设计：ReAct设计模式核心原理 - 飞书云文档.md",
+    "On-Call学习/项目经历-OnCall.md",
+    "AI/Agent.md",
+    "AI/RAG.md",
+    "OnCall.canvas",
+    "Clippings/6. ReAct、Plan-and-Execute、Reflection 三种范式有什么核心区别？实际项目中该如何选型？.md",
+    "Clippings/Agent.md",
+    "AI/MCP.md",
     "AI/Harness+SDD+多仓管理模式的AI全栈开发实践.md",
+    "Mysql/锁.md",
+    "Mysql/锁.md",
+    "算法/贪心.md",
+    "AI/AI学习日记.md",
     "每日一面/项目.md",
     "每日一面/项目#.md",
-    "OnCall.canvas",
     "Clippings/基于 Harness + SDD + 多仓管理模式的 AI 全栈开发实践｜得物技术.md",
-    "算法/贪心.md",
     "Clippings/‎Google Gemini.md",
     "每日一面/实习.md",
     "Redis/缓存篇.md",
     "清能互联实习.canvas",
     "Java/并发/并发安全.md",
     "Java/并发/线程池.md",
-    "AI/RAG.md",
     "Java/设计模式.md",
     "supportPhoto/Pasted image 20260521110134.png",
     "Java/并发/多线程.md",
@@ -259,25 +285,13 @@
     "Java/并发/场景.md",
     "Java/并发",
     "每日一面/Java八股.md",
-    "每日一面/算法题.md",
-    "每日一面/计算机基础.md",
-    "每日一面/GO八股.md",
-    "Java/Java面试题.md",
     "Java/Spring",
-    "On-Call学习/项目经历-OnCall.md",
-    "Clippings/13. 什么是多路召回？具体怎么做？.md",
     "supportPhoto/Pasted image 20260518112355.png",
-    "On-Call学习/eino框架.md",
     "supportPhoto/Pasted image 20260518110239.png",
-    "Clippings/大白话带你认识 JVM.md",
-    "Clippings/6. 在 RAG 中 Embedding 究竟是什么？如何选择和评估一个 Embedding 模型？.md",
     "supportPhoto/Pasted image 20260518105014.png",
     "supportPhoto/Pasted image 20260516192316.png",
     "supportPhoto/Pasted image 20260516162207.png",
-    "supportPhoto/7bf15d7f2e88d5e293023addf16d1eac.png",
     "笔试题",
-    "supportPhoto/Pasted image 20260515203812.png",
-    "supportPhoto/Pasted image 20260514200906.png",
     "Java/JVM",
     "Java/Java垃圾回收",
     "Go/Go垃圾回收",
