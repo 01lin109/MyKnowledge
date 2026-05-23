@@ -4,29 +4,47 @@
     "type": "split",
     "children": [
       {
-        "id": "17fcb97a31e169ad",
-        "type": "split",
+        "id": "14292f0ecce26cc5",
+        "type": "tabs",
         "children": [
           {
-            "id": "14292f0ecce26cc5",
-            "type": "tabs",
-            "dimension": 65.0093808630394,
-            "children": [
-              {
-                "id": "bc150f99d99c7caf",
-                "type": "leaf",
-                "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "Go/Golang面试题.md",
-                    "mode": "source",
-                    "source": false
-                  },
-                  "icon": "lucide-file",
-                  "title": "Golang面试题"
-                }
+            "id": "ca85aed520863732",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "AI/RAG.md",
+                "mode": "source",
+                "source": false
               },
-<<<<<<< HEAD
+              "icon": "lucide-file",
+              "title": "RAG"
+            }
+          },
+          {
+            "id": "0100b979b0d53611",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "AI/Harness Engineering.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Harness Engineering"
+            }
+          },
+          {
+            "id": "e7a89ee135d6f728",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "AI/Agent.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
               "title": "Agent"
             }
@@ -35,70 +53,18 @@
             "id": "753e46a08e62c01f",
             "type": "leaf",
             "state": {
-              "type": "split-diff-view",
+              "type": "markdown",
               "state": {
-                "aFile": ".obsidian/workspace.json",
-                "bFile": ".obsidian/workspace.json",
-                "aRef": ""
+                "file": "AI/Harness+SDD+多仓管理模式的AI全栈开发实践.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "diff",
-              "title": "Diff: workspace.json  (Working Tree)"
+              "icon": "lucide-file",
+              "title": "Harness+SDD+多仓管理模式的AI全栈开发实践"
             }
           }
         ],
         "currentTab": 3
-=======
-              {
-                "id": "7f5385520654fd78",
-                "type": "leaf",
-                "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "Go/Go框架/Orm框架/GORM.md",
-                    "mode": "source",
-                    "source": false
-                  },
-                  "icon": "lucide-file",
-                  "title": "GORM"
-                }
-              },
-              {
-                "id": "1472ca19da7da835",
-                "type": "leaf",
-                "state": {
-                  "type": "split-diff-view",
-                  "state": {
-                    "aFile": "On-Call学习/项目经历-OnCall.md",
-                    "bFile": "On-Call学习/项目经历-OnCall.md",
-                    "aRef": ""
-                  },
-                  "icon": "diff",
-                  "title": "Diff: 项目经历-OnCall  (Working Tree)"
-                }
-              }
-            ],
-            "currentTab": 2
-          },
-          {
-            "id": "d2089d65be64ed96",
-            "type": "tabs",
-            "dimension": 34.990619136960596,
-            "children": [
-              {
-                "id": "26bc9405fff0859a",
-                "type": "leaf",
-                "state": {
-                  "type": "terminal-view",
-                  "state": {},
-                  "icon": "terminal",
-                  "title": "Claude Code"
-                }
-              }
-            ]
-          }
-        ],
-        "direction": "horizontal"
->>>>>>> origin/main
       }
     ],
     "direction": "vertical"
@@ -171,17 +137,17 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Go/Go框架/Orm框架/GORM.md",
-                "collapseAll": true,
+                "file": "Go/Go协程/Channel（通道）.md",
+                "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
                 "showSearch": false,
                 "searchQuery": "",
                 "backlinkCollapsed": false,
-                "unlinkedCollapsed": false
+                "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "GORM 的反向链接列表"
+              "title": "Channel（通道） 的反向链接列表"
             }
           },
           {
@@ -233,12 +199,13 @@
             "state": {
               "type": "outline",
               "state": {
+                "file": "AI/Harness+SDD+多仓管理模式的AI全栈开发实践.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "大纲"
+              "title": "Harness+SDD+多仓管理模式的AI全栈开发实践 的大纲"
             }
           },
           {
@@ -268,7 +235,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 516.5
+    "width": 300
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -279,21 +246,19 @@
       "templates:插入模板": false,
       "command-palette:打开命令面板": false,
       "bases:新建数据库": false,
-      "obsidian-git:Open Git source control": false,
-      "agent-client:Open agent client": false,
-      "termy:打开Termy终端": false
+      "obsidian-git:Open Git source control": false
     }
   },
-<<<<<<< HEAD
   "active": "753e46a08e62c01f",
   "lastOpenFiles": [
+    "AI/AI学习日记.md",
+    "On-Call学习/项目经历-OnCall.md",
+    "conflict-files-obsidian-git.md",
     "AI/RAG.md",
     "Clippings/基于 Harness + SDD + 多仓管理模式的 AI 全栈开发实践｜得物技术.md",
     "清能互联实习.canvas",
     "OnCall.canvas",
-    "On-Call学习/项目经历-OnCall.md",
     "AI/Harness+SDD+多仓管理模式的AI全栈开发实践.md",
-    "AI/AI学习日记.md",
     "AI/Agent.md",
     "实战方案/服务端鉴权认证方案.md",
     "前端/XMLHttpRequest 到 Fetch，SSE，WebSocket.md",
@@ -301,18 +266,10 @@
     "算法/字符串.md",
     "算法/堆 & 队列.md",
     "AI/大模型选择题.md",
-=======
-  "active": "1472ca19da7da835",
-  "lastOpenFiles": [
-    "清能互联实习.canvas",
-    "On-Call学习/项目经历-OnCall.md",
->>>>>>> origin/main
-    "conflict-files-obsidian-git.md",
     "supportPhoto/Pasted image 20260523144144.png",
     "supportPhoto/Pasted image 20260523144034.png",
     "supportPhoto/Pasted image 20260523144031.png",
     "supportPhoto/Pasted image 20260523143708.png",
-<<<<<<< HEAD
     "Clippings/‌​⁢⁢﻿‬⁡‍⁡⁡‬﻿‌⁢﻿‍⁡⁡‍⁣﻿‬​⁡‬​⁣​​​‌⁣‬⁢​​‍​⁢‌​⁣​﻿⁣⁤⁡​⁤​架构设计：ReAct设计模式核心原理 - 飞书云文档.md",
     "Clippings/6. ReAct、Plan-and-Execute、Reflection 三种范式有什么核心区别？实际项目中该如何选型？.md",
     "Clippings/Agent.md",
@@ -325,48 +282,21 @@
     "每日一面/实习.md",
     "Redis/缓存篇.md",
     "Java/并发/并发安全.md",
-=======
-    "AI/Agent.md",
-    "Go/Go框架/Orm框架/GORM.md",
-    "Go/Golang面试题.md",
-    "OnCall.canvas",
-    "算法/堆 & 队列.md",
-    "笔试题/操作系统.md",
-    "笔试题",
-    "每日一面/计算机基础.md",
->>>>>>> origin/main
     "supportPhoto/Pasted image 20260521110134.png",
     "supportPhoto/Pasted image 20260521103659.png",
+    "Java/并发",
+    "Java/Spring",
     "supportPhoto/Pasted image 20260518112355.png",
+    "supportPhoto/Pasted image 20260518110239.png",
     "supportPhoto/Pasted image 20260518105014.png",
     "supportPhoto/Pasted image 20260516192316.png",
-    "supportPhoto/Pasted image 20260516162207.png",
-    "MQ/RabbitMQ.md",
-    "Java/设计模式.md",
-    "Java/并发/线程池.md",
-    "Java/并发/并发安全.md",
-    "Java/并发/多线程.md",
-    "Java/并发/场景.md",
-    "Java/并发",
-    "Clippings/基于 Harness + SDD + 多仓管理模式的 AI 全栈开发实践｜得物技术.md",
-    "Clippings/13. 什么是多路召回？具体怎么做？.md",
-    "AI/大模型选择题.md",
-    "AI/Harness+SDD+多仓管理模式的AI全栈开发实践.md",
-    "AI/AI学习日记.md",
-    "未命名.canvas",
-    "AI/RAG.md",
-    "计算机网络/HTTP.md",
-    "On-Call学习/eino框架.md",
-    "每日一面/算法题.md",
-    "每日一面/中间件八股.md",
-    "算法/字符串.md",
+    "笔试题",
     "Java/JVM",
-    "Java",
+    "Java/Java垃圾回收",
     "Go/Go垃圾回收",
+    "Java",
     "MQ",
     "每日一面",
-    "实战方案",
-    "Go/Go框架/Orm框架/未命名",
-    "Go/Go框架/Orm框架"
+    "实战方案"
   ]
 }
