@@ -67,14 +67,14 @@
             "id": "a2f4e8c0f7bdaf3c",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "split-diff-view",
               "state": {
-                "file": "AI/Harness+SDD+多仓管理模式的AI全栈开发实践.md",
-                "mode": "source",
-                "source": false
+                "aFile": ".obsidian/workspace.json",
+                "bFile": ".obsidian/workspace.json",
+                "aRef": ""
               },
-              "icon": "lucide-file",
-              "title": "Harness+SDD+多仓管理模式的AI全栈开发实践"
+              "icon": "diff",
+              "title": "Diff: workspace.json  (Working Tree)"
             }
           }
         ],
@@ -213,13 +213,12 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "AI/Harness+SDD+多仓管理模式的AI全栈开发实践.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Harness+SDD+多仓管理模式的AI全栈开发实践 的大纲"
+              "title": "大纲"
             }
           },
           {
@@ -265,6 +264,9 @@
   },
   "active": "a2f4e8c0f7bdaf3c",
   "lastOpenFiles": [
+    "On-Call学习/项目经历-OnCall.md",
+    "AI/RAG.md",
+    "AI/Harness+SDD+多仓管理模式的AI全栈开发实践.md",
     "AI/AI学习日记.md",
     "AI/Agent.md",
     "实战方案/服务端鉴权认证方案.md",
@@ -272,16 +274,13 @@
     "算法/贪心.md",
     "算法/字符串.md",
     "算法/堆 & 队列.md",
-    "AI/Harness+SDD+多仓管理模式的AI全栈开发实践.md",
     "AI/大模型选择题.md",
     "conflict-files-obsidian-git.md",
-    "On-Call学习/项目经历-OnCall.md",
     "supportPhoto/Pasted image 20260523144144.png",
     "supportPhoto/Pasted image 20260523144034.png",
     "supportPhoto/Pasted image 20260523144031.png",
     "supportPhoto/Pasted image 20260523143708.png",
     "Clippings/‌​⁢⁢﻿‬⁡‍⁡⁡‬﻿‌⁢﻿‍⁡⁡‍⁣﻿‬​⁡‬​⁣​​​‌⁣‬⁢​​‍​⁢‌​⁣​﻿⁣⁤⁡​⁤​架构设计：ReAct设计模式核心原理 - 飞书云文档.md",
-    "AI/RAG.md",
     "OnCall.canvas",
     "Clippings/6. ReAct、Plan-and-Execute、Reflection 三种范式有什么核心区别？实际项目中该如何选型？.md",
     "Clippings/Agent.md",
