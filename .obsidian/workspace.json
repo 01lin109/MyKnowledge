@@ -109,17 +109,17 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Go/Go协程/Channel（通道）.md",
-                "collapseAll": false,
+                "file": "Go/Go框架/Orm框架/GORM.md",
+                "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
                 "showSearch": false,
                 "searchQuery": "",
                 "backlinkCollapsed": false,
-                "unlinkedCollapsed": true
+                "unlinkedCollapsed": false
               },
               "icon": "links-coming-in",
-              "title": "Channel（通道） 的反向链接列表"
+              "title": "GORM 的反向链接列表"
             }
           },
           {
@@ -171,13 +171,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "每日一面/实习.md",
+                "file": "Go/Go框架/Orm框架/GORM.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "实习 的大纲"
+              "title": "GORM 的大纲"
             }
           },
           {
@@ -207,7 +207,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 409.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -221,8 +221,10 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "7f5385520654fd78",
+  "active": "73f49f012dd04a85",
   "lastOpenFiles": [
+    "Go/Go框架/Orm框架/GORM.md",
+    "Go/Golang面试题.md",
     "清能互联实习.canvas",
     "OnCall.canvas",
     "算法/堆 & 队列.md",
@@ -262,7 +264,6 @@
     "Java/JVM/JVM垃圾回收.md",
     "Java/JVM/JVM常见的参数.md",
     "Java/JVM/JVM 基本介绍.md",
-    "Java/JVM/Java虚拟机面试题.md",
     "Java/JVM",
     "Java",
     "Go/Go垃圾回收",
