@@ -1,19 +1,37 @@
 {
   "schemaVersion": 1,
   "source": "termy",
-  "updatedAt": "2026-05-23T08:43:31.592Z",
+  "updatedAt": "2026-05-23T08:48:16.951Z",
   "vaultRoot": "D:/MyKnowledge/MyKnowledge",
   "workspaceFolders": [
     "D:/MyKnowledge/MyKnowledge"
   ],
-  "activeFile": null,
+  "activeFile": {
+    "filePath": "D:\\MyKnowledge\\MyKnowledge\\AI\\AI学习日记.md",
+    "vaultPath": "AI/AI学习日记.md",
+    "fileUrl": "file:///D:/MyKnowledge/MyKnowledge/AI/AI%E5%AD%A6%E4%B9%A0%E6%97%A5%E8%AE%B0.md",
+    "hasFocus": false
+  },
   "openFiles": [
     {
-      "filePath": "D:\\MyKnowledge\\MyKnowledge\\Go\\Go框架\\Orm框架\\GORM.md",
-      "vaultPath": "Go/Go框架/Orm框架/GORM.md",
-      "fileUrl": "file:///D:/MyKnowledge/MyKnowledge/Go/Go%E6%A1%86%E6%9E%B6/Orm%E6%A1%86%E6%9E%B6/GORM.md",
-      "isActive": false
+      "filePath": "D:\\MyKnowledge\\MyKnowledge\\AI\\AI学习日记.md",
+      "vaultPath": "AI/AI学习日记.md",
+      "fileUrl": "file:///D:/MyKnowledge/MyKnowledge/AI/AI%E5%AD%A6%E4%B9%A0%E6%97%A5%E8%AE%B0.md",
+      "isActive": true
     }
   ],
-  "selection": null
+  "selection": {
+    "text": "",
+    "isEmpty": true,
+    "from": {
+      "line": 0,
+      "ch": 0,
+      "offset": 0
+    },
+    "to": {
+      "line": 0,
+      "ch": 0,
+      "offset": 0
+    }
+  }
 }
