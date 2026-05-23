@@ -1,18 +1,21 @@
 {
 	"nodes":[
-		{"id":"53f28cb6d08731de","x":-234,"y":-240,"width":814,"height":840,"type":"group","label":"数据准备阶段"},
+		{"id":"53f28cb6d08731de","type":"group","x":-234,"y":-240,"width":814,"height":840,"label":"数据准备阶段"},
+		{"id":"cea3d5c4b97a3c1d","x":-105,"y":771,"width":400,"height":400,"type":"file","file":"AI/Agent.md"},
 		{"id":"50971a6e822e714e","type":"text","text":"##### **OnCallRAG流程**","x":-180,"y":-220,"width":180,"height":60,"color":"4"},
 		{"id":"7874d0ef2ea36ee4","type":"text","text":"**告警手册（知识库内容）**","x":-204,"y":-100,"width":228,"height":60,"color":"4"},
 		{"id":"68a6fa377d0eca3b","type":"text","text":"**文档加载组件Loader**","x":-153,"y":40,"width":127,"height":60,"color":"4"},
 		{"id":"e50365667ede708a","type":"text","text":"**TransFormer组件**\n1．将文件内容，按照标题#进行切分  \n2．每个切分出来的分片，都赋予一个唯一的uuid\n3．对每个分片都增加元数据信息  \n4．构造返回值，返回","x":-201,"y":160,"width":223,"height":157,"color":"4"},
 		{"id":"72ed663392f575f0","type":"text","text":"**文档索引Indexer组件**\n1．首先对所有分片进行向量化，获取向量数组\n2．构造符合milvus表记录的结构体。id、content、vector、metadata\n3．构造完记录后，插入到数据库中。最后返回所有的id","x":-214,"y":393,"width":250,"height":187,"color":"4"},
-		{"id":"553ddc9453111d35","type":"file","file":"AI/RAG.md","x":160,"y":40,"width":400,"height":400,"color":"4"}
+		{"id":"553ddc9453111d35","type":"file","file":"AI/RAG.md","x":160,"y":40,"width":400,"height":400,"color":"4"},
+		{"id":"cce90755698948d0","x":36,"y":660,"width":124,"height":60,"type":"text","text":"**对话Agent**"}
 	],
 	"edges":[
 		{"id":"62f10865f3e2ffe7","fromNode":"50971a6e822e714e","fromSide":"bottom","toNode":"7874d0ef2ea36ee4","toSide":"top"},
 		{"id":"438abb4e07e8fb66","fromNode":"7874d0ef2ea36ee4","fromSide":"bottom","toNode":"68a6fa377d0eca3b","toSide":"top"},
 		{"id":"8f8762436d870cc7","fromNode":"68a6fa377d0eca3b","fromSide":"bottom","toNode":"e50365667ede708a","toSide":"top"},
 		{"id":"6d7e7b419b1eb8f9","fromNode":"e50365667ede708a","fromSide":"right","toNode":"553ddc9453111d35","toSide":"left"},
-		{"id":"6a81073abab9918f","fromNode":"e50365667ede708a","fromSide":"bottom","toNode":"72ed663392f575f0","toSide":"top"}
+		{"id":"6a81073abab9918f","fromNode":"e50365667ede708a","fromSide":"bottom","toNode":"72ed663392f575f0","toSide":"top"},
+		{"id":"1d895d9584754880","fromNode":"cce90755698948d0","fromSide":"bottom","toNode":"cea3d5c4b97a3c1d","toSide":"top"}
 	]
 }

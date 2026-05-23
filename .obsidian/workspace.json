@@ -41,12 +41,12 @@
             "state": {
               "type": "split-diff-view",
               "state": {
-                "aFile": "AI/Agent.md",
-                "bFile": "AI/Agent.md",
+                "aFile": ".obsidian/workspace.json",
+                "bFile": ".obsidian/workspace.json",
                 "aRef": ""
               },
               "icon": "diff",
-              "title": "Diff: Agent  (Working Tree)"
+              "title": "Diff: workspace.json  (Working Tree)"
             }
           }
         ],
@@ -234,14 +234,14 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "1472ca19da7da835",
+  "active": "73f49f012dd04a85",
   "lastOpenFiles": [
-    "conflict-files-obsidian-git.md",
     "supportPhoto/Pasted image 20260523144144.png",
     "supportPhoto/Pasted image 20260523144034.png",
     "supportPhoto/Pasted image 20260523144031.png",
     "supportPhoto/Pasted image 20260523143708.png",
     "AI/Agent.md",
+    "conflict-files-obsidian-git.md",
     "Go/Go框架/Orm框架/GORM.md",
     "Go/Golang面试题.md",
     "清能互联实习.canvas",
