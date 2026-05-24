@@ -76,9 +76,37 @@
               "icon": "diff",
               "title": "Diff: workspace.json  (Working Tree)"
             }
+          },
+          {
+            "id": "4c0ca70b0091926a",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Java/微服务/清能互联框架.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "清能互联框架"
+            }
+          },
+          {
+            "id": "0903640bdca538a5",
+            "type": "leaf",
+            "state": {
+              "type": "split-diff-view",
+              "state": {
+                "aFile": "conflict-files-obsidian-git.md",
+                "bFile": "conflict-files-obsidian-git.md",
+                "aRef": ""
+              },
+              "icon": "diff",
+              "title": "Diff: conflict-files-obsidian-git  (Working Tree)"
+            }
           }
         ],
-        "currentTab": 4
+        "currentTab": 6
       }
     ],
     "direction": "vertical"
@@ -262,9 +290,11 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "010ae1b1817c6fd4",
+  "active": "0903640bdca538a5",
   "lastOpenFiles": [
     "conflict-files-obsidian-git.md",
+    "Java/微服务/清能互联框架.md",
+    "Java/微服务",
     "AI/AI学习日记.md",
     "清能互联实习.canvas",
     "On-Call学习/项目经历-OnCall.md",
@@ -310,7 +340,6 @@
     "MQ",
     "每日一面",
     "实战方案",
-    "Go/Go框架/Orm框架/未命名",
-    "Go/Go框架/Orm框架"
+    "Go/Go框架/Orm框架/未命名"
   ]
 }
