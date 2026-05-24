@@ -1,19 +1,37 @@
 {
   "schemaVersion": 1,
   "source": "termy",
-  "updatedAt": "2026-05-23T08:43:31.592Z",
-  "vaultRoot": "D:/MyKnowledge/MyKnowledge",
+  "updatedAt": "2026-05-24T10:54:11.203Z",
+  "vaultRoot": "Users/zoushuming/Documents/Obsidian Vault",
   "workspaceFolders": [
-    "D:/MyKnowledge/MyKnowledge"
+    "Users/zoushuming/Documents/Obsidian Vault"
   ],
-  "activeFile": null,
+  "activeFile": {
+    "filePath": "/Users/zoushuming/Documents/Obsidian Vault/Java/微服务/清能互联框架.md",
+    "vaultPath": "Java/微服务/清能互联框架.md",
+    "fileUrl": "file:///Users/zoushuming/Documents/Obsidian%20Vault/Java/%E5%BE%AE%E6%9C%8D%E5%8A%A1/%E6%B8%85%E8%83%BD%E4%BA%92%E8%81%94%E6%A1%86%E6%9E%B6.md",
+    "hasFocus": true
+  },
   "openFiles": [
     {
-      "filePath": "D:\\MyKnowledge\\MyKnowledge\\Go\\Go框架\\Orm框架\\GORM.md",
-      "vaultPath": "Go/Go框架/Orm框架/GORM.md",
-      "fileUrl": "file:///D:/MyKnowledge/MyKnowledge/Go/Go%E6%A1%86%E6%9E%B6/Orm%E6%A1%86%E6%9E%B6/GORM.md",
-      "isActive": false
+      "filePath": "/Users/zoushuming/Documents/Obsidian Vault/Java/微服务/清能互联框架.md",
+      "vaultPath": "Java/微服务/清能互联框架.md",
+      "fileUrl": "file:///Users/zoushuming/Documents/Obsidian%20Vault/Java/%E5%BE%AE%E6%9C%8D%E5%8A%A1/%E6%B8%85%E8%83%BD%E4%BA%92%E8%81%94%E6%A1%86%E6%9E%B6.md",
+      "isActive": true
     }
   ],
-  "selection": null
+  "selection": {
+    "text": "",
+    "isEmpty": true,
+    "from": {
+      "line": 4,
+      "ch": 133,
+      "offset": 251
+    },
+    "to": {
+      "line": 4,
+      "ch": 133,
+      "offset": 251
+    }
+  }
 }
