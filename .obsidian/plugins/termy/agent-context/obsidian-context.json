@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "source": "termy",
-  "updatedAt": "2026-05-24T10:54:11.203Z",
+  "updatedAt": "2026-05-24T10:54:15.020Z",
   "vaultRoot": "Users/zoushuming/Documents/Obsidian Vault",
   "workspaceFolders": [
     "Users/zoushuming/Documents/Obsidian Vault"
@@ -10,7 +10,7 @@
     "filePath": "/Users/zoushuming/Documents/Obsidian Vault/Java/微服务/清能互联框架.md",
     "vaultPath": "Java/微服务/清能互联框架.md",
     "fileUrl": "file:///Users/zoushuming/Documents/Obsidian%20Vault/Java/%E5%BE%AE%E6%9C%8D%E5%8A%A1/%E6%B8%85%E8%83%BD%E4%BA%92%E8%81%94%E6%A1%86%E6%9E%B6.md",
-    "hasFocus": true
+    "hasFocus": false
   },
   "openFiles": [
     {
@@ -20,18 +20,5 @@
       "isActive": true
     }
   ],
-  "selection": {
-    "text": "",
-    "isEmpty": true,
-    "from": {
-      "line": 4,
-      "ch": 133,
-      "offset": 251
-    },
-    "to": {
-      "line": 4,
-      "ch": 133,
-      "offset": 251
-    }
-  }
+  "selection": null
 }
