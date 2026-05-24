@@ -4,109 +4,24 @@
     "type": "split",
     "children": [
       {
-        "id": "14292f0ecce26cc5",
+        "id": "1822b9d67b241284",
         "type": "tabs",
         "children": [
           {
-            "id": "bc150f99d99c7caf",
+            "id": "2633e54a9524efa7",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Go/Golang面试题.md",
+                "file": "Java/微服务/Kafka.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Golang面试题"
-            }
-          },
-          {
-            "id": "7f5385520654fd78",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Go/Go框架/Orm框架/GORM.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "GORM"
-            }
-          },
-          {
-            "id": "1472ca19da7da835",
-            "type": "leaf",
-            "state": {
-              "type": "split-diff-view",
-              "state": {
-                "aFile": ".obsidian/workspace.json",
-                "bFile": ".obsidian/workspace.json",
-                "aRef": ""
-              },
-              "icon": "diff",
-              "title": "Diff: workspace.json  (Working Tree)"
-            }
-          },
-          {
-            "id": "dd4eba8752decfbd",
-            "type": "leaf",
-            "state": {
-              "type": "split-diff-view",
-              "state": {
-                "aFile": ".obsidian/workspace.json",
-                "bFile": ".obsidian/workspace.json",
-                "aRef": ""
-              },
-              "icon": "diff",
-              "title": "Diff: workspace.json  (Working Tree)"
-            }
-          },
-          {
-            "id": "010ae1b1817c6fd4",
-            "type": "leaf",
-            "state": {
-              "type": "split-diff-view",
-              "state": {
-                "aFile": ".obsidian/workspace.json",
-                "bFile": ".obsidian/workspace.json",
-                "aRef": ""
-              },
-              "icon": "diff",
-              "title": "Diff: workspace.json  (Working Tree)"
-            }
-          },
-          {
-            "id": "4c0ca70b0091926a",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Java/微服务/清能互联框架.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "清能互联框架"
-            }
-          },
-          {
-            "id": "0903640bdca538a5",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Java/并发/多线程.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "多线程"
+              "title": "Kafka"
             }
           }
-        ],
-        "currentTab": 6
+        ]
       }
     ],
     "direction": "vertical"
@@ -241,12 +156,13 @@
             "state": {
               "type": "outline",
               "state": {
+                "file": "Java/微服务/Kafka.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "大纲"
+              "title": "Kafka 的大纲"
             }
           },
           {
@@ -276,7 +192,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 516.5
+    "width": 397.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -290,8 +206,11 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "0903640bdca538a5",
+  "active": "73f49f012dd04a85",
   "lastOpenFiles": [
+    "Java/微服务/Kafka.md",
+    "OnCall.canvas",
+    "Java/并发/多线程.md",
     "Java/并发/场景.md",
     "Java/并发/并发安全.md",
     "Java/微服务/清能互联框架.md",
@@ -308,7 +227,6 @@
     "AI/Agent.md",
     "Go/Go框架/Orm框架/GORM.md",
     "Go/Golang面试题.md",
-    "OnCall.canvas",
     "算法/堆 & 队列.md",
     "笔试题",
     "每日一面/计算机基础.md",
@@ -321,7 +239,6 @@
     "MQ/RabbitMQ.md",
     "Java/设计模式.md",
     "Java/并发/线程池.md",
-    "Java/并发/多线程.md",
     "Java/并发",
     "Clippings/基于 Harness + SDD + 多仓管理模式的 AI 全栈开发实践｜得物技术.md",
     "Clippings/13. 什么是多路召回？具体怎么做？.md",
@@ -333,7 +250,6 @@
     "On-Call学习/eino框架.md",
     "每日一面/算法题.md",
     "每日一面/中间件八股.md",
-    "算法/字符串.md",
     "Java/JVM",
     "Java",
     "Go/Go垃圾回收",
