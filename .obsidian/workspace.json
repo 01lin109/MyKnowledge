@@ -95,14 +95,14 @@
             "id": "0903640bdca538a5",
             "type": "leaf",
             "state": {
-              "type": "split-diff-view",
+              "type": "markdown",
               "state": {
-                "aFile": "conflict-files-obsidian-git.md",
-                "bFile": "conflict-files-obsidian-git.md",
-                "aRef": ""
+                "file": "Java/并发/多线程.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "diff",
-              "title": "Diff: conflict-files-obsidian-git  (Working Tree)"
+              "icon": "lucide-file",
+              "title": "多线程"
             }
           }
         ],
@@ -292,8 +292,11 @@
   },
   "active": "0903640bdca538a5",
   "lastOpenFiles": [
-    "conflict-files-obsidian-git.md",
+    "Java/并发/场景.md",
+    "Java/并发/并发安全.md",
     "Java/微服务/清能互联框架.md",
+    "笔试题/操作系统.md",
+    "conflict-files-obsidian-git.md",
     "Java/微服务",
     "AI/AI学习日记.md",
     "清能互联实习.canvas",
@@ -307,7 +310,6 @@
     "Go/Golang面试题.md",
     "OnCall.canvas",
     "算法/堆 & 队列.md",
-    "笔试题/操作系统.md",
     "笔试题",
     "每日一面/计算机基础.md",
     "supportPhoto/Pasted image 20260521110134.png",
@@ -319,9 +321,7 @@
     "MQ/RabbitMQ.md",
     "Java/设计模式.md",
     "Java/并发/线程池.md",
-    "Java/并发/并发安全.md",
     "Java/并发/多线程.md",
-    "Java/并发/场景.md",
     "Java/并发",
     "Clippings/基于 Harness + SDD + 多仓管理模式的 AI 全栈开发实践｜得物技术.md",
     "Clippings/13. 什么是多路召回？具体怎么做？.md",
