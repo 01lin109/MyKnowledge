@@ -99,8 +99,8 @@ Embedding就是把一段文字变成一个向量的过程 ——<font color="#4b
 ## 4.0 对话Agent的实现：
 ### 4.0.1流程编排：
 ![[PixPin_2026-05-25_20-24-25.png]]
-
-
+对话Agent
+[[面试题#1.SSE和WebSocket]]
 ## 4.1ReAct设计模式——让AI边想边做（对话Agent）
 ![[Pasted image 20260523143708.png]]
 ReAct（Reasoning and Acting，推理与行动）是当下 AI Agent（智能体）开发中最核心、最经典的设计模式之一。它由姚顺雨等人在 2022 年的论文中提出，核心思想非常朴素：**让大语言模型（LLM）像人类一样，一边思考（Reasoning），一边行动（Acting）。**
