@@ -1,23 +1,35 @@
 {
   "schemaVersion": 1,
   "source": "termy",
-  "updatedAt": "2026-05-27T13:41:08.045Z",
+  "updatedAt": "2026-05-29T11:30:50.244Z",
   "vaultRoot": "D:/MyKnowledge/MyKnowledge",
   "workspaceFolders": [
     "D:/MyKnowledge/MyKnowledge"
   ],
   "activeFile": {
-    "filePath": "D:\\MyKnowledge\\MyKnowledge\\算法\\pdd.md",
-    "vaultPath": "算法/pdd.md",
-    "fileUrl": "file:///D:/MyKnowledge/MyKnowledge/%E7%AE%97%E6%B3%95/pdd.md",
+    "filePath": "D:\\MyKnowledge\\MyKnowledge\\Mysql\\锁.md",
+    "vaultPath": "Mysql/锁.md",
+    "fileUrl": "file:///D:/MyKnowledge/MyKnowledge/Mysql/%E9%94%81.md",
     "hasFocus": false
   },
   "openFiles": [
     {
-      "filePath": "D:\\MyKnowledge\\MyKnowledge\\算法\\pdd.md",
-      "vaultPath": "算法/pdd.md",
-      "fileUrl": "file:///D:/MyKnowledge/MyKnowledge/%E7%AE%97%E6%B3%95/pdd.md",
+      "filePath": "D:\\MyKnowledge\\MyKnowledge\\Mysql\\锁.md",
+      "vaultPath": "Mysql/锁.md",
+      "fileUrl": "file:///D:/MyKnowledge/MyKnowledge/Mysql/%E9%94%81.md",
       "isActive": true
+    },
+    {
+      "filePath": "D:\\MyKnowledge\\MyKnowledge\\Mysql\\并发问题.md",
+      "vaultPath": "Mysql/并发问题.md",
+      "fileUrl": "file:///D:/MyKnowledge/MyKnowledge/Mysql/%E5%B9%B6%E5%8F%91%E9%97%AE%E9%A2%98.md",
+      "isActive": false
+    },
+    {
+      "filePath": "D:\\MyKnowledge\\MyKnowledge\\Mysql\\日志.md",
+      "vaultPath": "Mysql/日志.md",
+      "fileUrl": "file:///D:/MyKnowledge/MyKnowledge/Mysql/%E6%97%A5%E5%BF%97.md",
+      "isActive": false
     }
   ],
   "selection": null

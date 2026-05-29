@@ -4,67 +4,70 @@
     "type": "split",
     "children": [
       {
-        "id": "eb792705e1e19334",
-        "type": "split",
+        "id": "39a953c24d8e2135",
+        "type": "tabs",
         "children": [
           {
-            "id": "39a953c24d8e2135",
-            "type": "tabs",
-            "dimension": 81.23827392120076,
-            "children": [
-              {
-                "id": "5245061729d6f74d",
-                "type": "leaf",
-                "state": {
-                  "type": "canvas",
-                  "state": {
-                    "file": "OnCall.canvas",
-                    "viewState": {
-                      "x": 173,
-                      "y": 767.7938219895289,
-                      "zoom": -0.7006488734240882
-                    }
-                  },
-                  "icon": "lucide-layout-dashboard",
-                  "title": "OnCall"
+            "id": "5245061729d6f74d",
+            "type": "leaf",
+            "state": {
+              "type": "canvas",
+              "state": {
+                "file": "OnCall.canvas",
+                "viewState": {
+                  "x": 173,
+                  "y": 767.7938219895289,
+                  "zoom": -0.7006488734240882
                 }
               },
-              {
-                "id": "8cce65599d6cf485",
-                "type": "leaf",
-                "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "算法/pdd.md",
-                    "mode": "source",
-                    "source": false
-                  },
-                  "icon": "lucide-file",
-                  "title": "pdd"
-                }
-              }
-            ],
-            "currentTab": 1
+              "icon": "lucide-layout-dashboard",
+              "title": "OnCall"
+            }
           },
           {
-            "id": "f5ffe6f192c57fba",
-            "type": "tabs",
-            "dimension": 18.76172607879925,
-            "children": [
-              {
-                "id": "7ba62f4a12dae71e",
-                "type": "leaf",
-                "state": {
-                  "type": "terminal-view",
-                  "state": {},
-                  "icon": "terminal",
-                  "title": "Terminal"
-                }
-              }
-            ]
+            "id": "32103d63b9c2a408",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Mysql/锁.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "锁"
+            }
+          },
+          {
+            "id": "942d15ac0e9bdddb",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Mysql/并发问题.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "并发问题"
+            }
+          },
+          {
+            "id": "3ec9fa068667448c",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Mysql/日志.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "日志"
+            }
           }
         ],
-        "direction": "horizontal"
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -199,13 +202,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "算法/pdd.md",
+                "file": "Mysql/锁.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "pdd 的大纲"
+              "title": "锁 的大纲"
             }
           },
           {
@@ -252,12 +255,28 @@
   },
   "active": "73f49f012dd04a85",
   "lastOpenFiles": [
-    "每日一面/Java八股.md",
+    "Mysql/事务.md",
+    "supportPhoto/PixPin_2026-05-29_17-26-14.png",
+    "supportPhoto/Pasted image 20260529172526.png",
+    "supportPhoto/Pasted image 20260529172459.png",
+    "supportPhoto/Pasted image 20260529172440.png",
+    "supportPhoto/Pasted image 20260529172428.png",
+    "supportPhoto/Pasted image 20260529172351.png",
+    "supportPhoto/Pasted image 20260529172016.png",
+    "supportPhoto/Pasted image 20260529171925.png",
+    "supportPhoto/Pasted image 20260529171603.png",
+    "Mysql/日志.md",
+    "Mysql/并发问题.md",
+    "supportPhoto/Pasted image 20260529165300.png",
+    "Mysql/锁.md",
+    "Mysql/性能优化.md",
+    "Mysql/B+ 树.md",
+    "算法/数学算法.md",
     "算法/pdd.md",
+    "每日一面/Java八股.md",
     "计算机网络/OSI&5层网络模型.md",
     "On-Call学习/项目经历-OnCall.md",
     "计算机网络/面试题.md",
-    "supportPhoto/PixPin_2026-05-25_20-24-25.png",
     "On-Call学习/eino框架.md",
     "AI/Agent.md",
     "AI/大模型选择题.md",
@@ -268,30 +287,13 @@
     "Java/微服务/Kafka.md",
     "Java/微服务/Kafka.md",
     "Kafka_重新排版.md",
-    "supportPhoto/PixPin_2026-05-24_20-53-09 1.png",
-    "supportPhoto/PixPin_2026-05-24_20-53-09.png",
-    "supportPhoto/PixPin_2026-05-24_20-50-49.png",
     "Java/并发/多线程.md",
     "Java/并发/场景.md",
     "Java/并发/并发安全.md",
     "Java/微服务/清能互联框架.md",
-    "笔试题/操作系统.md",
-    "conflict-files-obsidian-git.md",
     "Java/微服务",
     "清能互联实习.canvas",
-    "supportPhoto/Pasted image 20260523144144.png",
-    "supportPhoto/Pasted image 20260523144034.png",
-    "supportPhoto/Pasted image 20260523144031.png",
-    "supportPhoto/Pasted image 20260523143708.png",
-    "Go/Go框架/Orm框架/GORM.md",
-    "Go/Golang面试题.md",
-    "算法/堆 & 队列.md",
     "笔试题",
-    "每日一面/计算机基础.md",
-    "supportPhoto/Pasted image 20260521110134.png",
-    "supportPhoto/Pasted image 20260521103659.png",
-    "MQ/RabbitMQ.md",
-    "Java/设计模式.md",
     "Java/并发",
     "未命名.canvas",
     "Java/JVM",
