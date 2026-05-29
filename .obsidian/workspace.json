@@ -4,70 +4,95 @@
     "type": "split",
     "children": [
       {
-        "id": "39a953c24d8e2135",
-        "type": "tabs",
+        "id": "d6a63d78d0b74725",
+        "type": "split",
         "children": [
           {
-            "id": "5245061729d6f74d",
-            "type": "leaf",
-            "state": {
-              "type": "canvas",
-              "state": {
-                "file": "OnCall.canvas",
-                "viewState": {
-                  "x": 173,
-                  "y": 767.7938219895289,
-                  "zoom": -0.7006488734240882
+            "id": "39a953c24d8e2135",
+            "type": "tabs",
+            "dimension": 77.29831144465291,
+            "children": [
+              {
+                "id": "5245061729d6f74d",
+                "type": "leaf",
+                "state": {
+                  "type": "canvas",
+                  "state": {
+                    "file": "OnCall.canvas",
+                    "viewState": {
+                      "x": 173,
+                      "y": 767.7938219895289,
+                      "zoom": -0.7006488734240882
+                    }
+                  },
+                  "icon": "lucide-layout-dashboard",
+                  "title": "OnCall"
                 }
               },
-              "icon": "lucide-layout-dashboard",
-              "title": "OnCall"
-            }
+              {
+                "id": "32103d63b9c2a408",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "Mysql/日志.md",
+                    "mode": "source",
+                    "source": false
+                  },
+                  "icon": "lucide-file",
+                  "title": "日志"
+                }
+              },
+              {
+                "id": "942d15ac0e9bdddb",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "Mysql/并发问题.md",
+                    "mode": "source",
+                    "source": false
+                  },
+                  "icon": "lucide-file",
+                  "title": "并发问题"
+                }
+              },
+              {
+                "id": "3ec9fa068667448c",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "Mysql/日志.md",
+                    "mode": "source",
+                    "source": false
+                  },
+                  "icon": "lucide-file",
+                  "title": "日志"
+                }
+              }
+            ],
+            "currentTab": 1
           },
           {
-            "id": "32103d63b9c2a408",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "算法/数学算法.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "数学算法"
-            }
-          },
-          {
-            "id": "942d15ac0e9bdddb",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Mysql/并发问题.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "并发问题"
-            }
-          },
-          {
-            "id": "3ec9fa068667448c",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Mysql/日志.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "日志"
-            }
+            "id": "8e58639e79bbdab6",
+            "type": "tabs",
+            "dimension": 22.70168855534709,
+            "children": [
+              {
+                "id": "4257b9cc5b9e13d1",
+                "type": "leaf",
+                "state": {
+                  "type": "terminal-view",
+                  "state": {},
+                  "icon": "terminal",
+                  "title": "Terminal"
+                }
+              }
+            ]
           }
         ],
-        "currentTab": 1
+        "direction": "horizontal"
       }
     ],
     "direction": "vertical"
@@ -202,13 +227,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "算法/数学算法.md",
+                "file": "Mysql/日志.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "数学算法 的大纲"
+              "title": "日志 的大纲"
             }
           },
           {
@@ -255,6 +280,9 @@
   },
   "active": "73f49f012dd04a85",
   "lastOpenFiles": [
+    "supportPhoto/PixPin_2026-05-29_21-37-38.png",
+    "Clippings/MySQL 日志：undo log、redo log、binlog 有什么用？.md",
+    "算法/数学算法.md",
     "supportPhoto/PixPin_2026-05-29_20-32-18.png",
     "实战方案/服务端鉴权认证方案.md",
     "Mysql/锁.md",
@@ -270,10 +298,8 @@
     "supportPhoto/Pasted image 20260529171603.png",
     "Mysql/日志.md",
     "Mysql/并发问题.md",
-    "supportPhoto/Pasted image 20260529165300.png",
     "Mysql/性能优化.md",
     "Mysql/B+ 树.md",
-    "算法/数学算法.md",
     "算法/pdd.md",
     "每日一面/Java八股.md",
     "计算机网络/OSI&5层网络模型.md",
@@ -291,7 +317,6 @@
     "Kafka_重新排版.md",
     "Java/并发/多线程.md",
     "Java/并发/场景.md",
-    "Java/并发/并发安全.md",
     "Java/微服务",
     "清能互联实习.canvas",
     "笔试题",
