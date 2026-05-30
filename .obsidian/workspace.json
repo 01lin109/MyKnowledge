@@ -35,12 +35,12 @@
                 "state": {
                   "type": "markdown",
                   "state": {
-                    "file": "Mysql/日志.md",
+                    "file": "算法/数学算法.md",
                     "mode": "source",
                     "source": false
                   },
                   "icon": "lucide-file",
-                  "title": "日志"
+                  "title": "数学算法"
                 }
               },
               {
@@ -278,8 +278,9 @@
       "termy:打开Termy终端": false
     }
   },
-  "active": "73f49f012dd04a85",
+  "active": "32103d63b9c2a408",
   "lastOpenFiles": [
+    "Mysql/日志.md",
     "supportPhoto/PixPin_2026-05-29_21-37-38.png",
     "Clippings/MySQL 日志：undo log、redo log、binlog 有什么用？.md",
     "算法/数学算法.md",
@@ -295,8 +296,6 @@
     "supportPhoto/Pasted image 20260529172351.png",
     "supportPhoto/Pasted image 20260529172016.png",
     "supportPhoto/Pasted image 20260529171925.png",
-    "supportPhoto/Pasted image 20260529171603.png",
-    "Mysql/日志.md",
     "Mysql/并发问题.md",
     "Mysql/性能优化.md",
     "Mysql/B+ 树.md",
