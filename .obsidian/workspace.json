@@ -10,7 +10,7 @@
           {
             "id": "39a953c24d8e2135",
             "type": "tabs",
-            "dimension": 77.29831144465291,
+            "dimension": 74.20262664165104,
             "children": [
               {
                 "id": "5245061729d6f74d",
@@ -18,15 +18,15 @@
                 "state": {
                   "type": "canvas",
                   "state": {
-                    "file": "OnCall.canvas",
+                    "file": "清能互联实习.canvas",
                     "viewState": {
-                      "x": 173,
-                      "y": 767.7938219895289,
-                      "zoom": -0.7006488734240882
+                      "x": -98.81016918047465,
+                      "y": -154.93633522718164,
+                      "zoom": -2.3716614519924333
                     }
                   },
                   "icon": "lucide-layout-dashboard",
-                  "title": "OnCall"
+                  "title": "清能互联实习"
                 }
               },
               {
@@ -35,12 +35,12 @@
                 "state": {
                   "type": "markdown",
                   "state": {
-                    "file": "算法/数学算法.md",
+                    "file": "每日一面/实习.md",
                     "mode": "source",
                     "source": false
                   },
                   "icon": "lucide-file",
-                  "title": "数学算法"
+                  "title": "实习"
                 }
               },
               {
@@ -49,12 +49,12 @@
                 "state": {
                   "type": "markdown",
                   "state": {
-                    "file": "Mysql/并发问题.md",
+                    "file": "每日一面/实习.md",
                     "mode": "source",
                     "source": false
                   },
                   "icon": "lucide-file",
-                  "title": "并发问题"
+                  "title": "实习"
                 }
               },
               {
@@ -72,12 +72,12 @@
                 }
               }
             ],
-            "currentTab": 1
+            "currentTab": 2
           },
           {
             "id": "8e58639e79bbdab6",
             "type": "tabs",
-            "dimension": 22.70168855534709,
+            "dimension": 25.797373358348967,
             "children": [
               {
                 "id": "4257b9cc5b9e13d1",
@@ -86,7 +86,7 @@
                   "type": "terminal-view",
                   "state": {},
                   "icon": "terminal",
-                  "title": "Terminal"
+                  "title": "Claude Code"
                 }
               }
             ]
@@ -227,13 +227,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Mysql/日志.md",
+                "file": "每日一面/实习.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "日志 的大纲"
+              "title": "实习 的大纲"
             }
           },
           {
@@ -242,10 +242,10 @@
             "state": {
               "type": "file-properties",
               "state": {
-                "file": "AI/Harness Engineering.md"
+                "file": "每日一面/实习.md"
               },
               "icon": "lucide-info",
-              "title": "Harness Engineering的笔记属性"
+              "title": "实习的笔记属性"
             }
           },
           {
@@ -278,15 +278,27 @@
       "termy:打开Termy终端": false
     }
   },
-  "active": "32103d63b9c2a408",
+  "active": "73f49f012dd04a85",
   "lastOpenFiles": [
+    "每日一面/算法题.md",
+    "每日一面/项目.md",
+    "清能互联实习.canvas",
+    "On-Call学习/项目经历-OnCall.md",
+    "On-Call学习/eino框架.md",
+    "Mysql/sql基础.md",
+    "Mysql/并发问题.md",
+    "每日一面/实习.md",
+    "OnCall.canvas",
+    "Mysql/B+ 树.md",
+    "Mysql/性能优化.md",
+    "Mysql/锁.md",
+    "Mysql/索引.md",
+    "算法/数学算法.md",
     "Mysql/日志.md",
     "supportPhoto/PixPin_2026-05-29_21-37-38.png",
     "Clippings/MySQL 日志：undo log、redo log、binlog 有什么用？.md",
-    "算法/数学算法.md",
     "supportPhoto/PixPin_2026-05-29_20-32-18.png",
     "实战方案/服务端鉴权认证方案.md",
-    "Mysql/锁.md",
     "Mysql/事务.md",
     "supportPhoto/PixPin_2026-05-29_17-26-14.png",
     "supportPhoto/Pasted image 20260529172526.png",
@@ -296,28 +308,17 @@
     "supportPhoto/Pasted image 20260529172351.png",
     "supportPhoto/Pasted image 20260529172016.png",
     "supportPhoto/Pasted image 20260529171925.png",
-    "Mysql/并发问题.md",
-    "Mysql/性能优化.md",
-    "Mysql/B+ 树.md",
     "算法/pdd.md",
     "每日一面/Java八股.md",
     "计算机网络/OSI&5层网络模型.md",
-    "On-Call学习/项目经历-OnCall.md",
     "计算机网络/面试题.md",
-    "On-Call学习/eino框架.md",
     "AI/Agent.md",
     "AI/大模型选择题.md",
     "AI/AI学习日记.md",
     "AI/MCP.md",
     "AI/RAG.md",
-    "OnCall.canvas",
     "Java/微服务/Kafka.md",
-    "Java/微服务/Kafka.md",
-    "Kafka_重新排版.md",
-    "Java/并发/多线程.md",
-    "Java/并发/场景.md",
     "Java/微服务",
-    "清能互联实习.canvas",
     "笔试题",
     "Java/并发",
     "未命名.canvas",
