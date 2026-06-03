@@ -1,22 +1,22 @@
 {
   "schemaVersion": 1,
   "source": "termy",
-  "updatedAt": "2026-05-30T10:49:33.680Z",
+  "updatedAt": "2026-06-03T08:05:34.291Z",
   "vaultRoot": "D:/MyKnowledge/MyKnowledge",
   "workspaceFolders": [
     "D:/MyKnowledge/MyKnowledge"
   ],
   "activeFile": {
-    "filePath": "D:\\MyKnowledge\\MyKnowledge\\每日一面\\实习.md",
-    "vaultPath": "每日一面/实习.md",
-    "fileUrl": "file:///D:/MyKnowledge/MyKnowledge/%E6%AF%8F%E6%97%A5%E4%B8%80%E9%9D%A2/%E5%AE%9E%E4%B9%A0.md",
+    "filePath": "D:\\MyKnowledge\\MyKnowledge\\Java\\并发\\并发安全.md",
+    "vaultPath": "Java/并发/并发安全.md",
+    "fileUrl": "file:///D:/MyKnowledge/MyKnowledge/Java/%E5%B9%B6%E5%8F%91/%E5%B9%B6%E5%8F%91%E5%AE%89%E5%85%A8.md",
     "hasFocus": false
   },
   "openFiles": [
     {
-      "filePath": "D:\\MyKnowledge\\MyKnowledge\\每日一面\\实习.md",
-      "vaultPath": "每日一面/实习.md",
-      "fileUrl": "file:///D:/MyKnowledge/MyKnowledge/%E6%AF%8F%E6%97%A5%E4%B8%80%E9%9D%A2/%E5%AE%9E%E4%B9%A0.md",
+      "filePath": "D:\\MyKnowledge\\MyKnowledge\\Java\\并发\\并发安全.md",
+      "vaultPath": "Java/并发/并发安全.md",
+      "fileUrl": "file:///D:/MyKnowledge/MyKnowledge/Java/%E5%B9%B6%E5%8F%91/%E5%B9%B6%E5%8F%91%E5%AE%89%E5%85%A8.md",
       "isActive": true
     }
   ],
