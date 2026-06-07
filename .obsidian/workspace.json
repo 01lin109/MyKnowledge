@@ -10,7 +10,7 @@
           {
             "id": "39a953c24d8e2135",
             "type": "tabs",
-            "dimension": 60.60037523452158,
+            "dimension": 81.23827392120076,
             "children": [
               {
                 "id": "5245061729d6f74d",
@@ -35,35 +35,21 @@
                 "state": {
                   "type": "markdown",
                   "state": {
-                    "file": "计算机网络/面试题.md",
+                    "file": "Java/JVM/JVM垃圾回收.md",
                     "mode": "source",
                     "source": false
                   },
                   "icon": "lucide-file",
-                  "title": "面试题"
-                }
-              },
-              {
-                "id": "3ec9fa068667448c",
-                "type": "leaf",
-                "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "笔试选择题/Java.md",
-                    "mode": "source",
-                    "source": false
-                  },
-                  "icon": "lucide-file",
-                  "title": "Java"
+                  "title": "JVM垃圾回收"
                 }
               }
             ],
-            "currentTab": 2
+            "currentTab": 1
           },
           {
             "id": "d2c89981dc0b5d92",
             "type": "tabs",
-            "dimension": 39.39962476547842,
+            "dimension": 18.76172607879925,
             "children": [
               {
                 "id": "ccbdb309b640e6d7",
@@ -213,13 +199,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "笔试选择题/Java.md",
+                "file": "Java/JVM/JVM垃圾回收.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Java 的大纲"
+              "title": "JVM垃圾回收 的大纲"
             }
           },
           {
@@ -266,12 +252,13 @@
   },
   "active": "73f49f012dd04a85",
   "lastOpenFiles": [
+    "计算机网络/面试题.md",
+    "笔试选择题/Java.md",
     "supportPhoto/PixPin_2026-06-07_19-41-41.png",
     "supportPhoto/PixPin_2026-06-07_19-40-56.png",
     "supportPhoto/PixPin_2026-06-07_19-37-57.png",
     "supportPhoto/PixPin_2026-06-07_19-37-24.png",
     "每日一面/实习.md",
-    "笔试选择题/Java.md",
     "笔试选择题",
     "每日一面/简历拷打.md",
     "每日一面/算法题.md",
@@ -285,7 +272,6 @@
     "On-Call学习/项目经历-OnCall.md",
     "每日一面/自我介绍.md",
     "计算机网络/自我介绍.md",
-    "计算机网络/面试题.md",
     "计算机网络/应用层.md",
     "计算机网络/HTTP.md",
     "计算机网络/OSI&5层网络模型.md",
@@ -304,7 +290,6 @@
     "supportPhoto/PixPin_2026-05-29_17-26-14.png",
     "supportPhoto/Pasted image 20260529172526.png",
     "supportPhoto/Pasted image 20260529172459.png",
-    "supportPhoto/Pasted image 20260529172440.png",
     "Java/微服务",
     "笔试题",
     "Java/并发",

@@ -1,22 +1,22 @@
 {
   "schemaVersion": 1,
   "source": "termy",
-  "updatedAt": "2026-06-07T11:50:01.837Z",
+  "updatedAt": "2026-06-07T11:59:18.837Z",
   "vaultRoot": "D:/MyKnowledge/MyKnowledge",
   "workspaceFolders": [
     "D:/MyKnowledge/MyKnowledge"
   ],
   "activeFile": {
-    "filePath": "D:\\MyKnowledge\\MyKnowledge\\笔试选择题\\Java.md",
-    "vaultPath": "笔试选择题/Java.md",
-    "fileUrl": "file:///D:/MyKnowledge/MyKnowledge/%E7%AC%94%E8%AF%95%E9%80%89%E6%8B%A9%E9%A2%98/Java.md",
+    "filePath": "D:\\MyKnowledge\\MyKnowledge\\Java\\JVM\\JVM垃圾回收.md",
+    "vaultPath": "Java/JVM/JVM垃圾回收.md",
+    "fileUrl": "file:///D:/MyKnowledge/MyKnowledge/Java/JVM/JVM%E5%9E%83%E5%9C%BE%E5%9B%9E%E6%94%B6.md",
     "hasFocus": false
   },
   "openFiles": [
     {
-      "filePath": "D:\\MyKnowledge\\MyKnowledge\\笔试选择题\\Java.md",
-      "vaultPath": "笔试选择题/Java.md",
-      "fileUrl": "file:///D:/MyKnowledge/MyKnowledge/%E7%AC%94%E8%AF%95%E9%80%89%E6%8B%A9%E9%A2%98/Java.md",
+      "filePath": "D:\\MyKnowledge\\MyKnowledge\\Java\\JVM\\JVM垃圾回收.md",
+      "vaultPath": "Java/JVM/JVM垃圾回收.md",
+      "fileUrl": "file:///D:/MyKnowledge/MyKnowledge/Java/JVM/JVM%E5%9E%83%E5%9C%BE%E5%9B%9E%E6%94%B6.md",
       "isActive": true
     }
   ],
