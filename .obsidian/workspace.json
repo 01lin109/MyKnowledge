@@ -35,16 +35,30 @@
                 "state": {
                   "type": "markdown",
                   "state": {
-                    "file": "Java/JVM/JVM垃圾回收.md",
+                    "file": "每日一面/实习.md",
                     "mode": "source",
                     "source": false
                   },
                   "icon": "lucide-file",
-                  "title": "JVM垃圾回收"
+                  "title": "实习"
+                }
+              },
+              {
+                "id": "4c6cf853048c8dd0",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "算法/动态规划.md",
+                    "mode": "source",
+                    "source": false
+                  },
+                  "icon": "lucide-file",
+                  "title": "动态规划"
                 }
               }
             ],
-            "currentTab": 1
+            "currentTab": 2
           },
           {
             "id": "d2c89981dc0b5d92",
@@ -121,7 +135,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 232.5
+    "width": 265.5
   },
   "right": {
     "id": "4226fd3a2ddbd4c5",
@@ -199,13 +213,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Java/JVM/JVM垃圾回收.md",
+                "file": "算法/动态规划.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "JVM垃圾回收 的大纲"
+              "title": "动态规划 的大纲"
             }
           },
           {
@@ -252,17 +266,28 @@
   },
   "active": "73f49f012dd04a85",
   "lastOpenFiles": [
+    "supportPhoto/PixPin_2026-06-08_20-48-17.png",
+    "Java/并发/多线程.md",
+    "算法/动态规划.md",
+    "Java/并发/场景.md",
+    "Java/并发/并发安全.md",
+    "Java/并发/线程池.md",
+    "算法/字符串.md",
+    "Java/JVM/JVM 基本介绍.md",
+    "Java/JVM/JVM垃圾回收.md",
+    "Java/Java面试题.md",
+    "每日一面/实习.md",
+    "每日一面/项目.md",
+    "supportPhoto/PixPin_2026-06-08_09-09-51.png",
     "计算机网络/面试题.md",
     "笔试选择题/Java.md",
     "supportPhoto/PixPin_2026-06-07_19-41-41.png",
     "supportPhoto/PixPin_2026-06-07_19-40-56.png",
     "supportPhoto/PixPin_2026-06-07_19-37-57.png",
     "supportPhoto/PixPin_2026-06-07_19-37-24.png",
-    "每日一面/实习.md",
     "笔试选择题",
     "每日一面/简历拷打.md",
     "每日一面/算法题.md",
-    "每日一面/项目.md",
     "算法/堆 & 队列.md",
     "算法/数学算法.md",
     "AI/MCP.md",
@@ -273,23 +298,13 @@
     "每日一面/自我介绍.md",
     "计算机网络/自我介绍.md",
     "计算机网络/应用层.md",
-    "计算机网络/HTTP.md",
-    "计算机网络/OSI&5层网络模型.md",
-    "AI/RAG.md",
     "OnCall.canvas",
-    "Java/并发/并发安全.md",
     "清能互联实习.canvas",
-    "Java/并发/场景.md",
-    "Java/并发/多线程.md",
-    "每日一面/中间件八股.md",
-    "每日一面/Java八股.md",
-    "每日一面/GO八股.md",
     "supportPhoto/Pasted image 20260602155938.png",
     "supportPhoto/PixPin_2026-05-29_21-37-38.png",
     "supportPhoto/PixPin_2026-05-29_20-32-18.png",
     "supportPhoto/PixPin_2026-05-29_17-26-14.png",
     "supportPhoto/Pasted image 20260529172526.png",
-    "supportPhoto/Pasted image 20260529172459.png",
     "Java/微服务",
     "笔试题",
     "Java/并发",

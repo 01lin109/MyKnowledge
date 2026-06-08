@@ -1,22 +1,22 @@
 {
   "schemaVersion": 1,
   "source": "termy",
-  "updatedAt": "2026-06-07T11:59:18.837Z",
+  "updatedAt": "2026-06-08T12:49:50.076Z",
   "vaultRoot": "D:/MyKnowledge/MyKnowledge",
   "workspaceFolders": [
     "D:/MyKnowledge/MyKnowledge"
   ],
   "activeFile": {
-    "filePath": "D:\\MyKnowledge\\MyKnowledge\\Java\\JVM\\JVM垃圾回收.md",
-    "vaultPath": "Java/JVM/JVM垃圾回收.md",
-    "fileUrl": "file:///D:/MyKnowledge/MyKnowledge/Java/JVM/JVM%E5%9E%83%E5%9C%BE%E5%9B%9E%E6%94%B6.md",
+    "filePath": "D:\\MyKnowledge\\MyKnowledge\\算法\\动态规划.md",
+    "vaultPath": "算法/动态规划.md",
+    "fileUrl": "file:///D:/MyKnowledge/MyKnowledge/%E7%AE%97%E6%B3%95/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92.md",
     "hasFocus": false
   },
   "openFiles": [
     {
-      "filePath": "D:\\MyKnowledge\\MyKnowledge\\Java\\JVM\\JVM垃圾回收.md",
-      "vaultPath": "Java/JVM/JVM垃圾回收.md",
-      "fileUrl": "file:///D:/MyKnowledge/MyKnowledge/Java/JVM/JVM%E5%9E%83%E5%9C%BE%E5%9B%9E%E6%94%B6.md",
+      "filePath": "D:\\MyKnowledge\\MyKnowledge\\算法\\动态规划.md",
+      "vaultPath": "算法/动态规划.md",
+      "fileUrl": "file:///D:/MyKnowledge/MyKnowledge/%E7%AE%97%E6%B3%95/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92.md",
       "isActive": true
     }
   ],
