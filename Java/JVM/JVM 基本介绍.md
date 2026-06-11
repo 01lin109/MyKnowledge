@@ -72,6 +72,7 @@ tags:
 ### 3.本地方法栈：
 与Java虚拟机栈类似，主要为虚拟机使用到的Native方法服务，在HotSpot虚拟机中和Java虚拟机栈合二为一。本地法执时也会创建栈帧，同样可能出现StackOverflowError和OutOfMemoryError两种错误。
 ### 4.Java堆：
+[[JVM垃圾回收]]
 是JVM中最大的一块内存区域，被所有线程共享，在虚拟机启动时创建，用于存放**对象实例**。从内存回收角度，堆被划分为新代和年代，新代分为Eden区和两个Survivor区。如果在堆中没有内存完成实例分配，并且堆也无法扩展时会抛出OutOfMemoryError异常。
 ![[Pasted image 20260514091626.png]]
 ### 5.方法区（元空间）：

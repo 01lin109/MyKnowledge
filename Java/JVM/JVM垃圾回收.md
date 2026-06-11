@@ -54,7 +54,7 @@ Java 堆是垃圾收集器管理的主要区域，因此也被称作 **GC 堆（
 
 ### 对象优先在 Eden 区分配
 
-大多数情况下，对象在新生代中 Eden 区分配。当 Eden 区没有足够空间进行分配时，虚拟机将发起一次 Minor GC。下面我们来进行实际测试一下。
+大多数情况下，对象在新生代中 Eden 区分配。当 Eden 区没有足够空间进行分配时，虚拟机将发起一次 Minor GC（Young GC）。下面我们来进行实际测试一下。
 
 测试代码：
 
@@ -104,7 +104,79 @@ public class GCTest {
   }
 }
 ```
+### JDK23现代示例
 
+#### 1. 编写测试代码
+在 G1 中，超过 Region 一半大小的对象叫大对象。为了让 `allocation1` 变成大对象触发特殊的 GC 行为，或者让它留在年轻代，我们需要精准控制 Region。这里我们演示让它填满年轻代：
+
+```java
+public class GCTest {
+    public static void main(String[] args) {
+        // 现代 G1 更加智能，我们需要连续分配几个刚好不触发大对象判定、但能撑爆年轻代的分配
+        byte[] a1 = new byte[8 * 1024 * 1024]; // 8M
+        byte[] a2 = new byte[8 * 1024 * 1024]; // 8M
+        byte[] a3 = new byte[8 * 1024 * 1024]; // 8M
+        
+        System.out.println("--- 关键分配：即将撑爆 G1 的当前年轻代 Region ---");
+        byte[] a4 = new byte[8 * 1024 * 1024]; // 8M
+    }
+}
+```
+
+#### 2. 配置 G1 专用的 JVM 参数
+
+```Bash
+-Xms64m -Xmx64m -XX:G1HeapRegionSize=16m -Xlog:gc*
+```
+
+> **G1 参数解析**：
+> 
+> - `-XX:G1HeapRegionSize=16m`：把每个 Region 固定为 16MB。此时 8MB 刚好没有超过一半，不会被判定为大对象，它们会老老实实呆在年轻代 Region 里。
+>     
+> - 当你连续分配到 `a4` 时，总额达到了 32MB，G1 默认初始年轻代占比很低（约 5%），这会瞬间把已有的年轻代 Region 耗尽，迫使 G1 触发一次 **`Pause Young (Normal) (G1 Evacuation Pause)`**。
+
+#### 测试结果解析：
+在 JDK 23 中运行**方法二**（使用 **G1 收集器**并限制 Region 为 16M）后，控制台打印的日志会与传统的 JDK 8 完全不同。G1 的核心逻辑是基于 **Region 的动态收集**。
+
+以下是方法二测试结果的关键信息说明：
+
+##### 1. 触发 GC 的标志（垃圾回收启动）
+
+你会看到类似下面的一行日志：
+
+```
+[0.112s][info][gc,start] GC(0) Pause Young (Normal) (G1 Evacuation Pause)
+```
+
+- **`Pause Young (Normal)`**：这代表 G1 成功触发了一次**年轻代垃圾回收**（相当于传统意义上的 Minor GC）。
+    
+- **`G1 Evacuation Pause`**：意思是“疏散停顿”。当分配 `a4` 数组时，G1 发现现有的年轻代 Region 已经塞满了，必须把里面活着的对象“疏散”转移到其他空闲 Region 中，从而触发了停顿。
+    
+
+##### 2. 内存变化与对象去向（分配担保的现代体现）
+
+在随后的堆内存快照或结束日志中，你会看到类似这样的变化：
+
+Plaintext
+
+```
+[0.115s][info][gc,heap ] GC(0) Eden regions: 2->0, Survivor regions: 0->1, Old regions: 0->2
+```
+
+- **`Eden regions: 2->0`**：清空了原来存放 `a1`、`a2`、`a3` 的年轻代 Eden 区域。
+    
+- **`Old regions: 0->2`**：**这是核心！** 老年代（Old）的 Region 数量从 0 变成了 2（约 32MB）。
+    
+
+> 💡 **现代版分配担保的真相**： 在这次 GC 期间，G1 尝试把 `a1, a2, a3` 复制到年轻代的 Survivor Region 中。但因为你限制了总堆大小（64M），G1 动态划分出的 Survivor Region 根本装不下这 24MB 的连续数据。
+> 
+> 于是 G1 触发了现代的**“分配担保”**：绕过 Survivor，直接在老年代（Old Region）开辟了 2 个全新的 Region，把这些存活的对象直接晋升（Promote）到了老年代。
+
+##### 3. 为什么没有发生 Full GC？
+
+在日志的最后，你**绝对不会**看到 `Pause Full (G1 Compaction Pause)` 这样的字眼。
+
+因为虽然对象都去了老年代，但整个 JVM 堆（64MB）中老年代只占了约 32MB，还剩下充足的空闲 Region。因此老年代空间绰绰有余，程序在没有触发 Full GC 的情况下安全、完美地运行结束了。
 ### 大对象直接进入老年代
 
 大对象就是需要大量连续内存空间的对象（比如：字符串、数组）。
