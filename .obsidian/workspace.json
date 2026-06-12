@@ -4,70 +4,20 @@
     "type": "split",
     "children": [
       {
-        "id": "39a953c24d8e2135",
+        "id": "d78f0c746b865980",
         "type": "tabs",
         "children": [
           {
-            "id": "5245061729d6f74d",
+            "id": "63b0bc296d08a79b",
             "type": "leaf",
             "state": {
-              "type": "canvas",
-              "state": {
-                "file": "清能互联实习.canvas",
-                "viewState": {
-                  "x": -98.81016918047465,
-                  "y": -154.93633522718164,
-                  "zoom": -2.3716614519924333
-                }
-              },
-              "icon": "lucide-layout-dashboard",
-              "title": "清能互联实习"
-            }
-          },
-          {
-            "id": "942d15ac0e9bdddb",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "每日一面/实习.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "实习"
-            }
-          },
-          {
-            "id": "4c6cf853048c8dd0",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Java/JVM/JVM 基本介绍.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "JVM 基本介绍"
-            }
-          },
-          {
-            "id": "330fb6e93daa434f",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "中金所面试/八股.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "八股"
+              "title": "新标签页"
             }
           }
-        ],
-        "currentTab": 3
+        ]
       }
     ],
     "direction": "vertical"
@@ -99,7 +49,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "无感事务",
+                "query": "反射",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -202,13 +152,12 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "中金所面试/八股.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "八股 的大纲"
+              "title": "大纲"
             }
           },
           {
@@ -253,11 +202,21 @@
       "termy:打开Termy终端": false
     }
   },
-  "active": "330fb6e93daa434f",
+  "active": "73f49f012dd04a85",
   "lastOpenFiles": [
-    "每日一面/实习.md",
-    "每日一面/简历拷打.md",
     "中金所面试/八股.md",
+    "Java/JVM/JVM 基本介绍.md",
+    "每日一面/实习.md",
+    "Java/并发/并发安全.md",
+    "每日一面/简历拷打.md",
+    "每日一面/项目.md",
+    "每日一面/中间件八股.md",
+    "每日一面/自我介绍.md",
+    "每日一面/综合面试&HR面.md",
+    "每日一面/Java八股.md",
+    "每日一面/GO八股.md",
+    "清能互联实习.canvas",
+    "OnCall.canvas",
     "supportPhoto/Pasted image 20260611210009.png",
     "supportPhoto/Pasted image 20260611204117.png",
     "计算机网络/知识点.md",
@@ -281,21 +240,11 @@
     "Redis/Redis 过期删除策略和内存淘汰策略有什么区别？.md",
     "Mysql/B+ 树.md",
     "Mysql/索引.md",
-    "每日一面/中间件八股.md",
     "算法/数据结构.md",
     "算法/字符串.md",
     "算法/贪心.md",
     "算法/动态规划.md",
-    "算法/数学算法.md",
-    "算法/堆 & 队列.md",
-    "每日一面/算法题.md",
-    "算法/pdd.md",
-    "每日一面/综合面试&HR面.md",
-    "Java/JVM/JVM垃圾回收.md",
-    "Java/JVM/JVM 基本介绍.md",
     "笔试选择题",
-    "OnCall.canvas",
-    "清能互联实习.canvas",
     "Java/微服务",
     "笔试题",
     "Java/并发",
