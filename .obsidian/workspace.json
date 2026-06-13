@@ -8,31 +8,20 @@
         "type": "tabs",
         "children": [
           {
-            "id": "95cb7d385e035081",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Mysql/并发问题.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "并发问题"
-            }
-          },
-          {
             "id": "fcc5438020e38520",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "canvas",
               "state": {
-                "file": "Mysql/事务.md",
-                "mode": "source",
-                "source": false
+                "file": "清能互联实习.canvas",
+                "viewState": {
+                  "x": 82,
+                  "y": 49.57732858722538,
+                  "zoom": -1.6207706274017404
+                }
               },
-              "icon": "lucide-file",
-              "title": "事务"
+              "icon": "lucide-layout-dashboard",
+              "title": "清能互联实习"
             }
           },
           {
@@ -198,13 +187,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Mysql/并发问题.md",
+                "file": "清能互联实习.canvas",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "并发问题 的大纲"
+              "title": "清能互联实习 的大纲"
             }
           },
           {
@@ -251,8 +240,12 @@
   },
   "active": "73f49f012dd04a85",
   "lastOpenFiles": [
-    "中金所面试/八股.md",
+    "每日一面/实习.md",
     "Mysql/事务.md",
+    "清能互联实习.canvas",
+    "每日一面/项目.md",
+    "Mysql/并发问题.md",
+    "中金所面试/八股.md",
     "Go/Go协程/互斥锁和读写锁.md",
     "计算机网络/面试题.md",
     "计算机网络/知识点.md",
@@ -266,7 +259,6 @@
     "每日一面/计算机基础.md",
     "Java/Java基础.md",
     "Java/并发/线程池.md",
-    "每日一面/实习.md",
     "supportPhoto/Pasted image 20260612175651.png",
     "Java/Java面试题.md",
     "Java/并发/ThreadLocal.md",
@@ -276,17 +268,13 @@
     "每日一面/综合面试&HR面.md",
     "每日一面/简历拷打.md",
     "Java/JVM/JVM 基本介绍.md",
-    "每日一面/项目.md",
     "每日一面/中间件八股.md",
     "每日一面/自我介绍.md",
     "每日一面/Java八股.md",
-    "每日一面/GO八股.md",
-    "清能互联实习.canvas",
     "OnCall.canvas",
     "supportPhoto/Pasted image 20260611210009.png",
     "supportPhoto/Pasted image 20260611204117.png",
     "中金所面试",
-    "MQ/Kafka.md",
     "supportPhoto/Pasted image 20260611110114.png",
     "计算机网络/知识点.md.tmp.22648.6c39a11de127",
     "supportPhoto/Pasted image 20260611103107.png",

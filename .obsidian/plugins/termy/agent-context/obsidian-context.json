@@ -1,24 +1,17 @@
 {
   "schemaVersion": 1,
   "source": "termy",
-  "updatedAt": "2026-06-12T13:09:44.975Z",
+  "updatedAt": "2026-06-13T12:04:53.228Z",
   "vaultRoot": "D:/MyKnowledge/MyKnowledge",
   "workspaceFolders": [
     "D:/MyKnowledge/MyKnowledge"
   ],
   "activeFile": {
-    "filePath": "D:\\MyKnowledge\\MyKnowledge\\Mysql\\并发问题.md",
-    "vaultPath": "Mysql/并发问题.md",
-    "fileUrl": "file:///D:/MyKnowledge/MyKnowledge/Mysql/%E5%B9%B6%E5%8F%91%E9%97%AE%E9%A2%98.md",
+    "filePath": "D:\\MyKnowledge\\MyKnowledge\\清能互联实习.canvas",
+    "vaultPath": "清能互联实习.canvas",
+    "fileUrl": "file:///D:/MyKnowledge/MyKnowledge/%E6%B8%85%E8%83%BD%E4%BA%92%E8%81%94%E5%AE%9E%E4%B9%A0.canvas",
     "hasFocus": false
   },
-  "openFiles": [
-    {
-      "filePath": "D:\\MyKnowledge\\MyKnowledge\\Mysql\\并发问题.md",
-      "vaultPath": "Mysql/并发问题.md",
-      "fileUrl": "file:///D:/MyKnowledge/MyKnowledge/Mysql/%E5%B9%B6%E5%8F%91%E9%97%AE%E9%A2%98.md",
-      "isActive": true
-    }
-  ],
+  "openFiles": [],
   "selection": null
 }
