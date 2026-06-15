@@ -1,17 +1,24 @@
 {
   "schemaVersion": 1,
   "source": "termy",
-  "updatedAt": "2026-06-13T12:04:53.228Z",
+  "updatedAt": "2026-06-15T12:43:18.575Z",
   "vaultRoot": "D:/MyKnowledge/MyKnowledge",
   "workspaceFolders": [
     "D:/MyKnowledge/MyKnowledge"
   ],
   "activeFile": {
-    "filePath": "D:\\MyKnowledge\\MyKnowledge\\清能互联实习.canvas",
-    "vaultPath": "清能互联实习.canvas",
-    "fileUrl": "file:///D:/MyKnowledge/MyKnowledge/%E6%B8%85%E8%83%BD%E4%BA%92%E8%81%94%E5%AE%9E%E4%B9%A0.canvas",
+    "filePath": "D:\\MyKnowledge\\MyKnowledge\\每日一面\\实习.md",
+    "vaultPath": "每日一面/实习.md",
+    "fileUrl": "file:///D:/MyKnowledge/MyKnowledge/%E6%AF%8F%E6%97%A5%E4%B8%80%E9%9D%A2/%E5%AE%9E%E4%B9%A0.md",
     "hasFocus": false
   },
-  "openFiles": [],
+  "openFiles": [
+    {
+      "filePath": "D:\\MyKnowledge\\MyKnowledge\\每日一面\\实习.md",
+      "vaultPath": "每日一面/实习.md",
+      "fileUrl": "file:///D:/MyKnowledge/MyKnowledge/%E6%AF%8F%E6%97%A5%E4%B8%80%E9%9D%A2/%E5%AE%9E%E4%B9%A0.md",
+      "isActive": true
+    }
+  ],
   "selection": null
 }
