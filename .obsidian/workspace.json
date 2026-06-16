@@ -27,12 +27,26 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "中金所面试/八股.md",
+                "file": "计算机网络/HTTP.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "八股"
+              "title": "HTTP"
+            }
+          },
+          {
+            "id": "0efd56834d608764",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Java/JVM/JVM垃圾回收.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "JVM垃圾回收"
             }
           },
           {
@@ -41,40 +55,26 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Redis/Redis 常见面试题.md",
+                "file": "Redis/Redis数据结构.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Redis 常见面试题"
+              "title": "Redis数据结构"
             }
           },
           {
-            "id": "9ad776d63003c525",
+            "id": "20e7d6a434c6ab73",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Mysql/锁.md",
+                "file": "MQ/RabbitMQ.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "锁"
-            }
-          },
-          {
-            "id": "b52073944449d4ee",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Redis/Redis 常见面试题.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Redis 常见面试题"
+              "title": "RabbitMQ"
             }
           },
           {
@@ -227,13 +227,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "每日一面/实习.md",
+                "file": "计算机网络/HTTP.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "实习 的大纲"
+              "title": "HTTP 的大纲"
             }
           },
           {
@@ -278,20 +278,22 @@
       "termy:打开Termy终端": false
     }
   },
-  "active": "0e2d3cf12d35ea1e",
+  "active": "73f49f012dd04a85",
   "lastOpenFiles": [
     "每日一面/实习.md",
+    "计算机网络/HTTP.md",
     "中金所面试/八股.md",
+    "Java/JVM/JVM垃圾回收.md",
+    "Java/并发/并发安全.md",
+    "MQ/RabbitMQ.md",
+    "Redis/Redis数据结构.md",
     "Redis/Redis 常见面试题.md",
     "计算机网络/面试题.md",
     "中金所面试/简历拷打.md",
     "Mysql/锁.md",
-    "Java/并发/并发安全.md",
     "Mysql/性能优化.md",
     "Mysql/并发问题.md",
-    "Java/JVM/JVM垃圾回收.md",
     "Java/JVM/JVM常见的参数.md",
-    "Redis/Redis数据结构.md",
     "Redis/Redis 过期删除策略和内存淘汰策略有什么区别？.md",
     "Redis/Redis 常见数据类型和应用场景.md",
     "每日一面/中间件八股.md",
@@ -304,8 +306,6 @@
     "每日一面/综合面试&HR面.md",
     "每日一面/Java八股.md",
     "每日一面/项目.md",
-    "每日一面/自我介绍.md",
-    "每日一面/GO八股.md",
     "清能互联实习.canvas",
     "supportPhoto/PixPin_2026-06-12_18-29-34.png",
     "supportPhoto/PixPin_2026-06-12_18-24-21.png",
