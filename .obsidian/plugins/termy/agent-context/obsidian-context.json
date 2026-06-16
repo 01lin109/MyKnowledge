@@ -1,15 +1,15 @@
 {
   "schemaVersion": 1,
   "source": "termy",
-  "updatedAt": "2026-06-15T12:43:18.575Z",
+  "updatedAt": "2026-06-16T06:45:14.181Z",
   "vaultRoot": "D:/MyKnowledge/MyKnowledge",
   "workspaceFolders": [
     "D:/MyKnowledge/MyKnowledge"
   ],
   "activeFile": {
-    "filePath": "D:\\MyKnowledge\\MyKnowledge\\每日一面\\实习.md",
-    "vaultPath": "每日一面/实习.md",
-    "fileUrl": "file:///D:/MyKnowledge/MyKnowledge/%E6%AF%8F%E6%97%A5%E4%B8%80%E9%9D%A2/%E5%AE%9E%E4%B9%A0.md",
+    "filePath": "D:\\MyKnowledge\\MyKnowledge\\中金所面试\\八股.md",
+    "vaultPath": "中金所面试/八股.md",
+    "fileUrl": "file:///D:/MyKnowledge/MyKnowledge/%E4%B8%AD%E9%87%91%E6%89%80%E9%9D%A2%E8%AF%95/%E5%85%AB%E8%82%A1.md",
     "hasFocus": false
   },
   "openFiles": [
@@ -17,6 +17,12 @@
       "filePath": "D:\\MyKnowledge\\MyKnowledge\\每日一面\\实习.md",
       "vaultPath": "每日一面/实习.md",
       "fileUrl": "file:///D:/MyKnowledge/MyKnowledge/%E6%AF%8F%E6%97%A5%E4%B8%80%E9%9D%A2/%E5%AE%9E%E4%B9%A0.md",
+      "isActive": false
+    },
+    {
+      "filePath": "D:\\MyKnowledge\\MyKnowledge\\中金所面试\\八股.md",
+      "vaultPath": "中金所面试/八股.md",
+      "fileUrl": "file:///D:/MyKnowledge/MyKnowledge/%E4%B8%AD%E9%87%91%E6%89%80%E9%9D%A2%E8%AF%95/%E5%85%AB%E8%82%A1.md",
       "isActive": true
     }
   ],

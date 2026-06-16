@@ -91,7 +91,8 @@
               "title": "并发安全"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -277,10 +278,10 @@
       "termy:打开Termy终端": false
     }
   },
-  "active": "73f49f012dd04a85",
+  "active": "0e2d3cf12d35ea1e",
   "lastOpenFiles": [
-    "中金所面试/八股.md",
     "每日一面/实习.md",
+    "中金所面试/八股.md",
     "Redis/Redis 常见面试题.md",
     "计算机网络/面试题.md",
     "中金所面试/简历拷打.md",
