@@ -1,7 +1,5 @@
 https://rabbitmq.cn/docs
 ![[7bf15d7f2e88d5e293023addf16d1eac.png]]
-
-
 # 1.消息可靠性
 ![[Pasted image 20260516162207.png]]
 ## 1.1 发送者的可靠性

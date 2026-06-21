@@ -1,22 +1,22 @@
 {
   "schemaVersion": 1,
   "source": "termy",
-  "updatedAt": "2026-06-16T13:34:34.929Z",
+  "updatedAt": "2026-06-21T13:58:49.141Z",
   "vaultRoot": "D:/MyKnowledge/MyKnowledge",
   "workspaceFolders": [
     "D:/MyKnowledge/MyKnowledge"
   ],
   "activeFile": {
-    "filePath": "D:\\MyKnowledge\\MyKnowledge\\计算机网络\\HTTP.md",
-    "vaultPath": "计算机网络/HTTP.md",
-    "fileUrl": "file:///D:/MyKnowledge/MyKnowledge/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/HTTP.md",
+    "filePath": "D:\\MyKnowledge\\MyKnowledge\\Gemini Q & A\\Java基础.md",
+    "vaultPath": "Gemini Q & A/Java基础.md",
+    "fileUrl": "file:///D:/MyKnowledge/MyKnowledge/Gemini%20Q%20&%20A/Java%E5%9F%BA%E7%A1%80.md",
     "hasFocus": false
   },
   "openFiles": [
     {
-      "filePath": "D:\\MyKnowledge\\MyKnowledge\\计算机网络\\HTTP.md",
-      "vaultPath": "计算机网络/HTTP.md",
-      "fileUrl": "file:///D:/MyKnowledge/MyKnowledge/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/HTTP.md",
+      "filePath": "D:\\MyKnowledge\\MyKnowledge\\Gemini Q & A\\Java基础.md",
+      "vaultPath": "Gemini Q & A/Java基础.md",
+      "fileUrl": "file:///D:/MyKnowledge/MyKnowledge/Gemini%20Q%20&%20A/Java%E5%9F%BA%E7%A1%80.md",
       "isActive": true
     }
   ],
