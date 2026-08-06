@@ -491,7 +491,7 @@ r.GET("/download-attachment", func(c *gin.Context) {
 
 在Web开发中，设置HTTP响应头和Cookie是常见的需求。Gin提供了简单易用的方法来处理这些操作。
 ### 7.5.1 设置HTTP Header
-[[HTTP#**响应消息**]]
+[[计算机网络/HTTP#**响应消息**]]
 
 ```go
 // 设置单个响应头
@@ -548,7 +548,7 @@ r.GET("/secure", func(c *gin.Context) {
 ```
 
 ### 7.5.2 Cookie操作
-[[HTTP#4.1.2Cookie 的常用属性]]、
+[[计算机网络/HTTP#4.1.2Cookie 的常用属性]]、
 
 > [!NOTE] Cookie存储什么？&&正确使用
 1. **身份钥匙 (最常用)**：
