@@ -4,53 +4,24 @@
     "type": "split",
     "children": [
       {
-        "id": "920ff9771bcb7654",
+        "id": "f951faf5c5809530",
         "type": "tabs",
         "children": [
           {
-            "id": "0e2d3cf12d35ea1e",
+            "id": "2089e8a3c3feec6a",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Mysql/事务.md",
+                "file": "华勤/监控子系统/Mock Interview.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "事务"
-            }
-          },
-          {
-            "id": "1107a8b221591613",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "MQ/RabbitMQ.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "RabbitMQ"
-            }
-          },
-          {
-            "id": "166dd39cc7f94f2f",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "华勤/监控子系统/Monitor.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Monitor"
+              "title": "Mock Interview"
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "vertical"
@@ -70,7 +41,9 @@
               "type": "file-explorer",
               "state": {
                 "sortOrder": "alphabetical",
-                "autoReveal": false
+                "autoReveal": false,
+                "showSearch": false,
+                "searchQuery": ""
               },
               "icon": "lucide-folder-closed",
               "title": "文件列表"
@@ -236,15 +209,21 @@
       "termy:打开Termy终端": false
     }
   },
-  "active": "73f49f012dd04a85",
+  "active": "2089e8a3c3feec6a",
   "lastOpenFiles": [
+    "华勤/监控子系统/HTTP请求异常采集.md",
+    "华勤/监控子系统/Mock Interview.md",
     "华勤/监控子系统/TDP 监控子系统深度分析报告.md",
     "华勤/监控子系统/Monitor.md",
-    "华勤/监控子系统/HTTP请求异常采集.md",
+    "简历内容.md",
+    "Gemini Q & A/Java基础.md",
+    "操作系统/硬件结构篇.md",
+    "运维",
+    "MQ/RabbitMQ.md",
+    "Mysql/事务.md",
     "计算机网络/面试题.md",
     "华勤/监控子系统",
     "华勤",
-    "Mysql/事务.md",
     "每日一面/实习.md",
     "Mysql/B+ 树.md",
     "Mysql/锁.md",
@@ -252,13 +231,11 @@
     "Clippings/2.1 CPU 是如何执行程序的？.md",
     "On-Call学习/项目经历-OnCall.md",
     "每日一面/中间件八股.md",
-    "MQ/RabbitMQ.md",
     "On-Call学习/eino框架.md",
     "计算机网络/微信图片_20250617140018.jpg",
     "计算机网络/微信图片_20250617140007.jpg",
     "计算机网络/微信图片_20250617140034.jpg",
     "MQ/Kafka.md",
-    "操作系统/硬件结构篇.md",
     "pdd面试/一面没回答上来的问题：.md",
     "Clippings/MySQL 是怎么加锁的？.md",
     "Clippings/MySQL 日志：undo log、redo log、binlog 有什么用？.md",
@@ -266,10 +243,7 @@
     "Clippings/基于 Harness + SDD + 多仓管理模式的 AI 全栈开发实践｜得物技术.md",
     "Clippings/13. 什么是多路召回？具体怎么做？.md",
     "Clippings/2.2 键入网址到网页显示，期间发生了什么？.md",
-    "计算机网络/RESTful API 设计规范.md",
     "操作系统",
-    "计算机网络/OSI&5层网络模型.md",
-    "计算机网络/HTTP.md",
     "pdd面试",
     "Gemini Q & A",
     "清能互联实习.canvas",
@@ -285,7 +259,6 @@
     "计算机网络/知识点.md.tmp.22648.6c39a11de127",
     "笔试选择题",
     "Java/微服务",
-    "笔试题",
     "未命名.canvas"
   ]
 }
