@@ -1,4 +1,4 @@
-# 1.HashMap
+ # 1.HashMap
 ![[Pasted image 20260612175651.png]]
 
 当两个不同的 Key（比如 "apple" 和 "banana"），经过哈希函数计算后，居然算出了**同一个数组索引**，这就是哈希冲突。

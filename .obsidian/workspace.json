@@ -4,24 +4,63 @@
     "type": "split",
     "children": [
       {
-        "id": "f951faf5c5809530",
-        "type": "tabs",
+        "id": "4ecd8e39f878af29",
+        "type": "split",
         "children": [
           {
-            "id": "2089e8a3c3feec6a",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "华勤/监控子系统/TDP 监控子系统深度分析报告.md",
-                "mode": "source",
-                "source": false
+            "id": "f951faf5c5809530",
+            "type": "tabs",
+            "dimension": 60.60037523452158,
+            "children": [
+              {
+                "id": "2089e8a3c3feec6a",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "每日一面/实习.md",
+                    "mode": "source",
+                    "source": false
+                  },
+                  "icon": "lucide-file",
+                  "title": "实习"
+                }
               },
-              "icon": "lucide-file",
-              "title": "TDP 监控子系统深度分析报告"
-            }
+              {
+                "id": "ee209e60c1d31019",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "Java/Java基础.md",
+                    "mode": "source",
+                    "source": false
+                  },
+                  "icon": "lucide-file",
+                  "title": "Java基础"
+                }
+              }
+            ]
+          },
+          {
+            "id": "5aa8ba67d464ce89",
+            "type": "tabs",
+            "dimension": 39.39962476547842,
+            "children": [
+              {
+                "id": "2813bb1558a6aac4",
+                "type": "leaf",
+                "state": {
+                  "type": "terminal-view",
+                  "state": {},
+                  "icon": "terminal",
+                  "title": "Claude Code"
+                }
+              }
+            ]
           }
-        ]
+        ],
+        "direction": "horizontal"
       }
     ],
     "direction": "vertical"
@@ -55,7 +94,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "布隆过滤器",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -158,7 +197,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "华勤/监控子系统/TDP 监控子系统深度分析报告.md",
+                "file": "每日一面/实习.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
@@ -188,13 +227,35 @@
               "icon": "git-pull-request",
               "title": "Source Control"
             }
+          },
+          {
+            "id": "daf03bd4a9f31ddb",
+            "type": "leaf",
+            "state": {
+              "type": "claudian-view",
+              "state": {
+                "tabWorkspace": {
+                  "version": 1,
+                  "openTabs": [
+                    {
+                      "tabId": "tab-1788245900056-pyn0ydb",
+                      "conversationId": null,
+                      "draftModel": "gpt-5.6-terra"
+                    }
+                  ],
+                  "activeTabId": "tab-1788245900056-pyn0ydb"
+                }
+              },
+              "icon": "bot",
+              "title": "Claudian"
+            }
           }
         ],
         "currentTab": 6
       }
     ],
     "direction": "horizontal",
-    "width": 388.5
+    "width": 499.833251953125
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -206,43 +267,45 @@
       "command-palette:打开命令面板": false,
       "bases:新建数据库": false,
       "obsidian-git:Open Git source control": false,
-      "termy:打开Termy终端": false
+      "termy:打开Termy终端": false,
+      "realclaudian:Open Claudian": false
     }
   },
   "active": "73f49f012dd04a85",
   "lastOpenFiles": [
-    "华勤/监控子系统/HTTP请求异常采集.md",
-    "华勤/监控子系统/Monitor.md",
-    "华勤/监控子系统/Mock Interview.md",
-    "华勤/监控子系统/SQL异常.md",
+    "Redis/缓存篇.md",
+    "Java/JVM/JVM 基本介绍.md",
+    "Java/JVM/JVM常见的参数.md",
+    "Java/JVM/JVM垃圾回收.md",
+    "Java/JVM/Java虚拟机面试题.md",
+    "Java/并发/ThreadLocal.md",
+    "中金所面试/八股.md",
+    "中金所面试/简历拷打.md",
+    "pdd面试/一面没回答上来的问题：.md",
+    "秋招模拟面试/Java八股.md",
+    "Java/并发/并发安全.md",
+    "秋招模拟面试",
+    "Java/并发/多线程.md",
+    "Java/并发/场景.md",
+    "Clippings/2.1 CPU 是如何执行程序的？.md",
+    "操作系统/硬件结构篇.md",
+    "计算机网络/面试题.md",
     "华勤/监控子系统/TDP 监控子系统深度分析报告.md",
+    "Java/Java基础.md",
+    "华勤/监控子系统/Monitor.md",
+    "华勤/监控子系统/SQL异常.md",
+    "华勤/监控子系统/Mock Interview.md",
+    "Java/并发/锁.md",
+    "Java/Java面试题.md",
+    "华勤/监控子系统/HTTP请求异常采集.md",
     "简历内容.md",
     "Gemini Q & A/Java基础.md",
-    "操作系统/硬件结构篇.md",
     "运维",
-    "MQ/RabbitMQ.md",
-    "Mysql/事务.md",
-    "计算机网络/面试题.md",
     "华勤/监控子系统",
     "华勤",
-    "每日一面/实习.md",
-    "Mysql/B+ 树.md",
-    "Mysql/锁.md",
-    "Mysql/并发问题.md",
-    "Clippings/2.1 CPU 是如何执行程序的？.md",
-    "On-Call学习/项目经历-OnCall.md",
-    "每日一面/中间件八股.md",
-    "On-Call学习/eino框架.md",
     "计算机网络/微信图片_20250617140018.jpg",
     "计算机网络/微信图片_20250617140007.jpg",
     "计算机网络/微信图片_20250617140034.jpg",
-    "MQ/Kafka.md",
-    "pdd面试/一面没回答上来的问题：.md",
-    "Clippings/MySQL 是怎么加锁的？.md",
-    "Clippings/MySQL 日志：undo log、redo log、binlog 有什么用？.md",
-    "Clippings/MySQL 死锁了，怎么办？.md",
-    "Clippings/基于 Harness + SDD + 多仓管理模式的 AI 全栈开发实践｜得物技术.md",
-    "Clippings/13. 什么是多路召回？具体怎么做？.md",
     "操作系统",
     "pdd面试",
     "Gemini Q & A",
@@ -258,7 +321,6 @@
     "中金所面试",
     "计算机网络/知识点.md.tmp.22648.6c39a11de127",
     "笔试选择题",
-    "Java/微服务",
     "未命名.canvas"
   ]
 }
