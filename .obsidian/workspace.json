@@ -4,63 +4,53 @@
     "type": "split",
     "children": [
       {
-        "id": "4ecd8e39f878af29",
-        "type": "split",
+        "id": "f951faf5c5809530",
+        "type": "tabs",
         "children": [
           {
-            "id": "f951faf5c5809530",
-            "type": "tabs",
-            "dimension": 60.60037523452158,
-            "children": [
-              {
-                "id": "2089e8a3c3feec6a",
-                "type": "leaf",
-                "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "每日一面/实习.md",
-                    "mode": "source",
-                    "source": false
-                  },
-                  "icon": "lucide-file",
-                  "title": "实习"
-                }
+            "id": "2089e8a3c3feec6a",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Mysql/事务.md",
+                "mode": "source",
+                "source": false
               },
-              {
-                "id": "ee209e60c1d31019",
-                "type": "leaf",
-                "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "Java/Java基础.md",
-                    "mode": "source",
-                    "source": false
-                  },
-                  "icon": "lucide-file",
-                  "title": "Java基础"
-                }
-              }
-            ]
+              "icon": "lucide-file",
+              "title": "事务"
+            }
           },
           {
-            "id": "5aa8ba67d464ce89",
-            "type": "tabs",
-            "dimension": 39.39962476547842,
-            "children": [
-              {
-                "id": "2813bb1558a6aac4",
-                "type": "leaf",
-                "state": {
-                  "type": "terminal-view",
-                  "state": {},
-                  "icon": "terminal",
-                  "title": "Claude Code"
-                }
-              }
-            ]
+            "id": "6824ef6d06f144db",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "华勤/监控子系统/Mock Interview.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Mock Interview"
+            }
+          },
+          {
+            "id": "ee209e60c1d31019",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Java/Java基础.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Java基础"
+            }
           }
         ],
-        "direction": "horizontal"
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -94,7 +84,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "布隆过滤器",
+                "query": "ThreadLocal",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -197,7 +187,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "每日一面/实习.md",
+                "file": "华勤/监控子系统/Mock Interview.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
@@ -255,7 +245,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 499.833251953125
+    "width": 320.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -271,35 +261,37 @@
       "realclaudian:Open Claudian": false
     }
   },
-  "active": "73f49f012dd04a85",
+  "active": "eb777342a5ee41b1",
   "lastOpenFiles": [
-    "Redis/缓存篇.md",
-    "Java/JVM/JVM 基本介绍.md",
-    "Java/JVM/JVM常见的参数.md",
-    "Java/JVM/JVM垃圾回收.md",
-    "Java/JVM/Java虚拟机面试题.md",
-    "Java/并发/ThreadLocal.md",
-    "中金所面试/八股.md",
-    "中金所面试/简历拷打.md",
-    "pdd面试/一面没回答上来的问题：.md",
-    "秋招模拟面试/Java八股.md",
-    "Java/并发/并发安全.md",
-    "秋招模拟面试",
-    "Java/并发/多线程.md",
-    "Java/并发/场景.md",
-    "Clippings/2.1 CPU 是如何执行程序的？.md",
-    "操作系统/硬件结构篇.md",
-    "计算机网络/面试题.md",
-    "华勤/监控子系统/TDP 监控子系统深度分析报告.md",
-    "Java/Java基础.md",
     "华勤/监控子系统/Monitor.md",
-    "华勤/监控子系统/SQL异常.md",
+    "华勤/监控子系统/SQL异常采集.md",
     "华勤/监控子系统/Mock Interview.md",
-    "Java/并发/锁.md",
-    "Java/Java面试题.md",
+    "华勤/监控子系统/模拟.md",
+    "华勤/监控子系统/SQL异常.md",
     "华勤/监控子系统/HTTP请求异常采集.md",
-    "简历内容.md",
-    "Gemini Q & A/Java基础.md",
+    "每日一面/Java八股.md",
+    "Java/并发/并发安全.md",
+    "每日练习",
+    "Java/JVM/Java虚拟机面试题.md",
+    "Java/JVM/JVM 基本介绍.md",
+    "Java/JVM/JVM垃圾回收.md",
+    "pdd面试/一面没回答上来的问题：.md",
+    "Redis/Redis数据结构.md",
+    "Go/Golang面试题.md",
+    "Redis/Redis 常见面试题.md",
+    "Redis/缓存篇.md",
+    "Mysql/锁.md",
+    "实战方案/服务端鉴权认证方案.md",
+    "Mysql/事务.md",
+    "Mysql/日志.md",
+    "Mysql/并发问题.md",
+    "每日一面/实习.md",
+    "Go/Go协程/Context与Errgroup.md",
+    "Java/Spring/事务.md",
+    "Java/Spring/AOP.md",
+    "Java/Spring",
+    "Java/JVM/JVM常见的参数.md",
+    "秋招模拟面试",
     "运维",
     "华勤/监控子系统",
     "华勤",
@@ -319,8 +311,6 @@
     "supportPhoto/Pasted image 20260611210009.png",
     "supportPhoto/Pasted image 20260611204117.png",
     "中金所面试",
-    "计算机网络/知识点.md.tmp.22648.6c39a11de127",
-    "笔试选择题",
     "未命名.canvas"
   ]
 }
