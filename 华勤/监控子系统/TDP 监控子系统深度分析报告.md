@@ -633,6 +633,3 @@ OOM  → ERR_OOM
 4. **显式 Bean 声明** — 不依赖 `@ComponentScan`，完全控制 Bean 创建顺序
 5. **SPI 扩展点** — `TaskDataSource` 接口 + `@ConditionalOnMissingBean` 适配器，支持业务系统按需接入
 
----
-
-![image.png](attachment:aaccb9d0-e2af-45fd-a26f-8784edf8a492:image.png)

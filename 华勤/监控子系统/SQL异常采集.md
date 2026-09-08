@@ -159,14 +159,69 @@ Thread.currentThread().getStackTrace() 遍历当前线程堆栈：
 
 价值：报出的是"**哪行业务代码触发了这条 SQL**"，而不是 MyBatis 内部帧——排查时直接跳到代码位置。
 
-## 5.3 其他精简策略
+The user wants a brief explanation of the SQL exception DTO assembly logic (SqlMonitorCollector). Let me recall what I know about SqlMonitorCollector from earlier exploration. I referenced it earlier:
 
-| 策略 | 做法 | 目的 |
-|---|---|---|
-| mapper 缩写 shortMapperId | `com.xxx.mapper.UserMapper.selectById` → `UserMapper.selectById` | summary 一行能读完 |
-| 堆栈精简 buildShortStack | 根因类名+message + 前 3 帧 | 保留定位能力，去掉几百行的噪音 |
-| 错误消息截断 | 超 120 字符截断加 `...` | ESB/飞书消息不刷屏 |
-| DTO 空值剔除 | `@JsonInclude(NON_NULL)` | ESB 网关校验：任何 null 字段报 002545(Must be character) |
+- [SqlMonitorCollector.recordSqlError() L102] and [recordSlowSql() L65]
+- unwrapException L232-277
+- shortMapperId L289-299
+
+I should read the actual file to be accurate since I need to give precise details. The user asked for a brief explanation, but I must be accurate. Let me read SqlMonitorCollector.java.
+
+Now I can give a brief explanation of the SQL exception DTO assembly. The user wants it brief (简要说明). Let me structure it:
+
+1. Entry: SqlMonitorInterceptor → recordSlowSql / recordSqlError (both on the business request thread, synchronously in the finally block)
+2. Two methods assemble the DTO differently (WARN vs ERROR)
+3. Key helper methods: unwrapException, shortMapperId, findCallerFromThread/appendCallerLocation, buildShortStack, getErrorMessage
+4. Then pushErrorLog → dedup etc. (same shared path)
+
+Note differences vs HTTP path:
+- Uses new MonitorErrorLogDto() directly (not builder) — same DTO class though
+- errorClass for slow SQL is fake "SlowSqlMonitor" (not a real exception class)
+- errorMethod = Mapper short ID, not business frame
+- errorLine = business caller line from thread stack (appendCallerLocation, with basePkg filter from config)
+- errorSummary format differs
+- errorStack = root cause + first 3 frames (only for SQL exception; slow SQL doesn't set it)
+- clientIp = "-" placeholder
+- Time fields: recordSqlError sets them explicitly; recordSlowSql doesn't (let pushErrorLog fill defaults)
+- Runs synchronously on business thread (inside finally of the interceptor), whole thing wrapped in try-catch
+
+Keep it brief with a comparison table maybe. Use file links. Brief!
+SQL 路径的 DTO 组装在 [SqlMonitorCollector.java](file:///d:/hq_work_code/tdp-server/tdp-server/tdp-server-webapp/src/main/java/com/huaqin/tdp/server/monitor/interceptor/SqlMonitorCollector.java) 中，分两个入口（注意：它跑在**业务请求线程**上，是拦截器 finally 块里的同步调用，整个方法体 try-catch 包裹，失败只记日志）：
+
+## 5.3DTO组装
+### 两个入口，两种 DTO
+
+**1. 慢SQL [recordSlowSql() L57-84](file:///d:/hq_work_code/tdp-server/tdp-server/tdp-server/tdp-server-webapp/src/main/java/com/huaqin/tdp/server/monitor/interceptor/SqlMonitorCollector.java#L57-L84)**（无异常对象，纯超时事件）
+
+| 字段 | 值 |
+|---|---|
+| errorLevel / errorCode | `"WARN"` / `"WARN_SLOW_SQL"` |
+| errorClass | **硬编码 `"SlowSqlMonitor"`**——不是真实异常类，是造出来的标识 |
+| errorMethod | Mapper 短 ID：`UserMapper.selectById` |
+| errorSummary | `[慢SQL 1520ms] UserMapper.selectById(SELECT)` |
+| clientIp | `"-"` 占位（没有 request 对象） |
+| errorStack | **不设置**（慢SQL没有异常堆栈） |
+
+**2. SQL异常 [recordSqlError() L95-140](file:///d:/hq_work_code/tdp-server/tdp-server/tdp-server/tdp-server-webapp/src/main/java/com/huaqin/tdp/server/monitor/interceptor/SqlMonitorCollector.java#L95-L140)**
+
+| 字段 | 值 |
+|---|---|
+| errorLevel / errorCode | `"ERROR"` / `"ERR_SQL_EXCEPTION"` |
+| errorClass | 解包后根因的**简名**，如 `SQLSyntaxErrorException` |
+| errorMethod | Mapper 短 ID（同上） |
+| errorSummary | `[SQL异常-UPDATE] OrderMapper.updateStatus · Data truncated...`（根因消息截 120 字符） |
+| errorStack | [buildShortStack()](file:///d:/hq_work_code/tdp-server/tdp-server/tdp-server/tdp-server-webapp/src/main/java/com/huaqin/tdp/server/monitor/interceptor/SqlMonitorCollector.java#L273-L287)：`根因类名: 消息` + **前 3 帧**（精简堆栈，对比 HTTP 路径整个不放堆栈） |
+| 三个时间字段 + occurCount | 自己显式设 `now()` / 1（慢SQL路径不设，留给 pushErrorLog 补默认值） |
+
+### 三个关键辅助方法
+
+- **[unwrapException() L228-258](file:///d:/hq_work_code/tdp-server/tdp-server/tdp-server/tdp-server-webapp/src/main/java/com/huaqin/tdp/server/monitor/interceptor/SqlMonitorCollector.java#L228-L258)**：解包拿真实 DB 错误。策略和 HTTP 路径的 findRootCause 不同——不是无脑走到链尾，而是沿 WRAPPER_EXCEPTIONS 名单（`InvocationTargetException`/`PersistenceException`/`MyBatisSystemException`）逐层剥壳，**一旦当前异常有自己的非空消息就提前停**（最多 10 层）。因为 MyBatis 链尾可能是无消息的底层异常，中间层反而信息量大
+- **[shortMapperId() L288-301](file:///d:/hq_work_code/tdp-server/tdp-server/tdp-server/tdp-server-webapp/src/main/java/com/huaqin/tdp/server/monitor/interceptor/SqlMonitorCollector.java#L288-L301)**：`com.x.UserMapper.selectById` → `UserMapper.selectById`，只留最后两段
+- **[findCallerFromThread() L174-214](file:///d:/hq_work_code/tdp-server/tdp-server/tdp-server/tdp-server-webapp/src/main/java/com/huaqin/tdp/server/monitor/interceptor/SqlMonitorCollector.java#L174-L214)**：从**当前线程堆栈**（不是异常堆栈）找业务调用帧，跳过 JDK/反射/MyBatis/Spring AOP/monitor 自身，且额外要求命中 `errorLogBasePackage` 配置的业务包名才返回——比 HTTP 路径的“第一个非框架帧”多了一层包名白名单，防误判更严。找到后行号写入 errorLine（**但类名方法名丢弃不用**，errorMethod 仍是 Mapper ID）
+
+### 组装完之后
+
+和 HTTP 路径汇合同一条链路：`pushErrorLog()` 补默认值 → 去重 key = `真实根因类名|Mapper短ID` → 窗口聚合 → ESB。SQL 文本（已脱敏）**不进 DTO 任何字段**，只在摘要里体现类型和耗时。
 
 # 六、上报链路 MonitorReportService.pushErrorLog
 
