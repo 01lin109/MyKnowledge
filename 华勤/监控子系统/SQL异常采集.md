@@ -27,11 +27,11 @@
 
 ## 1.1 为什么挂在 MyBatis 层而不是 JDBC/HTTP 层
 
-| 挂载点 | 优点 | 缺点 |
-|---|---|---|
-| JDBC DataSource 代理 | 最底层，能拿到真实 SQL | 需要包装数据源，多数据源侵入大 |
-| **MyBatis Interceptor（选用）** | 拿得到 MappedStatement id、SQL类型、参数对象，与框架天然集成 | 只覆盖 MyBatis 执行的 SQL |
-| HTTP 层 GlobalExceptionHandler | 已有通道 | 拿不到 SQL 语句本身，且 SQL 异常会先被业务层捕获/包装，堆栈失真 |
+| 挂载点                           | 优点                                        | 缺点                                    |
+| ----------------------------- | ----------------------------------------- | ------------------------------------- |
+| JDBC DataSource 代理            | 最底层，能拿到真实 SQL                             | 需要包装数据源，多数据源侵入大                       |
+| **MyBatis Interceptor（选用）**   | 拿得到 MappedStatement id、SQL类型、参数对象，与框架天然集成 | 只覆盖 MyBatis 执行的 SQL                   |
+| HTTP 层 GlobalExceptionHandler | 已有通道                                      | 拿不到 SQL 语句本身，且 SQL 异常会先被业务层捕获/包装，堆栈失真 |
 
 与 HTTP 报告的联动：`GlobalExceptionHandler.handleSystemException()` 中有一道 `isSqlRelatedException()` 过滤——遍历异常链 20 层，类名命中 sql/jdbc/ibatis/Persistence 关键字就**跳过 HTTP 层上报**。原因：SQL 异常已由 `SqlMonitorInterceptor` 在 MyBatis 层第一时间上报过，HTTP 层再报一次就是重复告警。
 
@@ -71,15 +71,15 @@ hmp.monitor.sql-enabled  → SQL 监控分开关（默认 true）
 
 # 三、慢SQL 与 异常SQL 的判定
 
-| 维度 | 慢SQL | 异常SQL |
-|---|---|---|
-| 判定条件 | `executeTime >= slowSqlThreshold`（默认 1000ms，Apollo 可配） | `proceed()` 抛出任意 Throwable |
-| 优先级 | 异常优先：同一次执行两者都满足时**只报异常**（if/else if） | — |
-| errorLevel | WARN | ERROR |
-| errorCode | WARN_SLOW_SQL | ERR_SQL_EXCEPTION |
-| errorClass | 固定 "SlowSqlMonitor" | 解包后的真实 DB 异常类简名（如 SQLSyntaxErrorException） |
-| errorSummary | `[慢SQL 2350ms] UserMapper.selectById(SELECT)` | `[SQL异常-SELECT] UserMapper.insert · Column 'xxx' cannot be null`（原因超120字截断） |
-| errorStack | 无 | 根因类名+message + 前3帧堆栈 |
+| 维度           | 慢SQL                                                   | 异常SQL                                                                       |
+| ------------ | ------------------------------------------------------ | --------------------------------------------------------------------------- |
+| 判定条件         | `executeTime >= slowSqlThreshold`（默认 1000ms，Apollo 可配） | `proceed()` 抛出任意 Throwable                                                  |
+| 优先级          | 异常优先：同一次执行两者都满足时**只报异常**（if/else if）                   | —                                                                           |
+| errorLevel   | WARN                                                   | ERROR                                                                       |
+| errorCode    | WARN_SLOW_SQL                                          | ERR_SQL_EXCEPTION                                                           |
+| errorClass   | 固定 "SlowSqlMonitor"                                    | 解包后的真实 DB 异常类简名（如 SQLSyntaxErrorException）                                  |
+| errorSummary | `[慢SQL 2350ms] UserMapper.selectById(SELECT)`          | `[SQL异常-SELECT] UserMapper.insert · Column 'xxx' cannot be null`（原因超120字截断） |
+| errorStack   | 无                                                      | 根因类名+message + 前3帧堆栈                                                        |
 
 计时注意：用的是 `try/catch + finally` 而不是 AOP 环绕——异常路径也保证计时和上报，同时**把原异常原样 re-throw**，监控层对业务完全透明。
 
