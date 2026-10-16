@@ -59,7 +59,7 @@ AJAX（ **A** synchronous **J** avaScript **A** nd **X** ML）是一个术语，
 
 > 使用 JavaScript 在后台发起 HTTP 请求，获取数据后局部更新页面，无需整页刷新。
 尽管名字里有"XML"，但现在绝大多数场景都使用 JSON 格式。实现 AJAX 的技术手段主要有两个： `XMLHttpRequest` 和 `Fetch API` 。
-[[计算机网络/HTTP]]
+[[HTTP HTTPS]]
 ## 第二章 XMLHttpRequest：经典的网络请求
 
 ### 2.1 认识 XMLHttpRequest

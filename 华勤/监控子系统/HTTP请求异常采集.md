@@ -280,41 +280,108 @@ JVM 等所有非守护线程结束才退出；守护线程会被立即强杀。
 
 doReport() 方法在异步线程中执行，提取 6 个维度的信息组装 DTO：
 
-|维度|方法|逻辑|
-|---|---|---|
-|根因异常|findRootCause()|沿 getCause() 最多追溯 10 层，找到最底层异常|
-|出错位置|extractCallerLocation()|遍历堆栈帧，跳过 JDK/反射代理/Spring/MyBatis/monitor 包，取第一个业务代码帧|
-|行号|parseLineFromCaller()|从 ClassName.method(File.java:123) 中解析 :123 部分|
-|错误码|inferErrorCode()|按异常类名关键字推断，如 nullpointer → ERR_NPE ， deadlock → ERR_DEADLOCK|
-|告警摘要|buildSmartSummary()|拼接 [中文标签] 异常类名: 消息 ，截断到 480 字符|
-|客户端 IP|safeGetClientIp()|依次取 X-Forwarded-For → X-Real-IP → RemoteAddr|
+| 维度     | 方法                      | 逻辑                                                           |
+| ------ | ----------------------- | ------------------------------------------------------------ |
+| 根因异常   | findRootCause()         | 沿 getCause() 最多追溯 10 层，找到最底层异常                               |
+| 出错位置   | extractCallerLocation() | 遍历堆栈帧，跳过 JDK/反射代理/Spring/MyBatis/monitor 包，取第一个业务代码帧         |
+| 行号     | parseLineFromCaller()   | 从 ClassName.method(File.java:123) 中解析 :123 部分                |
+| 错误码    | inferErrorCode()        | 按异常类名关键字推断，如 nullpointer → ERR_NPE ， deadlock → ERR_DEADLOCK |
+| 告警摘要   | buildSmartSummary()     | 拼接 [中文标签] 异常类名: 消息 ，截断到 480 字符                               |
+| 客户端 IP | safeGetClientIp()       | 依次取 X-Forwarded-For → X-Real-IP → RemoteAddr                 |
 
-```c
-/**
- * 从异常堆栈中提取出错位置：类名.方法名(文件名:行号)
- */
-private String extractCallerLocation(Throwable t) {
-    if (t == null) return "unknown";
-    StackTraceElement[] stack = t.getStackTrace();
-    if (stack == null || stack.length == 0) return "unknown";
+### 场景设定
 
-    // 找第一个业务代码帧（跳过 JDK / 反射 / Spring / MyBatis 框架）
-    for (StackTraceElement frame : stack) {
-        String cn = frame.getClassName();
-        if (cn.startsWith("java.") || cn.startsWith("javax.") || cn.startsWith("sun.")
-                || cn.startsWith("jdk.")) continue;
-        if (cn.contains("$Proxy") || cn.contains("CGLIB$$")) continue;
-        if (cn.startsWith("org.springframework") && !cn.startsWith("org.springframework.boot")) continue;
-        if (cn.startsWith("org.apache.ibatis") || cn.startsWith("org.mybatis")) continue;
-        if (cn.contains(".monitor.")) continue;
+假设业务代码这样出错：
 
-        return cn + "." + frame.getMethodName() + "(" + frame.getFileName() + ":" + frame.getLineNumber() + ")";
-    }
-    // 兜底返回第一帧
-    StackTraceElement first = stack[0];
-    return first.getClassName() + "." + first.getMethodName();
+```java
+// UserService.java
+public User getUser(Long id) {
+    User user = userMapper.selectById(id);
+    return user.getName();          // ← L142：user为null，NPE在这里抛出
 }
 ```
+
+Spring MVC 处理请求时抛出的异常，经过包装后传到 `handleSystemException()` 的原始异常长这样：
+
+```
+org.springframework.web.util.NestedServletException: Request processing failed
+    at org.springframework.web.servlet.FrameworkServlet.processRequest(...)
+    at javax.servlet.http.HttpServlet.service(...)
+    ...
+    Caused by: java.lang.NullPointerException        ← 真正的凶手在cause链里
+        at com.huaqin.tdp.server.service.UserService.getUser(UserService.java:142)
+        at com.huaqin.tdp.server.controller.UserController.getUser(UserController.java:33)
+        at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+        at java.lang.reflect.Method.invoke(Method.java:498)
+        at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(...)
+```
+
+---
+
+### 方法① findRootCause() — 从“表象”挖到“真凶”
+
+Spring 抛出的顶层异常是包装类的“外壳”，真正出错的是 cause 链末端。这个方法沿链往下走：
+
+```
+输入:  NestedServletException
+        └─ cause → NullPointerException
+                    └─ cause → null（到头了）
+
+输出:  NullPointerException 实例
+```
+
+|     | 值                                                     |
+| --- | ----------------------------------------------------- |
+| 处理前 | `org.springframework.web.util.NestedServletException` |
+| 处理后 | `java.lang.NullPointerException`                      |
+
+两个防御细节：`maxDepth=10` 防止异常链过长；`current.getCause() != current` 防止某些烂代码写 `initCause(this)` 造成自环死循环。
+
+---
+
+### 方法② extractCallerLocation() — 从堆栈里挑出“第一帧业务代码”
+
+输入是刚才拿到的 NPE，它带着整个堆栈数组。逐帧过筛子：
+
+| 帧   | 内容                                                                        | 判定                                               |
+| --- | ------------------------------------------------------------------------- | ------------------------------------------------ |
+| 0   | `com.huaqin.tdp.server.service.UserService.getUser(UserService.java:142)` | ✅ 不是JDK/代理/Spring/MyBatis/monitor包 → **命中，直接返回** |
+
+```
+输出: "com.huaqin.tdp.server.service.UserService.getUser(UserService.java:142)"
+```
+
+**过滤规则什么时候真正起作用？** 堆栈顶部全是框架帧的场景，比如异常从 AOP 代理或反射里抛出时：
+
+```
+帧0: sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)  → sun.开头，跳过
+帧1: java.lang.reflect.Method.invoke(...)                         → java.开头，跳过
+帧2: org.springframework.aop.framework.CglibAopProxy$...          → spring+CGLIB，跳过
+帧3: com.huaqin.tdp.server.service.UserService.getUser(...)       → ✅ 命中
+```
+
+跳过 `.monitor.` 包是**防自指**：万一监控上报自身出错，不能把“出错位置”又指向监控代码，否则告警会误导人去查监控组件。
+
+---
+
+### 方法③ parseLineFromCaller() — 从字符串里抠出行号
+
+纯字符串解析，因为 HMP 平台的 DTO 要求 `errorMethod`（位置）和 `errorLine`（行号）是**两个独立字段**：
+
+```
+输入: "com.huaqin.tdp.server.service.UserService.getUser(UserService.java:142)"
+                                              最后一个':'的位置 ──┐
+                                                                  ↓
+步骤1: lastIndexOf(':')  → 找到 "142" 前面的冒号（用 lastIndexOf 是因为
+         全限定类名里的包名如 com.huaqin 中不含冒号，但保险起见取最后一个）
+步骤2: indexOf(')', lastColon) → 找到冒号后面的右括号
+步骤3: substring(冒号+1, 右括号).trim() → "142"
+步骤4: parseInt("142") → 142
+
+输出: 142
+```
+
+---
 
 ### 问题一：栈帧过滤逻辑（跳过JDK/反射/Spring）
 

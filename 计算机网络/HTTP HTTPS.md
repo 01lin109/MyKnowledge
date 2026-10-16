@@ -427,3 +427,7 @@ JWT 彻底改变了逻辑。它不再需要服务器记账，而是把信息直�
 2. **OPTIONS 请求：** 如果你发现前端发了一个请求但没报错也没数据，去 Network 面板看看是不是 `OPTIONS` 请求挂了。后端拦截器（Interceptor）有时会误伤 `OPTIONS` 请求，需要放行。
     
 3. **安全风险：** 永远不要在生产环境中设置 `Access-Control-Allow-Origin: *`，这相当于给黑客开了后门。
+
+# HTTPS
+![[PixPin_2026-09-27_13-19-43.png]]
+

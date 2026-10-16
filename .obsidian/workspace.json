@@ -13,72 +13,43 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "每日一面/华勤实习.md",
+                "file": "Mysql/B+ 树.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "华勤实习"
+              "title": "B+ 树"
             }
           },
           {
-            "id": "6824ef6d06f144db",
+            "id": "758d13ee25bd4c32",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "每日一面/华勤实习.md",
+                "file": "每日一面/模拟面试.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "华勤实习"
+              "title": "模拟面试"
             }
           },
           {
-            "id": "19d59fa305bc5ded",
+            "id": "1eadd71f4bae8eb8",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "bases",
               "state": {
-                "file": "华勤/监控子系统/SQL异常采集.md",
-                "mode": "source",
-                "source": false
+                "file": "华为/未命名 1.base",
+                "viewName": "视图"
               },
-              "icon": "lucide-file",
-              "title": "SQL异常采集"
-            }
-          },
-          {
-            "id": "9c2a30336fc45328",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "2026-09-14.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "2026-09-14"
-            }
-          },
-          {
-            "id": "ee209e60c1d31019",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Java/Java基础.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Java基础"
+              "icon": "lucide-table",
+              "title": "未命名 1"
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -112,7 +83,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "布谷鸟",
+                "query": "可重复读",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -215,8 +186,8 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "2026-09-14.md",
-                "followCursor": false,
+                "file": "华为/未命名 1.base",
+                "followCursor": true,
                 "showSearch": false,
                 "searchQuery": ""
               },
@@ -230,42 +201,20 @@
             "state": {
               "type": "file-properties",
               "state": {
-                "file": "每日一面/实习.md"
+                "file": "每日一面/场景题目.md"
               },
               "icon": "lucide-info",
-              "title": "实习的笔记属性"
+              "title": "笔记属性"
             }
           },
           {
-            "id": "73f49f012dd04a85",
+            "id": "e33f443fb254b0ab",
             "type": "leaf",
             "state": {
               "type": "git-view",
               "state": {},
               "icon": "git-pull-request",
               "title": "Source Control"
-            }
-          },
-          {
-            "id": "daf03bd4a9f31ddb",
-            "type": "leaf",
-            "state": {
-              "type": "claudian-view",
-              "state": {
-                "tabWorkspace": {
-                  "version": 1,
-                  "openTabs": [
-                    {
-                      "tabId": "tab-1788245900056-pyn0ydb",
-                      "conversationId": null,
-                      "draftModel": "gpt-5.6-terra"
-                    }
-                  ],
-                  "activeTabId": "tab-1788245900056-pyn0ydb"
-                }
-              },
-              "icon": "bot",
-              "title": "Claudian"
             }
           }
         ],
@@ -284,60 +233,59 @@
       "templates:插入模板": false,
       "command-palette:打开命令面板": false,
       "bases:新建数据库": false,
-      "obsidian-git:Open Git source control": false,
-      "termy:打开Termy终端": false,
-      "realclaudian:Open Claudian": false
+      "obsidian-git:Open Git source control": false
     }
   },
-  "active": "9c2a30336fc45328",
+  "active": "1eadd71f4bae8eb8",
   "lastOpenFiles": [
-    "未命名.canvas",
-    "2026-09-14.md",
-    "每日一面/场景题目.md",
-    "每日一面/Java八股.md",
-    "每日一面/GO八股.md",
-    "每日一面/华勤实习.md",
-    "每日一面/清能互联实习.md",
-    "华勤/监控子系统/SQL异常采集.md",
-    "华勤/监控子系统/TDP 监控子系统深度分析报告.md",
-    "华勤/监控子系统/Monitor.md",
-    "华勤/监控子系统/HTTP请求异常采集.md",
-    "每日一面/算法题.md",
-    "每日一面/项目.md",
-    "每日一面/中间件八股.md",
+    "华为/未命名.base",
+    "华为/未命名 1.base",
+    "华为/云&SA.md",
     "每日一面/综合面试&HR面.md",
-    "On-Call学习/项目经历-OnCall.md",
+    "华为",
+    "每日一面/模拟面试.md",
     "每日一面/自我介绍.md",
-    "On-Call学习/模拟面试.md",
-    "每日练习/秋招.md",
+    "每日一面/GO八股.md",
+    "每日一面/场景题目.md",
+    "Mysql/B+ 树.md",
+    "每日一面/清能互联实习.md",
+    "每日一面/华勤实习.md",
+    "每日一面/Java八股.md",
     "Mysql/事务.md",
-    "秋招模拟面试/清能互联实习.md",
-    "秋招模拟面试/Java八股.md",
-    "华勤/监控子系统/模拟.md",
+    "Mysql/并发问题.md",
+    "Java/并发/并发安全.md",
+    "中金所面试/八股.md",
+    "pdd面试/一面没回答上来的问题：.md",
+    "Java/并发/锁.md",
+    "计算机网络/面试题.md",
+    "计算机网络/知识点.md",
+    "计算机网络/RESTful API 设计规范.md",
+    "计算机网络/HTTP HTTPS.md",
+    "计算机网络/微信图片_20250617140007.jpg",
+    "计算机网络/微信图片_20250617140018.jpg",
+    "supportPhoto/PixPin_2026-09-27_13-19-43.png",
+    "每日一面/项目.md",
+    "华勤/监控子系统/HTTP请求异常采集.md",
+    "每日一面/中间件八股.md",
     "Redis/缓存篇.md",
+    "Mysql/锁.md",
+    "supportPhoto/PixPin_2026-09-16_11-00-04.png",
+    "未命名.canvas",
     "清能互联实习.canvas",
-    "On-Call学习/eino框架.md",
-    "Mysql/索引.md",
     "每日练习",
     "Java/Spring",
     "秋招模拟面试",
     "运维",
     "华勤/监控子系统",
     "华勤",
-    "计算机网络/微信图片_20250617140018.jpg",
-    "计算机网络/微信图片_20250617140007.jpg",
     "计算机网络/微信图片_20250617140034.jpg",
     "操作系统",
     "pdd面试",
-    "Gemini Q & A",
     "supportPhoto/PixPin_2026-06-12_18-29-34.png",
     "supportPhoto/PixPin_2026-06-12_18-24-21.png",
     "supportPhoto/Pasted image 20260612181530.png",
     "supportPhoto/Pasted image 20260612180949.png",
     "supportPhoto/Pasted image 20260612175651.png",
-    "OnCall.canvas",
-    "supportPhoto/Pasted image 20260611210009.png",
-    "supportPhoto/Pasted image 20260611204117.png",
-    "中金所面试"
+    "OnCall.canvas"
   ]
 }

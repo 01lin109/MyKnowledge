@@ -1,24 +1,37 @@
 {
   "schemaVersion": 1,
   "source": "termy",
-  "updatedAt": "2026-09-14T13:14:58.673Z",
-  "vaultRoot": "D:/MyKnowledge/MyKnowledge",
+  "updatedAt": "2026-09-15T11:18:54.827Z",
+  "vaultRoot": "D:/icloud/iCloudDrive/iCloud~md~obsidian/MyKnowledge/MyKnowledge",
   "workspaceFolders": [
-    "D:/MyKnowledge/MyKnowledge"
+    "D:/icloud/iCloudDrive/iCloud~md~obsidian/MyKnowledge/MyKnowledge"
   ],
   "activeFile": {
-    "filePath": "D:\\MyKnowledge\\MyKnowledge\\2026-09-14.md",
+    "filePath": "D:\\icloud\\iCloudDrive\\iCloud~md~obsidian\\MyKnowledge\\MyKnowledge\\2026-09-14.md",
     "vaultPath": "2026-09-14.md",
-    "fileUrl": "file:///D:/MyKnowledge/MyKnowledge/2026-09-14.md",
+    "fileUrl": "file:///D:/icloud/iCloudDrive/iCloud%7Emd%7Eobsidian/MyKnowledge/MyKnowledge/2026-09-14.md",
     "hasFocus": false
   },
   "openFiles": [
     {
-      "filePath": "D:\\MyKnowledge\\MyKnowledge\\2026-09-14.md",
+      "filePath": "D:\\icloud\\iCloudDrive\\iCloud~md~obsidian\\MyKnowledge\\MyKnowledge\\2026-09-14.md",
       "vaultPath": "2026-09-14.md",
-      "fileUrl": "file:///D:/MyKnowledge/MyKnowledge/2026-09-14.md",
+      "fileUrl": "file:///D:/icloud/iCloudDrive/iCloud%7Emd%7Eobsidian/MyKnowledge/MyKnowledge/2026-09-14.md",
       "isActive": true
     }
   ],
-  "selection": null
+  "selection": {
+    "text": "",
+    "isEmpty": true,
+    "from": {
+      "line": 0,
+      "ch": 0,
+      "offset": 0
+    },
+    "to": {
+      "line": 0,
+      "ch": 0,
+      "offset": 0
+    }
+  }
 }
